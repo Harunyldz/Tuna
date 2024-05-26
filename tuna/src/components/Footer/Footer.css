@@ -1,5 +1,5 @@
 .footer-container {
-    position: absolute;
+    position: relative;
     /* height: 20vw; */
     bottom: 0;
     width: 100%;
@@ -38,7 +38,7 @@
     transition: all 0.3s ease;
 }
 
-.footer-left ul li:hover{
+.footer-left ul li:hover {
     margin-left: 1vw;
 }
 
@@ -76,7 +76,7 @@
     margin-top: 0;
 }
 
-.footer-center .icons li{
+.footer-center .icons li {
     font-size: 1.5vw;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@
     transition: all 0.3s ease-in;
 }
 
-.footer-center .icons li:hover{
+.footer-center .icons li:hover {
     background-color: #f89715;
     color: #0a2c3c;
 }
@@ -97,18 +97,18 @@
     flex: 1;
 }
 
-.footer-right ul{
+.footer-right ul {
     padding: 0;
     text-align: right;
 }
 
-.footer-right ul li{
+.footer-right ul li {
     margin-bottom: 0.5vw;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 
-.footer-right ul li:hover{
+.footer-right ul li:hover {
     margin-right: 1vw;
 }

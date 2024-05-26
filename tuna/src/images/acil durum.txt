@@ -1,0 +1,27 @@
+ACİL DURUM PLANI
+
+1. Acil Durum Tanımı:
+   - Hangi olayın acil durum olarak kabul edileceği belirtilmelidir.
+   - Örnek: Yangın, deprem, patlama, vb.
+
+2. Acil Durum Ekip Üyeleri:
+   - Acil durumda görev alacak ekip üyeleri ve iletişim bilgileri listelenmelidir.
+   - İsim, telefon numarası, e-posta adresi gibi bilgiler eklenmelidir.
+
+3. Acil Durum Yerleri:
+   - Acil durumda toplanma alanları, tahliye yolları ve güvenli bölgeler belirtilmelidir.
+   - Harita veya plan üzerinde işaretlemeler yapılabilir.
+
+4. İletişim Planı:
+   - Acil durumda iletişim nasıl sağlanacak belirtilmelidir.
+   - İç iletişim (ekip üyeleri arasında) ve dış iletişim (yetkililer, kolluk kuvvetleri, medya) detayları verilmelidir.
+
+5. Acil Durum Prosedürleri:
+   - Yangın, deprem, patlama gibi farklı acil durum senaryoları için prosedürler oluşturulmalıdır.
+   - Her senaryo için adım adım ne yapılması gerektiği açıklanmalıdır.
+
+6. Acil Durum Tatbikatları:
+   - Belirli aralıklarla acil durum tatbikatları düzenlenmelidir.
+   - Ekip üyelerinin tepki süreleri ve prosedürleri uygulama becerileri test edilmelidir.
+
+Not: Bu acil durum planı sürekli güncel tutulmalı ve tüm çalışanlara dağıtılmalıdır.

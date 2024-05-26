@@ -1,0 +1,23 @@
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: none;
+    background-color: lightgray;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.card-img {
+    width: 250px;
+    height: 150px;
+
+}
+
+.card-icon {
+    font-size: 30px;
+    color: #0a2c3c;
+}
