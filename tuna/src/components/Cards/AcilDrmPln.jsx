@@ -9,7 +9,7 @@ function AcilDrmPln() {
     return (
         <div className='card-item'>
             <img className='card-img' src={acilDr} alt="igu" />
-            <h2>Acil Durum Planı</h2>
+            <h3>Acil Durum Planı</h3>
             <ImArrowRight className='card-icon' />
         </div>
     )

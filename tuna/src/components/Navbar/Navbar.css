@@ -35,7 +35,7 @@
 
 .navbar .logo-name {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.1vw;
 }
 
 .navbar .logo-title {
@@ -44,7 +44,7 @@
 
 .navbar-links {
     display: flex;
-    font-size: 0.8vw;
+    font-size: 1.3vw;
     gap: 1vw;
     cursor: pointer;
     font-weight: 700;

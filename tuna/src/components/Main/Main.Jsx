@@ -11,7 +11,7 @@ import IsGvUzm from '../Cards/IsGvUzm.jsx'
 
 function Main() {
     return (
-        <div>
+        <div className='main'>
             <main className='main-box'>
                 <IsGvUzm />
                 <Hkm />
