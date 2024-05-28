@@ -21,3 +21,32 @@
     font-size: 30px;
     color: red;
 }
+
+.hakkimizda-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.hakkimizda-container h1,
+.hakkimizda-container h2 {
+    color: #333;
+}
+
+.hakkimizda-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-baslik {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-img {
+    border-radius: 10px;
+}

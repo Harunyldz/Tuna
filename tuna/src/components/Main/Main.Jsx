@@ -24,14 +24,14 @@ const Main = () => {
 
 export default Main;
 
-{
-  /* <IsGvUzm />
-        <Hkm />
-        <Dsp />
-        <RiskAnaliz />
-        <AcilDrmPln />
-        <IsgTmlEgtm />
-        <YuksekteCalisma />
-        <HijyenEgt />
-        <YanginEgt /> */
-}
+// {
+//   /* <IsGvUzm />
+//         <Hkm />
+//         <Dsp />
+//         <RiskAnaliz />
+//         <AcilDrmPln />
+//         <IsgTmlEgtm />
+//         <YuksekteCalisma />
+//         <HijyenEgt />
+//         <YanginEgt /> */
+// }
