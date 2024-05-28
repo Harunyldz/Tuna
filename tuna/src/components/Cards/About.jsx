@@ -1,6 +1,6 @@
 import React from 'react'
 import './cards.css'
-import igu from "../../assets/igu.jpg"
+import logo3 from "../../assets/logo3.jpg"
 
 function About() {
     return (
@@ -10,7 +10,7 @@ function About() {
                     <h1>TUNA İŞ GÜVENLİĞİ HİZMETLERİ</h1>
                 </div>
                 <div>
-                    <img className='about-img' src={igu} alt='' width={150} height={150} />
+                    <img className='about-img' src={logo3} alt='' width={200} height={150} />
                 </div>
 
             </div>
