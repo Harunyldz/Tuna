@@ -69,58 +69,76 @@ export const carts = [
 export const menuItems=[
     {
         id:1,
-        title:"Ana Sayfa"
+        title:"Ana Sayfa",
+        href:"/"
     },
     {
         id:2,
-        title:"Hakkımızda"
+        title:"Hakkımızda",
+        href:"hakkimizda"
     },
     {
         id:3,
         title:"Hizmetlerimiz",
+        href:"hizmetlerimiz",
         subMenu:[
             {
                 id:1,
-                title:"İş Güvenliği Uzmanı"
+                title:"İş Güvenliği Uzmanı",
+                href:"is-guvenligi-uzmani"
             },
             {
                 id:2,
-                title:"İş Yeri Hekimi"
+                title:"İş Yeri Hekimi",
+                href:"is-yeri-hekimi"
             },
             {
                 id:3,
-                title:"Diğer Sağlık Personeli"
+                title:"Diğer Sağlık Personeli",
+                href:"diger-saglik-personeli"
             },
             {
                 id:4,
-                title:"Risk Analizi"
+                title:"Risk Analizi",
+                href:"risk-analizi"
             },
             {
                 id:5,
-                title:"Acil Durum Planı"
+                title:"Acil Durum Planı",
+                href:"acil-durum-plani"
             }
         ]
     },
     {
         id:4,
         title:"Eğitimlerimiz",
+        href:"egitimlerimiz",
         subMenu:[
             {
                 id:1,
-                title:"İş Güvenliği Eğitimi"
+                title:"İş Güvenliği Eğitimi",
+                href:"is-guvenligi-egitimi"
             },
             {
                 id:2,
-                title:"Hijyen Eğitimi"
+                title:"Hijyen Eğitimi",
+                href:"hijyen-egitimi"
             },
             {
                 id:3,
-                title:"Yangın Eğitimi"
+                title:"Yangın Eğitimi",
+                href:"yangin-egitimi"
             },
             {
                 id:4,
-                title:"Yüksekte Çalışma Eğitimi"
+                title:"Yüksekte Çalışma Eğitimi",
+                href:"yuksekte-calisma-egitimi"
             }
         ]
+    },
+    {
+        id:5,
+        title:"İletişim",
+        href:"iletisim"
     }
 ]

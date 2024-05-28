@@ -10,11 +10,11 @@ import About from '../../components/Cards/About.jsx'
 const Home = () => {
   return (
     <div className='home'>
-      {/* <Navbar /> */}
-      {/* <Slider />
-      <Main /> */}
-      {/* <Footer /> */}
+      <Navbar />
       <About />
+      <Main />
+      <Slider />
+      <Footer />
 
     </div>
   )
