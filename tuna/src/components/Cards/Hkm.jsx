@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import hkm from "../../images/HKM.jpg"
+import hkm from "../../assets/HKM.jpg"
 import './cards.css'
 
 

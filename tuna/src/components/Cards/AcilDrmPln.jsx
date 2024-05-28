@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import acilDr from "../../images/acildurum.jpg"
+import acilDr from "../../assets/acildurum.jpg"
 import './cards.css'
 
 

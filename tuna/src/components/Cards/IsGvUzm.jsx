@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import igu from "../../images/igu.jpg"
+import igu from "../../assets/igu.jpg"
 import './cards.css'
 
 function IsGvUzm() {

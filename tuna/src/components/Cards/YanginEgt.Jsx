@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import yangin from "../../images/yangin.jpeg"
+import yangin from "../../assets/yangin.jpeg"
 import './cards.css'
 
 

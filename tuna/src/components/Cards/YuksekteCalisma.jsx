@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import hight from "../../images/hightWorking.jpg"
+import hight from "../../assets/hightWorking.jpg"
 import './cards.css'
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import Risk from "../../images/riskDe.jpg"
+import Risk from "../../assets/riskDe.jpg"
 import './cards.css'
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import dsp from "../../images/dsp2.jpeg"
+import dsp from "../../assets/dsp2.jpeg"
 import './cards.css'
 
 function Dsp() {

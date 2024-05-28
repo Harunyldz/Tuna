@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import isgEgt from "../../images/isgEgt.png"
+import isgEgt from "../../assets/isgEgt.png"
 import './cards.css'
 
 

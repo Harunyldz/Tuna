@@ -1,30 +1,37 @@
-import React from 'react'
-import './main.css'
-import Dsp from '../Cards/Dsp.jsx'
-import AcilDrmPln from '../Cards/AcilDrmPln.jsx'
-import HijyenEgt from '../Cards/HijyenEgt.jsx'
-import Hkm from '../Cards/Hkm.jsx'
-import IsgTmlEgtm from '../Cards/IsgTmlEgtm.jsx'
-import RiskAnaliz from '../Cards/RiskAnaliz.jsx'
-import YuksekteCalisma from '../Cards/YuksekteCalisma.jsx'
-import IsGvUzm from '../Cards/IsGvUzm.jsx'
+import React from "react";
+import "./main.css";
+import { carts } from "../../Data.js";
 
-function Main() {
-    return (
-        <div className='main'>
-            <main className='main-box'>
-                <IsGvUzm />
-                <Hkm />
-                <Dsp />
-                <RiskAnaliz />
-                <AcilDrmPln />
-                <IsgTmlEgtm />
-                <YuksekteCalisma />
-                <HijyenEgt />
+const Main = () => {
+  console.log(carts);
+  return (
+    <div className="main-container">
+      <div className="main">
+        {carts.map((cart) => (
+          <div className="main-cart" key={cart.id}>
+            <img src={cart.image} alt="" />
+            <div className="content">
+              <h3>{cart.title}</h3>
+              <hr />
+              <p>{cart.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-            </main>
-        </div>
-    )
+export default Main;
+
+{
+  /* <IsGvUzm />
+        <Hkm />
+        <Dsp />
+        <RiskAnaliz />
+        <AcilDrmPln />
+        <IsgTmlEgtm />
+        <YuksekteCalisma />
+        <HijyenEgt />
+        <YanginEgt /> */
 }
-
-export default Main

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImArrowRight } from "react-icons/im";
-import hijyen from "../../images/hijyen.jpeg"
+import hijyen from "../../assets/hijyen.jpeg"
 import './cards.css'
 
 

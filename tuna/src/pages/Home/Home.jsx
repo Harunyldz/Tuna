@@ -6,18 +6,10 @@ import Main from '../../components/Main/Main.jsx'
 
 const Home = () => {
   return (
-    <div>
-      <div>
+    <div className='home'>
         <Navbar />
-      </div>
-      <div>
         <Main />
-      </div>
-      <div>
         <Footer />
-      </div>
-
-
     </div>
   )
 }
