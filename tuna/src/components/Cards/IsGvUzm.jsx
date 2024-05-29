@@ -8,7 +8,7 @@ function IsGvUzm() {
     return (
         <div className='content-item'>
             <div className='content-title'>
-                İş Güvenliği Uzmanı
+                <h1>İş Güvenliği Uzmanı</h1>
             </div>
             <div className='content-center'>
                 <div className='content-center-box1'>
@@ -21,8 +21,8 @@ function IsGvUzm() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={igu} alt="" width={200} height={200} />
-                    <img className='img2' src={igu2} alt="" width={200} height={200} />
+                    <img className='img1' src={igu} alt="" width={300} height={200} />
+                    <img className='img2' src={igu2} alt="" width={300} height={200} />
                 </div>
             </div>
             <div className='content-desc'>
