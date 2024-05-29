@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
 import logo from "../../assets/logo5.png";
 import { menuItems } from "../../Data";
+import { FaChevronDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -37,20 +39,25 @@ const Navbar = () => {
               onMouseEnter={menu.subMenu ? handleMouseEnter : null}
               onMouseLeave={menu.subMenu ? handleMouseLeave : null}
             >
-              <a href={menu.href}>{menu.title}</a>
+              <Link to={menu.href}>{menu.title}</Link> 
+              {menu.subMenu&& (
+                <span className="menu-icon">
+                  <FaChevronDown/>
+                </span>
+              )}
               {menu.subMenu && (
                 <AnimatePresence>
                   {dropdown && (
                     <motion.ul
                       className="dropdown-menu"
-                      initial={{ opacity: 0, y:10 }}
+                      initial={{ opacity: 0, y:20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.5 }}
+                      exit={{ opacity: 0, y: 20 }}
+                      transition={{ duration: 0.7 }}
                     >
-                      {menu.subMenu.map((submenu, index) => (
-                        <li key={index}>
-                          <a href={submenu.href}>{submenu.title}</a>
+                      {menu.subMenu.map((submenu) => (
+                        <li key={submenu.id}>
+                          <Link to={submenu.href}>{submenu.title}</Link>
                         </li>
                       ))}
                     </motion.ul>
