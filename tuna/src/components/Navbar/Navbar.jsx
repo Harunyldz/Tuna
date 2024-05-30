@@ -1,32 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
-
 import logo from "../../assets/logo5.png";
 import { menuItems } from "../../Data";
+import { FaChevronDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleMouseEnter = () => {
+    if (window.innerWidth >= 960) {
+      setDropdown(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth >= 960) {
+      setDropdown(false);
+    }
+  };
+
   return (
     <div className="navbar-container">
       <div className="navbar">
         <div className="navbar-logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="TUNA Logo" />
           <div className="logo-text">
             <span className="logo-name">TUNA</span>
-            <span className="logo-title">İş Güvenliği</span>
+            <span className="logo-title">İş Güvenliği Hizmetleri</span>
           </div>
         </div>
         <ul className="navbar-links">
-          <li className="navbar-link">Ana Sayfa</li>
-          <li className="navbar-link">Hakkımızda</li>
-          <li className="navbar-link">Hizmetlerimiz</li>
-          <li className="navbar-link">Eğitimlerimiz</li>
-          <li className="navbar-link">İletişim</li>
-          <li >
-            <input className='search-input' type="text" placeholder='Birşeyler Ara' />
+          {menuItems.map((menu) => (
+            <li
+              className="navbar-link"
+              key={menu.id}
+              onMouseEnter={menu.subMenu ? handleMouseEnter : null}
+              onMouseLeave={menu.subMenu ? handleMouseLeave : null}
+            >
+              <Link to={menu.href}>{menu.title}</Link> 
+              {menu.subMenu&& (
+                <span className="menu-icon">
+                  <FaChevronDown/>
+                </span>
+              )}
+              {menu.subMenu && (
+                <AnimatePresence>
+                  {dropdown && (
+                    <motion.ul
+                      className="dropdown-menu"
+                      initial={{ opacity: 0, y:20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
+                      transition={{ duration: 0.7 }}
+                    >
+                      {menu.subMenu.map((submenu) => (
+                        <li key={submenu.id}>
+                          <Link to={submenu.href}>{submenu.title}</Link>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              )}
+            </li>
+          ))}
+          <li>
+            <input
+              className="search-input"
+              type="text"
+              placeholder="Birşeyler Ara"
+            />
           </li>
         </ul>
       </div>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f89715" fill-opacity="1" d="M0,128L60,106.7C120,85,240,43,360,42.7C480,43,600,85,720,112C840,139,960,149,1080,149.3C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */}
     </div>
   );
 };

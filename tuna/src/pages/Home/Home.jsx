@@ -11,12 +11,12 @@ import IsGvUzm from '../../components/Cards/IsGvUzm.jsx'
 const Home = () => {
   return (
     <div className='home'>
-      {/* <Navbar /> */}
-      {/* <Slider />
-      <Main /> */}
-      {/* <Footer /> */}
-      {/* <About /> */}
+      <Navbar />
+      <Slider />
+      <Main />
+       <About />
       <IsGvUzm />
+      <Footer /> 
 
     </div>
   )
