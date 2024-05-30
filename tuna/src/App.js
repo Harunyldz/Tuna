@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import IsGvUzm from './components/Cards/IsGvUzm';
+import RiskAnaliz from './components/Cards/RiskAnaliz';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/hakkimizda' element={<About />} />
         <Route path='/is-guvenligi-uzmani' element={<IsGvUzm />} />
+        <Route path='/risk-analizi' element={<RiskAnaliz />} />
         {/* <Route path='/hizmetlerimiz' element={<Home/>}/> */}
       </Routes>
       {/* <Home/> */}

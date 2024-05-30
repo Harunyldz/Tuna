@@ -1,5 +1,4 @@
 import React from 'react'
-import { ImArrowRight } from "react-icons/im";
 import igu from "../../assets/igu.jpg"
 import igu2 from "../../assets/igu2.jpg"
 import './cards.css'
@@ -18,27 +17,18 @@ function IsGvUzm() {
                     <p>
                         İş güvenliği uzmanlarımız, iş yerlerinde meydana gelebilecek tehlikeleri ve riskleri belirler, önlemek için stratejiler geliştirir, çalışanları bu konuda eğitir ve sağlık ve güvenlik düzenlemeleri ile uyumu sağlar. Bu hizmetlerin sağlanması, 6331 sayılı İş Sağlığı ve Güvenliği Kanunu’na uygun olarak gerçekleşir ve bu kanuna göre işverenler, iş yerlerinde iş sağlığı ve güvenliği hizmetlerini sağlamakla yükümlüdür.
                     </p>
-
-                </div>
-                <div className='content-center-box2'>
-                    <img className='img1' src={igu} alt="" width={300} height={200} />
-                    <img className='img2' src={igu2} alt="" width={300} height={200} />
-                </div>
-            </div>
-            <div className='content-desc'>
-                <div className='content-desc-box1'>
                     <h3>İş Güvenliği Uzmanlığı Nedir?</h3>
                     <p>
                         İş güvenliği uzmanlığı, iş yerlerinde çalışanların güvenliğini ve sağlığını korumak amacıyla yapılan düzenlemeler ve uygulamalar üzerine uzmanlaşmış bir meslektir. Bu alanda çalışan uzmanlar, iş yerlerinde olası tehlikeleri tespit eder, risk değerlendirmeleri yapar ve iş kazalarını önlemek için gerekli tedbirleri alır. İş güvenliği uzmanlığı, özellikle sanayi, inşaat ve madencilik gibi yüksek riskli sektörlerde hayati öneme sahiptir.</p>
                     <h3>İş Güvenliği Uzmanının Görevleri</h3>
-                    <ul>
+                    <ol>
                         <li><b>Risk Değerlendirmesi:</b> İş yerindeki potansiyel tehlikeleri belirlemek ve bu tehlikelerin risk seviyelerini değerlendirmek.</li>
                         <li><b>Eğitim ve Bilgilendirme:</b>Çalışanlara iş güvenliği konularında eğitimler vermek ve farkındalıklarını artırmak.</li>
                         <li><b>Acil Durum Planları:</b> Yangın, patlama, kimyasal sızıntı gibi acil durumlar için önceden planlar hazırlamak ve tatbikatlar düzenlemek.</li>
                         <li><b>Denetim ve Kontrol:</b> İş yerinde güvenlik standartlarına uyulup uyulmadığını düzenli olarak denetlemek ve gerektiğinde iyileştirme önerilerinde bulunmak.</li>
                         <li><b>Kaza Araştırması:</b> Meydana gelen iş kazalarını ve meslek hastalıklarını araştırarak nedenlerini tespit etmek ve tekrarını önlemek için çözümler geliştirmek.</li>
                         <li><b>Dokümantasyon: </b> İş güvenliği ile ilgili tüm faaliyetleri belgelemek ve raporlamak.</li>
-                    </ul>
+                    </ol>
                     <h3>İş Güvenliği Uzmanı Olma Süreci</h3>
                     <ul>
                         <li><b>Eğitim:</b>İş güvenliği uzmanı olmak için üniversitelerin mühendislik, mimarlık veya fen fakültelerinden mezun olmak gereklidir. Ayrıca, iş sağlığı ve güvenliği alanında lisans veya lisansüstü eğitim almak da mümkündür.</li>
@@ -55,9 +45,12 @@ function IsGvUzm() {
                     </ul>
                     <p>İş güvenliği uzmanları, iş yerlerinin güvenli ve sağlıklı bir çalışma ortamı sağlamasına katkıda bulunarak hem iş kazalarını önlemeye hem de çalışanların refahını artırmaya yönelik önemli bir rol üstlenirler.</p>
                 </div>
-                <div className='content-desc-box2'>
-                    <p>eklenecek</p></div>
+                <div className='content-center-box2'>
+                    <img className='img1' src={igu} alt="" width={300} height={200} />
+                    <img className='img2' src={igu2} alt="" width={300} height={200} />
+                </div>
             </div>
+
         </div>
 
 
