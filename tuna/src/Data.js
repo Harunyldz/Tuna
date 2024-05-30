@@ -8,6 +8,8 @@ import risk from "../src/assets/risk.jpeg"
 import yangin from "../src/assets/yangin.jpg"
 import yuksek from "../src/assets/yuksek2.jpg"
 
+import IsGvUzm from './components/Cards/IsGvUzm'
+
 export const carts = [
     {
         id: 1,
@@ -66,79 +68,79 @@ export const carts = [
 ]
 
 
-export const menuItems=[
+export const menuItems = [
     {
-        id:1,
-        title:"Ana Sayfa",
-        href:"/"
+        id: 1,
+        title: "Ana Sayfa",
+        href: "/"
     },
     {
-        id:2,
-        title:"Hakkımızda",
-        href:"hakkimizda"
+        id: 2,
+        title: "Hakkımızda",
+        href: "hakkimizda"
     },
     {
-        id:3,
-        title:"Hizmetlerimiz",
-        href:"hizmetlerimiz",
-        subMenu:[
+        id: 3,
+        title: "Hizmetlerimiz",
+        href: "hizmetlerimiz",
+        subMenu: [
             {
-                id:1,
-                title:"İş Güvenliği Uzmanı",
-                href:"is-guvenligi-uzmani"
+                id: 1,
+                title: "İş Güvenliği Uzmanı",
+                href: 'is-guvenligi-uzmani'
             },
             {
-                id:2,
-                title:"İş Yeri Hekimi",
-                href:"is-yeri-hekimi"
+                id: 2,
+                title: "İş Yeri Hekimi",
+                href: "is-yeri-hekimi"
             },
             {
-                id:3,
-                title:"Diğer Sağlık Personeli",
-                href:"diger-saglik-personeli"
+                id: 3,
+                title: "Diğer Sağlık Personeli",
+                href: "diger-saglik-personeli"
             },
             {
-                id:4,
-                title:"Risk Analizi",
-                href:"risk-analizi"
+                id: 4,
+                title: "Risk Analizi",
+                href: "risk-analizi"
             },
             {
-                id:5,
-                title:"Acil Durum Planı",
-                href:"acil-durum-plani"
+                id: 5,
+                title: "Acil Durum Planı",
+                href: "acil-durum-plani"
             }
         ]
     },
     {
-        id:4,
-        title:"Eğitimlerimiz",
-        href:"egitimlerimiz",
-        subMenu:[
+        id: 4,
+        title: "Eğitimlerimiz",
+        href: "egitimlerimiz",
+        subMenu: [
             {
-                id:1,
-                title:"İş Güvenliği Eğitimi",
-                href:"is-guvenligi-egitimi"
+                id: 1,
+                title: "İş Güvenliği Eğitimi",
+                href: "is-guvenligi-egitimi"
             },
             {
-                id:2,
-                title:"Hijyen Eğitimi",
-                href:"hijyen-egitimi"
+                id: 2,
+                title: "Hijyen Eğitimi",
+                href: "hijyen-egitimi"
             },
             {
-                id:3,
-                title:"Yangın Eğitimi",
-                href:"yangin-egitimi"
+                id: 3,
+                title: "Yangın Eğitimi",
+                href: "yangin-egitimi"
             },
             {
-                id:4,
-                title:"Yüksekte Çalışma Eğitimi",
-                href:"yuksekte-calisma-egitimi"
+                id: 4,
+                title: "Yüksekte Çalışma Eğitimi",
+                href: "yuksekte-calisma-egitimi"
             }
         ]
     },
     {
-        id:5,
-        title:"İletişim",
-        href:"iletisim"
+        id: 5,
+        title: "İletişim",
+        href: "iletisim"
     }
 ]
