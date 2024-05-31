@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import IsGvUzm from './components/Cards/IsGvUzm';
 import RiskAnaliz from './components/Cards/RiskAnaliz';
+import AcilDrmPln from './components/Cards/AcilDrmPln';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/hakkimizda' element={<About />} />
         <Route path='/is-guvenligi-uzmani' element={<IsGvUzm />} />
         <Route path='/risk-analizi' element={<RiskAnaliz />} />
+        <Route path='/acil-durum-plani' element={<AcilDrmPln />} />
         {/* <Route path='/hizmetlerimiz' element={<Home/>}/> */}
       </Routes>
       {/* <Home/> */}
