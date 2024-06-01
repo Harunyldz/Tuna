@@ -57,7 +57,7 @@ const Navbar = () => {
                     >
                       {menu.subMenu.map((submenu) => (
                         <li key={submenu.id}>
-                          <Link to={submenu.href}>{submenu.title}</Link>
+                          <Link to={`${menu.href}/${submenu.href}`}>{submenu.title}</Link>
                         </li>
                       ))}
                     </motion.ul>

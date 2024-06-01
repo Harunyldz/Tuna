@@ -3,13 +3,12 @@ import "./main.css";
 import { carts } from "../../Data.js";
 
 const Main = () => {
-  console.log(carts);
   return (
     <div className="main-container">
       <div className="main">
         {carts.map((cart) => (
           <div className="main-cart" key={cart.id}>
-            <img src={cart.image} alt="" />
+            <img src={cart.image} alt={cart.title} />
             <div className="content">
               <h3>{cart.title}</h3>
               <hr />

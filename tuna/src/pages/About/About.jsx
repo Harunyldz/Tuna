@@ -6,7 +6,6 @@ import logo3 from "../../assets/logo3.jpg"
 const About = () => {
   return (
     <div>
-      <Navbar />
       <div className="hakkimizda-container">
             <div className='about-baslik'>
                 <div>
@@ -31,7 +30,6 @@ const About = () => {
             </p>
 
         </div>
-      <Footer />
     </div>
   );
 };

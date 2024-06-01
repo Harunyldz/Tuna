@@ -9,11 +9,8 @@ import Slider from '../../components/slider/Slider.jsx'
 const Home = () => {
   return (
     <div className='home'>
-      <Navbar />
       <Slider />
       <Main />
-      <Footer />
-
     </div>
   )
 }
