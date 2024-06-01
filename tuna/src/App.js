@@ -7,10 +7,10 @@ import RiskAnaliz from './components/Cards/RiskAnaliz';
 import AcilDrmPln from './components/Cards/AcilDrmPln';
 import Dsp from './components/Cards/Dsp';
 import Hkm from './components/Cards/Hkm';
-import Main from './components/Main/Main';
 import Info from './components/Cards/Info';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/hakkimizda' element={<About />} />
-        <Route path='/hizmetlerimiz' element={<Main />} />
+        <Route path='/hizmetlerimiz' element={<Services />} />
         <Route path='/hizmetlerimiz/is-guvenligi-uzmani' element={<IsGvUzm />} />
         <Route path='/hizmetlerimiz/risk-analizi' element={<RiskAnaliz />} />
         <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDrmPln />} />
