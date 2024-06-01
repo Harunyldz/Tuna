@@ -4,9 +4,6 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Main from '../../components/Main/Main.jsx'
 import Slider from '../../components/slider/Slider.jsx'
-import About from '../../components/Cards/About.jsx'
-import IsGvUzm from '../../components/Cards/IsGvUzm.jsx'
-import RiskAnaliz from '../../components/Cards/RiskAnaliz.jsx'
 
 
 const Home = () => {
@@ -15,9 +12,6 @@ const Home = () => {
       <Navbar />
       <Slider />
       <Main />
-      <About />
-      {/* <IsGvUzm /> */}
-      <RiskAnaliz />
       <Footer />
 
     </div>
