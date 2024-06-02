@@ -52,9 +52,6 @@ function IsGvUzm() {
             </div>
 
         </div>
-
-
-
     )
 }
 

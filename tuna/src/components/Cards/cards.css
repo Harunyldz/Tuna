@@ -80,7 +80,8 @@
 }
 
 .content-center-box1 p,
-h3 {
+h3,
+table {
     padding: 0 50px;
 }
 

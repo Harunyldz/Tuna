@@ -4,7 +4,7 @@ import { carts } from "../../Data.js";
 
 const Services = () => {
 
-  const services=carts.filter(item=>item.type==="hizmet")
+  const services = carts.filter(item => item.type === "hizmet")
 
   return (
     <div className="services-container">

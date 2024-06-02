@@ -5,6 +5,8 @@ import logo from "../../assets/logo5.png";
 import { menuItems } from "../../Data";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -39,10 +41,10 @@ const Navbar = () => {
               onMouseEnter={menu.subMenu ? handleMouseEnter : null}
               onMouseLeave={menu.subMenu ? handleMouseLeave : null}
             >
-              <Link to={menu.href}>{menu.title}</Link> 
-              {menu.subMenu&& (
+              <Link to={menu.href}>{menu.title}</Link>
+              {menu.subMenu && (
                 <span className="menu-icon">
-                  <FaChevronDown/>
+                  <FaChevronDown />
                 </span>
               )}
               {menu.subMenu && (
@@ -50,7 +52,7 @@ const Navbar = () => {
                   {dropdown && (
                     <motion.ul
                       className="dropdown-menu"
-                      initial={{ opacity: 0, y:20 }}
+                      initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 20 }}
                       transition={{ duration: 0.7 }}
@@ -66,13 +68,15 @@ const Navbar = () => {
               )}
             </li>
           ))}
-          <li>
+          <li style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
             <input
               className="search-input"
               type="text"
               placeholder="Birşeyler Ara"
             />
+            <FaSearch style={{ marginLeft: '5px' }} />
           </li>
+
         </ul>
       </div>
     </div>
