@@ -4,7 +4,5 @@
 2. navbar sayfa aşağı kayınca yukarda sabit kalsın.
 
 3. ana sayfada görünenleri anlayamadım.  bakıp
-4. rotu yapısı yapacaktım. çözümleyemedim.
-5. main.jsx sadece navbadaki hizmetlerimiz cartları olsun......yapıldı
-6. eğitim için de yeni bir compenent açın. oraya da navbardaki eğitim linkinde bulunanlar olsun.
-7. Ana sayfada neler görünecek belirlensin
+4. main.jsx sadece navbadaki hizmetlerimiz cartları olsun......yapıldı
+5. Ana sayfada neler görünecek belirlensin
