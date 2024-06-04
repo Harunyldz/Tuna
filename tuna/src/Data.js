@@ -24,7 +24,7 @@ export const carts = [
         image: hkm,
         type: "hizmet",
         text: "İş yeri hekimi, sağlık gözetimi, iş yeri risklerinin değerlendirilmesi ve çalışanların eğitiminden sorumludur",
-        href: "işyeri-hekimi"
+        href: "is-yeri-hekimi"
     },
     {
         id: 3,
