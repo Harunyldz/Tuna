@@ -10,13 +10,13 @@ import Hkm from './components/Cards/Hkm';
 import Info from './components/Cards/Info';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import Services from './components/Services/Services';
+import Services from './pages/Services/Services.jsx';
 import HijyenEgt from './components/Cards/HijyenEgt';
-import Education from './components/Services/Education';
 import IsgTmlEgtm from './components/Cards/IsgTmlEgtm';
 import YanginEgt from './components/Cards/YanginEgt.jsx';
 import YuksekteCalisma from './components/Cards/YuksekteCalisma.jsx';
-import Contact from './components/contact/Contact.jsx';
+import Trainings from './pages/Trainings/Trainings.jsx';
+import EmailForm from './components/EmailForm/EmailForm.jsx';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/hakkimizda' element={<About />} />
         <Route path='/hizmetlerimiz' element={<Services />} />
-        <Route path='/egitimlerimiz' element={<Education />} />
+        <Route path='/egitimlerimiz' element={<Trainings />} />
         <Route path='/hizmetlerimiz/is-guvenligi-uzmani' element={<IsGvUzm />} />
         <Route path='/hizmetlerimiz/risk-analizi' element={<RiskAnaliz />} />
         <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDrmPln />} />
@@ -37,7 +37,7 @@ function App() {
         <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
         <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
         <Route path='/info' element={<Info />} />
-        <Route path='/iletisim' element={<Contact />} />
+        <Route path='/iletisim' element={<EmailForm />} />
       </Routes>
       <Footer />
     </div>

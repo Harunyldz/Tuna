@@ -1,14 +1,14 @@
 import React from 'react'
-import "./Services.css";
+import "./Trainings.css";
 import { carts } from "../../Data.js";
 
-function Education() {
-    const services = carts.filter(item => item.type === "egitim")
+function Trainings() {
+    const trainings = carts.filter(item => item.type === "egitim")
     return (
-        <div className="services-container">
-            <div className="services">
-                {services.map((cart) => (
-                    <div className="services-cart" key={cart.id}>
+        <div className="trainings-container">
+            <div className="trainings">
+                {trainings.map((cart) => (
+                    <div className="trainings-cart" key={cart.id}>
                         <img src={cart.image} alt={cart.title} />
                         <div className="content">
                             <h3>{cart.title}</h3>
@@ -22,4 +22,4 @@ function Education() {
     )
 }
 
-export default Education
+export default Trainings
