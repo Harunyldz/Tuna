@@ -16,7 +16,7 @@ import IsgTmlEgtm from './components/Cards/IsgTmlEgtm';
 import YanginEgt from './components/Cards/YanginEgt.jsx';
 import YuksekteCalisma from './components/Cards/YuksekteCalisma.jsx';
 import Trainings from './pages/Trainings/Trainings.jsx';
-import EmailForm from './components/EmailForm/EmailForm.jsx';
+import Contact from './pages/Contact/Contact.jsx';
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
         <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
         <Route path='/info' element={<Info />} />
-        <Route path='/iletisim' element={<EmailForm />} />
+        <Route path='/iletisim' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
