@@ -17,10 +17,12 @@ import YanginEgt from './components/Cards/YanginEgt.jsx';
 import YuksekteCalisma from './components/Cards/YuksekteCalisma.jsx';
 import Trainings from './pages/Trainings/Trainings.jsx';
 import Contact from './pages/Contact/Contact.jsx';
+import ScrollToTop from './utils/ScrollToTop.js';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

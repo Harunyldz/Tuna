@@ -1,10 +1,11 @@
 import React from "react";
 import "./Services.css";
 import { carts } from "../../Data.js";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Services = () => {
-
-  const services = carts.filter(item => item.type === "hizmet")
+  const services = carts.filter(item => item.type === "hizmet");
 
   return (
     <div className="services-container">
@@ -17,6 +18,11 @@ const Services = () => {
               <hr />
               <p>{cart.text}</p>
             </div>
+            <Link to={cart.href} className="card-button-link">
+              <button className="card-button">
+                İNCELE <FaArrowRight className="arrow-icon" />
+              </button>
+            </Link>
           </div>
         ))}
       </div>
@@ -25,4 +31,3 @@ const Services = () => {
 };
 
 export default Services;
-
