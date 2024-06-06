@@ -18,11 +18,13 @@ import YuksekteCalisma from './components/Cards/YuksekteCalisma.jsx';
 import Trainings from './pages/Trainings/Trainings.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import ScrollToTop from './utils/ScrollToTop.js';
+import NaceKodu from './components/Cards/NaceKodu.jsx';
+import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx';
 
 function App() {
   return (
     <div className="App">
-      <ScrollToTop/>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -39,6 +41,8 @@ function App() {
         <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
         <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
         <Route path='/info' element={<Info />} />
+        <Route path='/nace' element={<NaceKodu />} />
+        <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
         <Route path='/iletisim' element={<Contact />} />
       </Routes>
       <Footer />
