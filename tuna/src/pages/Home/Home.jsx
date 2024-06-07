@@ -7,8 +7,8 @@ import Header from '../../components/Header/Header.jsx'
 const Home = () => {
   return (
     <div className='home'>
+      <Header />
       <Slider />
-      <Header/>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 34vw;
     width: 75%;
     margin: auto;
@@ -20,6 +20,8 @@
     align-items: first baseline;
     text-align: justify;
     /* padding: 50px; */
+    padding-left: 100px;
+    padding-right: 50px;
 }
 
 
