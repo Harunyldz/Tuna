@@ -1,10 +1,18 @@
 import "./Cart.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart,index }) => {
   return (
-    <div className="cart" key={cart.id}>
+    <motion.div
+      className="cart"
+      key={cart.id}
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.5, delay: index * 0.5}}
+    >
       <img src={cart.image} alt={cart.title} />
       <div className="content">
         <h3>{cart.title}</h3>
@@ -16,7 +24,7 @@ const Cart = ({ cart }) => {
           İNCELE <FaArrowRight className="arrow-icon" />
         </button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
