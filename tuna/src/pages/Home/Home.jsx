@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Home.css"
-import Slider from '../../components/slider/Slider.jsx'
+import Slider from '../../components/Slider/Slider.jsx'
 import Header from '../../components/Header/Header.jsx'
 
 
 const Home = () => {
   return (
     <div className='home'>
-      <Header />
       <Slider />
+      <Header />
     </div>
   )
 }

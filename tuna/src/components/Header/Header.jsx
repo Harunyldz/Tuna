@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,8 +19,7 @@ const Header = () => {
             <button className="sliderBtn">Devamını Oku</button>
           </Link>
         </div>
-        <div className="box2">
-
+        {/* <div className="box2">
           <Link to="/info">
             {" "}
             <button className="box2-btn">
@@ -29,11 +28,15 @@ const Header = () => {
           </Link>
           <hr />
           <Link to="/nace">
-            <button className="box2-btn">Tehlike Sınıfı - Nace kodu Öğren</button></Link>
+            <button className="box2-btn">
+              Tehlike Sınıfı - Nace kodu Öğren
+            </button>
+          </Link>
           <hr />
           <Link to="/isgKatipNasil">
-            <button className="box2-btn">İsg Katip Onayı Nasıl Yapılır</button></Link>
-        </div>
+            <button className="box2-btn">İsg Katip Onayı Nasıl Yapılır</button>
+          </Link>
+        </div> */}
       </div>
     </header>
   );

@@ -1,54 +1,60 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import yuksek2 from "../../assets/yuksek2.jpg";
-import yangin2 from "../../assets/yangin2.jpeg";
+import yangin3 from "../../assets/yangin3.jpeg";
+import yangin4 from "../../assets/yangin4.jpeg";
 import yuksek from "../../assets/yuksek.jpeg";
-import hijyen3 from "../../assets/hijyen3.jpg";
+import healthsafety from "../../assets/healthsafety.jpg";
+import health from "../../assets/health.jpg";
+import health2 from "../../assets/health2.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./slider.css";
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "./Slider.css";
+import Hero from "../Hero/Hero";
 
 const Slider = () => {
   return (
-    <>
+    <div className="slider-container">
+      <Hero/>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
+        direction={"vertical"}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // navigation={true}
+        loop={true}
+        speed={2000}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src={yuksek} alt="" />
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={yuksek} alt="Yuksek 1" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={yuksek2} alt="" />
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={yangin3} alt="Yangin 2" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={yangin2} alt="" />
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={yangin4} alt="Yangin 4" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={hijyen3} alt="" />
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={health} alt="İSG" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={health2} alt="İSG" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide-overlay">
+          <img src={healthsafety} alt="İSG" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
-export default Slider
+export default Slider;
