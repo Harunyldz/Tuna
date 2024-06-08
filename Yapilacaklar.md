@@ -6,3 +6,7 @@
 3. ana sayfada görünenleri anlayamadım.  bakıp
 4. main.jsx sadece navbadaki hizmetlerimiz cartları olsun......yapıldı
 5. Ana sayfada neler görünecek belirlensin
+Resimler için Lazy loading kullan
+
+
+
