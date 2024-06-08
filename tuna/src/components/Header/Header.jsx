@@ -1,5 +1,7 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import Hero from "../Hero/Hero";
+
 
 const Header = () => {
   return (
@@ -19,6 +21,8 @@ const Header = () => {
             <button className="sliderBtn">Devamını Oku</button>
           </Link>
         </div>
+
+
         {/* <div className="box2">
           <Link to="/info">
             {" "}

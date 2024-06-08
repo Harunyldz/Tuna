@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import Slider from '../../components/Slider/Slider.jsx'
+import Slider from '../../components/slider/Slider.jsx'
 import Header from '../../components/Header/Header.jsx'
 
 

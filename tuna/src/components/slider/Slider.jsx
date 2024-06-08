@@ -20,7 +20,7 @@ import Hero from "../Hero/Hero";
 const Slider = () => {
   return (
     <div className="slider-container">
-      <Hero/>
+      <Hero />
       <Swiper
         spaceBetween={0}
         direction={"vertical"}
