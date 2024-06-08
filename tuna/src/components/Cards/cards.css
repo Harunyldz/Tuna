@@ -56,7 +56,7 @@
 /* Content css */
 .content-item {
     width: 90%;
-    height: 100vh;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +89,6 @@ table {
     width: 440px;
     height: 340px;
     position: relative;
-    /* border: 1px solid lightgray; */
     flex-wrap: wrap;
     margin-left: 20px;
 }

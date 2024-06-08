@@ -24,29 +24,29 @@ import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx';
 function App() {
   return (
     <div className="App">
-
-
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/hakkimizda' element={<About />} />
-        <Route path='/hizmetlerimiz' element={<Services />} />
-        <Route path='/egitimlerimiz' element={<Trainings />} />
-        <Route path='/hizmetlerimiz/is-guvenligi-uzmani' element={<IsGvUzm />} />
-        <Route path='/hizmetlerimiz/risk-analizi' element={<RiskAnaliz />} />
-        <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDrmPln />} />
-        <Route path='/hizmetlerimiz/diger-saglik-personeli' element={<Dsp />} />
-        <Route path='/hizmetlerimiz/is-yeri-hekimi' element={<Hkm />} />
-        <Route path='/egitimlerimiz/hijyen-egitimi' element={<HijyenEgt />} />
-        <Route path='/egitimlerimiz/is-guvenligi-egitimi' element={<IsgTmlEgtm />} />
-        <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
-        <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
-        <Route path='/info' element={<Info />} />
-        <Route path='/nace' element={<NaceKodu />} />
-        <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
-        <Route path='/iletisim' element={<Contact />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/hakkimizda' element={<About />} />
+          <Route path='/hizmetlerimiz' element={<Services />} />
+          <Route path='/egitimlerimiz' element={<Trainings />} />
+          <Route path='/hizmetlerimiz/is-guvenligi-uzmani' element={<IsGvUzm />} />
+          <Route path='/hizmetlerimiz/risk-analizi' element={<RiskAnaliz />} />
+          <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDrmPln />} />
+          <Route path='/hizmetlerimiz/diger-saglik-personeli' element={<Dsp />} />
+          <Route path='/hizmetlerimiz/is-yeri-hekimi' element={<Hkm />} />
+          <Route path='/egitimlerimiz/hijyen-egitimi' element={<HijyenEgt />} />
+          <Route path='/egitimlerimiz/is-guvenligi-egitimi' element={<IsgTmlEgtm />} />
+          <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
+          <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
+          <Route path='/info' element={<Info />} />
+          <Route path='/nace' element={<NaceKodu />} />
+          <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
+          <Route path='/iletisim' element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
