@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Navbar />
-      <div className="content">
+      <div className="app-content">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/hakkimizda' element={<About />} />
