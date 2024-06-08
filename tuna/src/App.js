@@ -24,6 +24,8 @@ import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx';
 function App() {
   return (
     <div className="App">
+
+
       <ScrollToTop />
       <Navbar />
       <Routes>
