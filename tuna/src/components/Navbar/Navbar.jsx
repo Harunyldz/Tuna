@@ -6,6 +6,8 @@ import { menuItems } from "../../Data";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import teklifAl from "../teklifAl/TeklifAl"
+
 
 
 const Navbar = () => {
@@ -76,7 +78,8 @@ const Navbar = () => {
             />
             <FaSearch style={{ marginLeft: '5px' }} />
           </li>
-
+          <li>
+            <Link to={teklifAl}><button className="TeklifBtn">Teklif Al</button></Link></li>
         </ul>
       </div>
     </div>
