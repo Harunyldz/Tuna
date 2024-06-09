@@ -5,9 +5,9 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import yangin3 from "../../assets/yangin3.jpeg";
 import yangin4 from "../../assets/yangin4.jpeg";
 import yuksek from "../../assets/yuksek.jpeg";
-import healthsafety from "../../assets/healthsafety.jpg";
+// import healthsafety from "../../assets/healthsafety.jpg";
 import health from "../../assets/health.jpg";
-import health2 from "../../assets/health2.jpg";
+// import health2 from "../../assets/health2.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -46,12 +46,12 @@ const Slider = () => {
         <SwiperSlide className="swiper-slide-overlay">
           <img src={health} alt="İSG" />
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide-overlay">
+        {/* <SwiperSlide className="swiper-slide-overlay">
           <img src={health2} alt="İSG" />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide-overlay">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper-slide-overlay">
           <img src={healthsafety} alt="İSG" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

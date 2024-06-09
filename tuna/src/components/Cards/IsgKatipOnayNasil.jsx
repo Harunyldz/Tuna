@@ -26,7 +26,7 @@ function IsgKatipOnayNasil() {
                     </p>
                     <p>
                         İSG Katip Sisteminden ONAY VERMEK İÇİN
-                        <a href="https://isgkatip.csgb.gov.tr">TIKLAYINIZ</a>.
+                        <a href="https://isgkatip.csgb.gov.tr" target='_blank'>TIKLAYINIZ</a>.
                     </p>
                 </div>
                 <div className='content-center-box2'>

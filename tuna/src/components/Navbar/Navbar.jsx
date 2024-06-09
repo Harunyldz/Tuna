@@ -5,7 +5,6 @@ import logo from "../../assets/logo5.png";
 import { menuItems } from "../../Data";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
 
 
 
@@ -70,14 +69,7 @@ const Navbar = () => {
               )}
             </li>
           ))}
-          <li style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Birşeyler Ara"
-            />
-            <FaSearch style={{ marginLeft: '5px' }} />
-          </li>
+
           <li>
             <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link></li>
         </ul>
