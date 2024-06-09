@@ -1,74 +1,60 @@
 .header {
-    height: 34vw;
-    width: 75%;
-    margin: auto;
-}
-
-.slider-box {
+    width: 100%;
+    color: #3f3e3e;
+    padding: 5rem 0;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
-.box1 {
-    width: 50%;
-    height: 100%;
+.header-container {
+    width: 75%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.header-content {
+    flex: 1;
+    border: 1px solid rgba(10,44,60,1) ;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: first baseline;
-    text-align: justify;
-    /* padding: 50px; */
-    padding-left: 100px;
-    padding-right: 50px;
+    padding: 20px;
 }
 
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content h1 span{
+    font-weight: 900;
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
 
 .sliderBtn {
-    padding: 10px 20px;
-    background-color: rgba(43, 63, 245, 0.822);
-    color: #fff;
-    text-align: center;
+    background-color: #f89715;
     border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
     border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.box2 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.sliderBtn:hover {
+    background-color: #e08510;
 }
 
-.box2-btn1 {
-    padding: 5px 20px;
-    background-color: rgba(43, 63, 245, 0.822);
-    color: #fff;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.box2-btn {
-    padding: 5px 20px;
-    background-color: rgba(43, 63, 245, 0.822);
-    color: #fff;
-    text-align: center;
-    width: 400px;
-    height: 75px;
-    border: none;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.box2-btn:hover {
-    background-color: rgba(12, 28, 167, 0.822);
+.header-links {
+    flex: 1;
 }

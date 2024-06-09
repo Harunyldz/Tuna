@@ -10,7 +10,7 @@ const Cart = ({ cart,index }) => {
       key={cart.id}
       initial={{ opacity: 0}}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, y: 50 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 0.5, delay: index * 0.5}}
     >
       <img src={cart.image} alt={cart.title} />

@@ -7,7 +7,6 @@ import yangin4 from "../../assets/yangin4.jpeg";
 import yuksek from "../../assets/yuksek.jpeg";
 // import healthsafety from "../../assets/healthsafety.jpg";
 import health from "../../assets/health.jpg";
-// import health2 from "../../assets/health2.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,18 +14,16 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./Slider.css";
-import Hero from "../Hero/Hero";
 
 const Slider = () => {
   return (
     <div className="slider-container">
-      <Hero />
       <Swiper
         spaceBetween={0}
         direction={"vertical"}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         loop={true}
