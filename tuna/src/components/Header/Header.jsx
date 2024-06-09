@@ -18,6 +18,7 @@ const Header = () => {
           </p>
 
           <Link to="/hakkimizda">
+
             <button className="sliderBtn">Devamını Oku</button>
           </Link>
         </div>
