@@ -19,8 +19,9 @@ import Trainings from './pages/Trainings/Trainings.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import ScrollToTop from './utils/ScrollToTop.js';
 import NaceKodu from './components/Cards/NaceKodu.jsx';
-import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx';
-import TeklifAl from ' ./components/teklifAl/teklifAl.jsx'
+import TeklifAl from './components/teklifAl/TeklifAl.jsx';
+import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
+
 
 function App() {
   return (
