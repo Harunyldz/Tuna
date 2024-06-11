@@ -27,13 +27,13 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar">
-        <div className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           <img src={logo} alt="TUNA Logo" />
           <div className="logo-text">
             <span className="logo-name">TUNA</span>
             <span className="logo-title">İş Güvenliği Hizmetleri</span>
           </div>
-        </div>
+        </Link>
         <ul className="navbar-links">
           {menuItems.map((menu) => (
             <li
