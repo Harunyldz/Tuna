@@ -2,6 +2,9 @@ import React from 'react'
 import acilDr from "../../assets/acildurum.jpg"
 import acilDr2 from "../../assets/acil-durum.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
+
 
 
 
@@ -40,9 +43,16 @@ function AcilDrmPln() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={acilDr2} alt="" width={300} height={200} />
-                    <img className='img2' src={acilDr} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={acilDr2} alt="" width={300} height={200} />
+                        <img className='img2' src={acilDr} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
+
             </div>
 
         </div>
