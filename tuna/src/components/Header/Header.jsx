@@ -10,10 +10,10 @@ const Header = () => {
         <AnimatePresence>
           <motion.div
             className="header-content"
-            initial={{ opacity: 0, x: -500 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -500 }}
-            transition={{ duration: 2 }}
+            initial={{ opacity: 0, x: -200 }}
+            transition={{ type:"tween", duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+
           >
             <h1>
               <span>TUNA</span> İş Güvenliği Hizmetleri{" "}
@@ -28,17 +28,17 @@ const Header = () => {
             </p>
 
             <Link to="/hakkimizda">
-              <button className="sliderBtn">Devamını Oku</button>
+              <button className="header-btn">Devamını Oku</button>
             </Link>
           </motion.div>
         </AnimatePresence>
         <AnimatePresence>
           <motion.div
             className="header-links"
-            initial={{ opacity: 0, x: 500 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 500 }}
-            transition={{ duration: 2}}
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ type:"tween", duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+
           >
             <HeaderMenu />
           </motion.div>

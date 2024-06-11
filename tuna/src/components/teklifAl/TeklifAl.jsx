@@ -113,7 +113,7 @@ function TeklifAl() {
                         <textarea name="ekHizmet" value={formData.ekHizmet} onChange={handleChange}></textarea>
                     </div>
                     <div className='btn'>
-                        <button type="submit">Gönder</button>
+                        <button className='teklifAl-btn' type="submit">Gönder</button>
                     </div>
 
                 </div></div>

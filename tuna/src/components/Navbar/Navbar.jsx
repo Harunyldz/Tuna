@@ -71,7 +71,7 @@ const Navbar = () => {
           ))}
 
           <li>
-            <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link></li>
+            <Link to="/teklifAl"><button className="navbar-btn">Teklif Al</button></Link></li>
         </ul>
       </div>
     </div>
