@@ -52,6 +52,7 @@
   bottom: 10vw;
   background: linear-gradient(to right, rgba(10, 44, 60, 0.9), rgba(10, 44, 60, 0.8), rgba(10, 44, 60, 0.0));
   padding: 2vw 5vw;
+  padding-bottom: 3vw;
   width: 800px;
   z-index: 999;
 }
@@ -75,10 +76,10 @@
   outline: none;
   border-radius: 4px;
   color: #fff5e1;
-  box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5), 0 4px 8px rgba(248, 151, 21, 0.3);
+  box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
 }
 
 .slide-btn:hover{
   background-color: #e08510;
-  box-shadow: 0 12px 24px rgba(224, 133, 16, 0.7), 0 8px 16px rgba(224, 133, 16, 0.5);
+  box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
 }
