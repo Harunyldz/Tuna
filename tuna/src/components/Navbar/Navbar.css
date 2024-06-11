@@ -124,17 +124,26 @@
 }
 
 
-.TeklifBtn {
-  padding: 8px 8px;
+.navbar-btn {
+  padding: 12px 20px;
   background-color: #f89715;
-  box-shadow: 5px 5px 5px #da8c8c;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
   color: #fff;
   font-weight: bold;
-  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
+
 
 .TeklifBtn:hover {
   box-shadow: none;
   color: orange;
+}
+
+.navbar-btn:hover {
+  background-color: #e08510;
+  box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
   font-weight: bold;
 }

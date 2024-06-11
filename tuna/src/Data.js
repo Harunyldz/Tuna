@@ -1,3 +1,5 @@
+
+//Card images
 import acildurum from "../src/assets/acildurum3.jpg"
 import dsp from "../src/assets/dsp2.jpeg"
 import hijyen from "../src/assets/hijyen3.jpg"
@@ -6,7 +8,17 @@ import isgEgt from "../src/assets/isgegt.jpg"
 import igu from "../src/assets/igu.jpg"
 import risk from "../src/assets/risk.jpeg"
 import yangin from "../src/assets/yangin.jpg"
-import yuksek from "../src/assets/yuksek2.jpg"
+import yuksek2 from "../src/assets/yuksek2.jpg"
+
+//Slide images
+import yuksek from "../src/assets/yuksek.jpeg";
+import isgegt from "../src/assets/isgegt.jpg";
+import risk2 from "../src/assets/risk3.jpg"
+import health from "../src/assets/health.jpg"
+import emergency from "../src/assets/emergency.jpg"
+import yangin4 from "../src/assets/yangin4.jpeg"
+import healthsafety from "../src/assets/healthsafety.jpg"
+
 
 
 export const carts = [
@@ -77,7 +89,7 @@ export const carts = [
     {
         id: 9,
         title: "Yüksekte Çalışma Eğitimi",
-        image: yuksek,
+        image: yuksek2,
         type: "egitim",
         text: "Yüksekte çalışma eğitimi, çalışanların yüksek yerlerde güvenli ve sağlıklı bir şekilde çalışabilmeleri için gerekli bilgi ve becerileri kazanmalarını amaçlayan bir eğitim programıdır.",
         href: "yuksekte-calisma-egitimi"
@@ -159,5 +171,50 @@ export const menuItems = [
         id: 5,
         title: "İletişim",
         href: "iletisim"
+    }
+]
+
+export const slides=[
+    {
+        id:1,
+        image:yuksek,
+        text:"Çalışanlarınızın güvenliği bizim önceliğimiz. ",
+        span:"Güvenli ve sağlıklı çalışma ortamları yaratmak için buradayız."
+    },
+    {
+        id:2,
+        image:isgegt,
+        text:"Bilinçli çalışanlar, güvenli çalışma ortamları oluşturur.",
+        span:"İş sağlığı ve güvenliği eğitimlerimiz ile farkındalığı artırın."
+    },
+    {
+        id:3,
+        image:risk2,
+        text:"Riskleri önceden belirleyin, güvenliği sağlayın.",
+        span:"Etkili risk değerlendirme hizmetlerimizle iş yeriniz daha güvenli."
+    },
+    {
+        id:4,
+        image:health,
+        text:"KKD kullanımı ile iş kazalarını minimuma indirin.",
+        span:"Kişisel Koruyucu Donanımların (KKD) etkin kullanımıyla iş yerinizde güvenliği sağlayalım."
+    },
+    {
+        id:5,
+        image:emergency,
+        text:"Acil durumlara karşı hazırlıklı olun. ",
+        span:"Etkin acil durum planlarımızla çalışanlarınızı koruyun."
+    },
+    {
+        id:6,
+        image:yangin4,
+        text:"İş kazalarını önleyin, güvenliği artırın. ",
+        span:"Proaktif önlemlerimizle çalışanlarınızın hayatını koruyun."
+    },
+    {
+        id:7,
+        image:healthsafety,
+        text:"İSG yasal mevzuatına uygunluğunuzu sağlayın. ",
+        span:"Profesyonel danışmanlık hizmetlerimizle iş yerinizi güvence altına alın."
     }
 ]
