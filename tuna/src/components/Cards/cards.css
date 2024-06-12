@@ -137,6 +137,23 @@ table {
 
 }
 
+.TeklifBtn {
+    padding: 12px 20px;
+    background-color: #f89715;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.TeklifBtn:hover {
+    background-color: #e08510;
+    box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
+    font-weight: bold;
+}
 
 .content-center-box1 ul,
 ol {

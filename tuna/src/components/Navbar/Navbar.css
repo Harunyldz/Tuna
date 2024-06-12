@@ -136,12 +136,6 @@
   cursor: pointer;
 }
 
-
-.TeklifBtn:hover {
-  box-shadow: none;
-  color: orange;
-}
-
 .navbar-btn:hover {
   background-color: #e08510;
   box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
