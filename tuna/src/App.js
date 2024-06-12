@@ -22,7 +22,6 @@ import NaceKodu from './components/Cards/NaceKodu.jsx';
 import TeklifAl from './components/teklifAl/TeklifAl.jsx';
 import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
 
-
 function App() {
   return (
     <div className="App">
@@ -50,6 +49,7 @@ function App() {
           <Route path='/teklifAl' element={<TeklifAl />} />
         </Routes>
       </div>
+
       <Footer />
     </div>
   );

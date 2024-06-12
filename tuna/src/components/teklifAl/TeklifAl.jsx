@@ -1,6 +1,7 @@
 import React from 'react'
 import './teklifAl.css'
 import { useState } from 'react';
+import emailjs from "@emailjs/browser";
 
 function TeklifAl() {
     const [formData, setFormData] = useState({
@@ -24,6 +25,7 @@ function TeklifAl() {
     });
 
     const handleChange = (e) => {
+
         const { name, value, type, checked } = e.target;
         if (type === 'checkbox') {
             setFormData({
@@ -39,11 +41,32 @@ function TeklifAl() {
                 [name]: value
             });
         }
+        //emaile gönderme denemeleri
+        const serviceId = "service_1rigzui";
+        const templateId = "template_0oq9o8b";
+        const publicKey = "Sp1DH0OemN8mGvZNC";
+
+        const templateParams = {
+            from_name: name,
+            from_data: formData,
+            to_name: "Tuna",
+
+        };
+        emailjs
+            .send(serviceId, templateId, templateParams, publicKey)
+            .then((response) => {
+                console.log("Email sent succesfully", response);
+                setFormData("");
+            })
+            .catch((error) => {
+                console.log("Error sending email", error);
+            });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
+
     };
     return (
         <form onSubmit={handleSubmit}>

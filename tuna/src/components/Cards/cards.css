@@ -172,3 +172,11 @@ ol {
     list-style-type: disc;
     padding: 5px 15px;
 }
+
+.ref-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
