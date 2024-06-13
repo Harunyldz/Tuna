@@ -21,6 +21,7 @@ import ScrollToTop from './utils/ScrollToTop.js';
 import NaceKodu from './components/Cards/NaceKodu.jsx';
 import TeklifAl from './components/teklifAl/TeklifAl.jsx';
 import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
+import Referans from './components/Cards/Referans.jsx'
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
           <Route path='/iletisim' element={<Contact />} />
           <Route path='/teklifAl' element={<TeklifAl />} />
+          <Route path='/referans' element={<Referans />} />
         </Routes>
       </div>
 

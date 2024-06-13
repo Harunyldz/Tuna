@@ -19,6 +19,19 @@ import emergency from "../src/assets/emergency.jpg"
 import yangin4 from "../src/assets/yangin4.jpeg"
 import healthsafety from "../src/assets/healthsafety.jpg"
 
+//Referans images
+
+import ataSoyk from "../../assets/ref/atakentSoyak.jpg"
+import alkur from "../../assets/ref/alkur.jpg"
+import ataSinav from "../../assets/ref/atakentSinav.jpg"
+import aybak from "../../assets/ref/aybakGida.jpg"
+import drn from "../../assets/ref/drnGold.jpg"
+import ensarlar from "../../assets/ref/ensarlar.jpg"
+import kalemOfset from "../../assets/ref/kalemOfset.jpg"
+import macitKoz from "../../assets/ref/maciterKozmetik.jpg"
+import mehAk from "../../assets/ref/mehmetAkkaya.jpg"
+import muratMat from "../../assets/ref/muratMabaacilik.jpg"
+import safira from "../../assets/ref/safira.jpg"
 
 
 export const carts = [
@@ -174,47 +187,128 @@ export const menuItems = [
     }
 ]
 
-export const slides=[
+export const slides = [
     {
-        id:1,
-        image:yuksek,
-        text:"Çalışanlarınızın güvenliği bizim önceliğimiz. ",
-        span:"Güvenli ve sağlıklı çalışma ortamları yaratmak için buradayız."
+        id: 1,
+        image: yuksek,
+        text: "Çalışanlarınızın güvenliği bizim önceliğimiz. ",
+        span: "Güvenli ve sağlıklı çalışma ortamları yaratmak için buradayız."
     },
     {
-        id:2,
-        image:isgegt,
-        text:"Bilinçli çalışanlar, güvenli çalışma ortamları oluşturur.",
-        span:"İş sağlığı ve güvenliği eğitimlerimiz ile farkındalığı artırın."
+        id: 2,
+        image: isgegt,
+        text: "Bilinçli çalışanlar, güvenli çalışma ortamları oluşturur.",
+        span: "İş sağlığı ve güvenliği eğitimlerimiz ile farkındalığı artırın."
     },
     {
-        id:3,
-        image:risk2,
-        text:"Riskleri önceden belirleyin, güvenliği sağlayın.",
-        span:"Etkili risk değerlendirme hizmetlerimizle iş yeriniz daha güvenli."
+        id: 3,
+        image: risk2,
+        text: "Riskleri önceden belirleyin, güvenliği sağlayın.",
+        span: "Etkili risk değerlendirme hizmetlerimizle iş yeriniz daha güvenli."
     },
     {
-        id:4,
-        image:health,
-        text:"KKD kullanımı ile iş kazalarını minimuma indirin.",
-        span:"Kişisel Koruyucu Donanımların (KKD) etkin kullanımıyla iş yerinizde güvenliği sağlayalım."
+        id: 4,
+        image: health,
+        text: "KKD kullanımı ile iş kazalarını minimuma indirin.",
+        span: "Kişisel Koruyucu Donanımların (KKD) etkin kullanımıyla iş yerinizde güvenliği sağlayalım."
     },
     {
-        id:5,
-        image:emergency,
-        text:"Acil durumlara karşı hazırlıklı olun. ",
-        span:"Etkin acil durum planlarımızla çalışanlarınızı koruyun."
+        id: 5,
+        image: emergency,
+        text: "Acil durumlara karşı hazırlıklı olun. ",
+        span: "Etkin acil durum planlarımızla çalışanlarınızı koruyun."
     },
     {
-        id:6,
-        image:yangin4,
-        text:"İş kazalarını önleyin, güvenliği artırın. ",
-        span:"Proaktif önlemlerimizle çalışanlarınızın hayatını koruyun."
+        id: 6,
+        image: yangin4,
+        text: "İş kazalarını önleyin, güvenliği artırın. ",
+        span: "Proaktif önlemlerimizle çalışanlarınızın hayatını koruyun."
     },
     {
-        id:7,
-        image:healthsafety,
-        text:"İSG yasal mevzuatına uygunluğunuzu sağlayın. ",
-        span:"Profesyonel danışmanlık hizmetlerimizle iş yerinizi güvence altına alın."
+        id: 7,
+        image: healthsafety,
+        text: "İSG yasal mevzuatına uygunluğunuzu sağlayın. ",
+        span: "Profesyonel danışmanlık hizmetlerimizle iş yerinizi güvence altına alın."
     }
+
+]
+//Referanslar
+export const referans = [
+    {
+        id: 1,
+        title: "Atakent Forum Akademi",
+        image: ataSoyk,
+        type: "ref",
+        text: 'Atakent Forum Akademi'
+    },
+    {
+        id: 2,
+        title: "Atakent Sınav Dershanesi",
+        image: ataSinav,
+        type: "ref",
+        text: 'Atakent Sınav Dershanesi'
+    },
+    {
+        id: 3,
+        title: "Safira Gözlük",
+        image: safira,
+        type: "ref",
+        text: 'Safira Gözlük'
+    },
+    {
+        id: 4,
+        title: "Alkur Etiket",
+        image: alkur,
+        type: "ref",
+        text: 'Alkur Etiket'
+    },
+    {
+        id: 5,
+        title: "Aybak Gıda",
+        image: aybak,
+        type: "ref",
+        text: 'Aybak Gıda'
+    },
+    {
+        id: 6,
+        title: "DRN Gold Kuyumcukent",
+        image: drn,
+        type: "ref",
+        text: 'DRN Gold Kuyumcukent'
+    },
+    {
+        id: 7,
+        title: "Ensarlar Gıda Lojistik",
+        image: ensarlar,
+        type: "ref",
+        text: 'Ensarlar Gıda Lojistik'
+    },
+    {
+        id: 8,
+        title: "Kalem Ofset",
+        image: kalemOfset,
+        type: "ref",
+        text: 'Kalem Ofset'
+    },
+    {
+        id: 9,
+        title: "Maciter Kozmetik",
+        image: macitKoz,
+        type: "ref",
+        text: 'Maciter Kozmetik'
+    },
+    {
+        id: 10,
+        title: "Mehmet Akkaya Fotoğrafçılık",
+        image: mehAk,
+        type: "ref",
+        text: 'Mehmet Akkaya Fotoğrafçılık'
+    },
+    {
+        id: 11,
+        title: "Murat Matbaacılık",
+        image: muratMat,
+        type: "ref",
+        text: 'Murat Matbaacılık'
+    },
 ]

@@ -1,32 +1,27 @@
 import React from 'react'
-import ataSoyk from "../../assets/ref/atakentSoyak.jpg"
-import alkur from "../../assets/ref/alkur.jpg"
-import ataSinav from "../../assets/ref/atakentSinav.jpg"
-import aybak from "../../assets/ref/aybakGida.jpg"
-import drn from "../../assets/ref/drnGold.jpg"
-import ensarlar from "../../assets/ref/ensarlar.jpg"
-import kalemOfset from "../../assets/ref/kalemOfset.jpg"
-import macitKoz from "../../assets/ref/maciterKozmetik.jpg"
-import mehAk from "../../assets/ref/mehmetAkkaya.jpg"
-import muratMat from "../../assets/ref/muratMabaacilik.jpg"
-import safira from "../../assets/ref/safira.jpg"
+import { motion } from "framer-motion";
+import { referans } from '../../Data';
 
-function Referans() {
+
+
+const Referans = ({ cart, index }) => {
     return (
-        <div className='ref-img'>
-            <img className='img1' src={ataSoyk} alt="" width={300} height={200} />
-            <img className='img1' src={alkur} alt="" width={300} height={200} />
-            <img className='img1' src={ataSinav} alt="" width={300} height={200} />
-            <img className='img1' src={aybak} alt="" width={300} height={200} />
-            <img className='img1' src={drn} alt="" width={300} height={200} />
-            <img className='img1' src={ensarlar} alt="" width={300} height={200} />
-            <img className='img1' src={kalemOfset} alt="" width={300} height={200} />
-            <img className='img1' src={macitKoz} alt="" width={300} height={200} />
-            <img className='img1' src={mehAk} alt="" width={300} height={200} />
-            <img className='img1' src={muratMat} alt="" width={300} height={200} />
-            <img className='img1' src={safira} alt="" width={300} height={200} />
-        </div>
-    )
+        <motion.div
+            className="cart"
+            key={referans.id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.5 }}
+        >
+            <img src={referans.image} alt={referans.title} />
+            <div className="content">
+                <h3>{referans.title}</h3>
+                <hr />
+                <p>{referans.text}</p>
+            </div>
+        </motion.div>
+    );
 }
 
 export default Referans
