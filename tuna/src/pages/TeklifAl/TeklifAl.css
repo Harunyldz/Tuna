@@ -1,0 +1,114 @@
+.teklif {
+    width: 75%;
+    margin: 5vw;
+}
+
+.teklif-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.teklif-form {
+    width: 700px;
+    margin:auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.teklif-form .form-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.teklif-form .form-left {
+    flex: 1;
+}
+
+.teklif-form .form-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.teklif-form .form-right h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.teklif-form .form-right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.teklif-form .form-right .checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.teklif-form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.teklif-form input[type="text"],
+.teklif-form input[type="email"],
+.teklif-form input[type="tel"],
+.teklif-form input[type="number"],
+.teklif-form textarea,
+.teklif-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.teklif-form input:focus {
+    border: 1px solid #f89715;
+}
+
+.teklif-form select {
+    padding-right: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.teklif-form select:focus{
+    border: 1px solid #f89715;
+}
+
+.teklif-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    width: calc(100% - 20px);
+}
+
+.teklif-form button[type="submit"] {
+    background-color: #f89715;
+    color: #fff;
+    border: none;
+    padding: 12px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.teklif-form button[type="submit"]:hover {
+    background-color: #e08510;
+}
