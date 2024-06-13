@@ -4,145 +4,200 @@ import { useState } from 'react';
 import emailjs from "@emailjs/browser";
 
 function TeklifAl() {
-    const [formData, setFormData] = useState({
-        ad: '',
-        soyad: '',
-        email: '',
-        telefon: '',
-        tehlikeSinif: '',
-        kisiSayisi: '',
-        hizmetler: {
-            isGuvenligi: false,
-            isyeriHekimligi: false,
-            riskAnaliz: false,
-            acilDurum: false,
-            yanginEgitimi: false,
-            yuksekteCalismaEgitimi: false,
-            iseGiris: false,
-            mobilSaglik: false,
-        },
-        ekHizmet: ''
-    });
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [numPeople, setNumPeople] = useState("");
+    const [services, setServices] = useState([]);
+    const [additionalRequest, setAdditionalRequest] = useState("");
 
-    const handleChange = (e) => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-        const { name, value, type, checked } = e.target;
-        if (type === 'checkbox') {
-            setFormData({
-                ...formData,
-                hizmetler: {
-                    ...formData.hizmetler,
-                    [name]: checked
-                }
-            });
-        } else {
-            setFormData({
-                ...formData,
-                [name]: value
-            });
-        }
-        //emaile gönderme denemeleri
         const serviceId = "service_1rigzui";
         const templateId = "template_0oq9o8b";
         const publicKey = "Sp1DH0OemN8mGvZNC";
 
         const templateParams = {
             from_name: name,
-            from_data: formData,
-            to_name: "Tuna",
-
+            from_email: email,
+            from_phone: phone,
+            num_people: numPeople,
+            selected_services: services.join(", "),
+            additional_request: additionalRequest,
+            to_name: "Tuna"
         };
+
         emailjs
             .send(serviceId, templateId, templateParams, publicKey)
             .then((response) => {
-                console.log("Email sent succesfully", response);
-                setFormData("");
+                console.log("Email sent successfully", response);
+                setName("");
+                setEmail("");
+                setPhone("");
+                setNumPeople("");
+                setServices([]);
+                setAdditionalRequest("");
             })
             .catch((error) => {
                 console.log("Error sending email", error);
             });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form Data Submitted:', formData);
-
+    const handleCheckboxChange = (e) => {
+        const { value, checked } = e.target;
+        if (checked) {
+            setServices([...services, value]);
+        } else {
+            setServices(services.filter((service) => service !== value));
+        }
     };
+
     return (
         <form onSubmit={handleSubmit}>
-            <div className="form">
-                <div className='form-One'>
-                    <div>
-                        <input type="text" name="ad" placeholder='Adınız' value={formData.ad} onChange={handleChange} required />
-                    </div>
-                    <div>
-                        <input type="text" name="soyad" placeholder='Soyadınız' value={formData.soyad} onChange={handleChange} required />
-                    </div>
-                </div>
-                <div className='form-One'>
-                    <div>
-                        <input type="number" name="telefon" placeholder='Telefon Numaranız' value={formData.telefon} onChange={handleChange} required />
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder='E-Posta Adresiniz' value={formData.email} onChange={handleChange} required />
-                    </div>
-                </div>
-                <div>
-                    <div className='form-One'>
-                        <div>
-                            <input type="text" name="tehlikeSinif" placeholder='Tehlike Sınıfı' value={formData.tehlikeSinif} onChange={handleChange} required />
-                        </div>
-                        <div>
-                            <input type="number" name="kisiSayisi" placeholder='Kişi Sayısı' value={formData.kisiSayisi} onChange={handleChange} required />
-                        </div></div>
-                    <div className='checkbox'>
-                        <label className='labelHeader'>İstediğiniz hizmetleri seçiniz:</label>
-                        <div>
-                            <input type="checkbox" name="isGuvenligi" checked={formData.hizmetler.isGuvenligi} onChange={handleChange} />
-                            <label>İş Güvenliği Uzmanlık Hizmeti</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="isyeriHekimligi" checked={formData.hizmetler.isyeriHekimligi} onChange={handleChange} />
-                            <label>İşyeri Hekimlik Hizmeti</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="riskAnaliz" checked={formData.hizmetler.riskAnaliz} onChange={handleChange} />
-                            <label>Risk Analiz Raporu</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="acilDurum" checked={formData.hizmetler.acilDurum} onChange={handleChange} />
-                            <label>Acil Durum Eylem Planı</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="yanginEgitimi" checked={formData.hizmetler.yanginEgitimi} onChange={handleChange} />
-                            <label>Yangın Eğitimi Ve Tatbikatı</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="yuksekteCalismaEgitimi" checked={formData.hizmetler.yuksekteCalismaEgitimi} onChange={handleChange} />
-                            <label>Yüksekte Çalışma Eğitimi</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="iseGiris" checked={formData.hizmetler.iseGiris} onChange={handleChange} />
-                            <label>İşe Giriş Sağlık Raporu</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="mobilSaglik" checked={formData.hizmetler.mobilSaglik} onChange={handleChange} />
-                            <label>Mobil Sağlık Tarama Hizmeti</label>
-                        </div>
-
-                    </div>
-                    <div>
-                        <label className='msg'>Ek hizmet talebiniz varsa bu alana yazarak belirtebilirsiniz:</label>
-                        <textarea name="ekHizmet" value={formData.ekHizmet} onChange={handleChange}></textarea>
-                    </div>
-                    <div className='btn'>
-                        <button className='teklifAl-btn' type="submit">Gönder</button>
-                    </div>
-
-                </div></div>
+            <label>
+                Adınız Soyadınız:
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+            </label>
+            <br />
+            <label>
+                E-Posta Adresiniz:
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            </label>
+            <br />
+            <label>
+                Telefon:
+                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+            </label>
+            <br />
+            <label>
+                Kişi Sayısı:
+                <input type="number" value={numPeople} onChange={(e) => setNumPeople(e.target.value)} required />
+            </label>
+            <br />
+            <label>
+                İstediğiniz hizmetleri seçiniz:
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="İş Güvenliği Uzmanlık Hizmeti"
+                        checked={services.includes("İş Güvenliği Uzmanlık Hizmeti")}
+                        onChange={handleCheckboxChange}
+                    />
+                    İş Güvenliği Uzmanlık Hizmeti
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="İşyeri Hekimlik Hizmeti"
+                        checked={services.includes("İşyeri Hekimlik Hizmeti")}
+                        onChange={handleCheckboxChange}
+                    />
+                    İşyeri Hekimlik Hizmeti
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Risk Analiz Raporu"
+                        checked={services.includes("Risk Analiz Raporu")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Risk Analiz Raporu
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Acil Durum Eylem Planı"
+                        checked={services.includes("Acil Durum Eylem Planı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Acil Durum Eylem Planı
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Yangın Eğitimi Ve Tatbikatı"
+                        checked={services.includes("Yangın Eğitimi Ve Tatbikatı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Yangın Eğitimi Ve Tatbikatı
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="İşe Giriş Sağlık Raporu"
+                        checked={services.includes("İşe Giriş Sağlık Raporu")}
+                        onChange={handleCheckboxChange}
+                    />
+                    İşe Giriş Sağlık Raporu
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Mobil Sağlık Tarama Hizmeti"
+                        checked={services.includes("Mobil Sağlık Tarama Hizmeti")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Mobil Sağlık Tarama Hizmeti
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Sedex Denetim Danışmanlığı"
+                        checked={services.includes("Sedex Denetim Danışmanlığı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Sedex Denetim Danışmanlığı
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Bscı Denetim Danışmanlığı"
+                        checked={services.includes("Bscı Denetim Danışmanlığı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Bscı Denetim Danışmanlığı
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Fama Denetim Danışmanlığı"
+                        checked={services.includes("Fama Denetim Danışmanlığı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Fama Denetim Danışmanlığı
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Sosyal Uygunluk Denetim Danışmanlığı"
+                        checked={services.includes("Sosyal Uygunluk Denetim Danışmanlığı")}
+                        onChange={handleCheckboxChange}
+                    />
+                    Sosyal Uygunluk Denetim Danışmanlığı
+                </label>
+            </label>
+            <br />
+            <label>
+                Ek hizmet talebiniz varsa bu alana yazarak belirtebilirsiniz:
+                <textarea value={additionalRequest} onChange={(e) => setAdditionalRequest(e.target.value)} />
+            </label>
+            <br />
+            <button type="submit">Gönder</button>
         </form>
     );
-}
+};
 
 
 export default TeklifAl

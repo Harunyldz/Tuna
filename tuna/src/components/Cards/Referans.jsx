@@ -1,27 +1,31 @@
-import React from 'react'
-import { motion } from "framer-motion";
-import { referans } from '../../Data';
-
-
+import "../Cart/Cart.css";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Referans = ({ cart, index }) => {
     return (
         <motion.div
             className="cart"
-            key={referans.id}
+            key={cart.id}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: index * 0.5 }}
         >
-            <img src={referans.image} alt={referans.title} />
+            <img src={cart.image} alt={cart.title} />
             <div className="content">
-                <h3>{referans.title}</h3>
+                <h3>{cart.title}</h3>
                 <hr />
-                <p>{referans.text}</p>
+                <p>{cart.text}</p>
             </div>
+            <Link to={cart.href} className="card-button-link">
+                <button className="card-button">
+                    İNCELE <FaArrowRight className="arrow-icon" />
+                </button>
+            </Link>
         </motion.div>
     );
-}
+};
 
-export default Referans
+export default Referans;
