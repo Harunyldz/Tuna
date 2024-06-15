@@ -20,8 +20,8 @@ import Contact from './pages/Contact/Contact.jsx';
 import ScrollToTop from './utils/ScrollToTop.js';
 import NaceKodu from './components/Cards/NaceKodu.jsx';
 import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
-import Referans from './components/Cards/Referans.jsx'
 import TeklifAl from './pages/TeklifAl/TeklifAl.jsx';
+import Referans from './components/Referans/Referans.jsx';
 
 function App() {
   return (

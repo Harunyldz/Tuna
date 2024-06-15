@@ -20,7 +20,6 @@ import yangin4 from "../src/assets/yangin4.jpeg"
 import healthsafety from "../src/assets/healthsafety.jpg"
 
 //Referans images
-
 import ataSoyk from "./assets/ref/atakentSoyak.jpg"
 import alkur from "./assets/ref/alkur.jpg"
 import ataSinav from "./assets/ref/atakentSinav.jpg"
@@ -34,6 +33,7 @@ import muratMat from "./assets/ref/muratMabaacilik.jpg"
 import safira from "./assets/ref/safira.jpg"
 
 
+//hizmet ve eğitim kartları
 export const carts = [
     {
         id: 1,
@@ -109,7 +109,7 @@ export const carts = [
     },
 ]
 
-
+//Navbar elemanları
 export const menuItems = [
     {
         id: 1,
@@ -187,6 +187,7 @@ export const menuItems = [
     }
 ]
 
+//Slide içerikleri
 export const slides = [
     {
         id: 1,
@@ -232,8 +233,9 @@ export const slides = [
     }
 
 ]
+
 //Referanslar
-export const referans = [
+export const referanslar = [
     {
         id: 1,
         title: "Atakent Forum Akademi",

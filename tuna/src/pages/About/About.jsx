@@ -39,7 +39,7 @@ const About = () => {
           edilen bir firma olmaktır. Kaliteli hizmet anlayışımızla sektörde
           lider olmayı amaçlıyoruz.
         </p>
-        <Link to="/referans"><p>Refranslar için tıkla</p></Link>
+        <Link to="/referans"><p>Referanslarımız</p></Link>
       </div>
       {/* <Referans /> */}
     </div>

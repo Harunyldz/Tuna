@@ -1,0 +1,43 @@
+.referans{
+  margin-top: 5vw;
+  width: 75%;
+  background-color:#58A399;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.referans h3{
+    display: block;
+    background-color: aliceblue;
+}
+
+
+.referans .swiper {
+    width: 1000px;
+    height: 24vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .referans .swiper-slide {
+    text-align: center;
+    background: #fff;
+    /* height: 100%; */
+    /* width:400px; */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #58A399; */
+    border: 1px solid #58A399;
+    border-radius: 10px;
+    background: transparent;
+
+  }
+  
+  .referans .swiper-slide img {
+    width: 300px;
+    object-fit: cover;
+  }
