@@ -1,4 +1,5 @@
 import "./Referans.css";
+import { motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,14 +12,17 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { referanslar } from "../../Data.js";
-console.log(referanslar)
+console.log(referanslar);
 const Referans = () => {
   return (
-    <div className="referans">
-      <h3>Referanslarımız</h3>
+    <motion.div
+      className="referans"
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ type: "tween", duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+    >
       <Swiper
         slidesPerView={5}
-        // slidesPerGroup={5}
         spaceBetween={30}
         centeredSlides={false}
         loop={true}
@@ -29,7 +33,7 @@ const Referans = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="ref-swiper"
       >
         {referanslar.map((referans) => (
           <SwiperSlide key={referans.id}>
@@ -37,7 +41,7 @@ const Referans = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

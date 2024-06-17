@@ -1,43 +1,64 @@
-.referans{
-  margin-top: 5vw;
-  width: 75%;
-  background-color:#58A399;
+.referans {
+  margin-bottom: 5vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
-.referans h3{
-    display: block;
-    background-color: aliceblue;
+.referans .ref-swiper{
+  width: 80vw;
 }
 
+.referans .ref-swiper {
+  height: 10vw;
+  margin: 0;
+  padding: 0 50px;
+  position: relative; 
+}
 
-.referans .swiper {
-    width: 1000px;
-    height: 24vw;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .referans .swiper-slide {
-    text-align: center;
-    background: #fff;
-    /* height: 100%; */
-    /* width:400px; */
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    /* background-color: #58A399; */
-    border: 1px solid #58A399;
-    border-radius: 10px;
-    background: transparent;
+.referans .swiper-slide {
+  text-align: center;
+  background: #fff;
+  width: 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
 
-  }
-  
-  .referans .swiper-slide img {
-    width: 300px;
-    object-fit: cover;
-  }
+.referans .swiper-slide img {
+  width: 200px; 
+  object-fit: cover;
+  filter: grayscale(100);
+  transition: all 0.3s ease;
+}
+
+.referans .swiper-slide img:hover{
+  filter: grayscale(0);
+}
+
+.ref-swiper .swiper-button-next,
+.ref-swiper .swiper-button-prev {
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  z-index: 10; 
+}
+
+.ref-swiper .swiper-button-next:hover,
+.ref-swiper .swiper-button-prev:hover {
+  background-color: #f89715; 
+  color:#0a2c3c;
+}
+
+.ref-swiper .swiper-button-next::after,
+.ref-swiper .swiper-button-prev::after {
+  font-size: 24px; 
+  font-weight: bold;
+}

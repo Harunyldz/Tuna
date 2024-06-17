@@ -35,7 +35,7 @@ const Slider = () => {
         loop={true}
         speed={2000}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        // className="mySwiper"
         onSlideChange={handleSlideChange}
       >
         {slides.map((slide, index) => (
