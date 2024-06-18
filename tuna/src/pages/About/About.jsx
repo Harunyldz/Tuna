@@ -1,7 +1,6 @@
 import logo5 from "../../assets/logo5.png";
-import { Link } from "react-router-dom";
 import "./About.css";
-import Referans from "../../components/Cards/Referans";
+
 
 const About = () => {
   return (
@@ -39,7 +38,7 @@ const About = () => {
           edilen bir firma olmaktır. Kaliteli hizmet anlayışımızla sektörde
           lider olmayı amaçlıyoruz.
         </p>
-        <Link to="/referans"><p>Referanslarımız</p></Link>
+
       </div>
       {/* <Referans /> */}
     </div>
