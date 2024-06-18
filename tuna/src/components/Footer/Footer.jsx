@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Footer.css"
 import logo from "../../assets/logo5.png"
-
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -12,14 +13,15 @@ const Footer = () => {
                 <div className="footer-left">
                     <h2>Tuna İş Güvenliği Hizmetleri</h2>
                     <ul>
-                        <li>İş Güvenliği Uzmanı</li>
-                        <li>İşyeri Hekimi</li>
-                        <li>Diğer Sağlık Personeli (İşyeri Hemşiresi)</li>
-                        <li>Risk Değerlendirmesi</li>
-                        <li>Acil Durum Eylem Planı</li>
-                        <li>Hijyen Eğitimi</li>
-                        <li>Tatbikatlı Yangın Eğitimi</li>
-                        <li>Yüksekte Çalışma Eğitimi</li>
+                        <Link to='/hizmetlerimiz/is-guvenligi-uzmani'><li><FaAngleRight />İş Güvenliği Uzmanlığı</li></Link>
+                        <Link to='/hizmetlerimiz/is-yeri-hekimi'><li><FaAngleRight />İşyeri Hekimliği</li></Link>
+                        <Link to='/hizmetlerimiz/diger-saglik-personeli'><li><FaAngleRight />Diğer Sağlık Personeli</li></Link>
+                        <Link to='/hizmetlerimiz/risk-analizi'><li><FaAngleRight />Risk Analizi Raporu</li></Link>
+                        <Link to='/hizmetlerimiz/acil-durum-plani'><li><FaAngleRight />Acil Durum Planı</li></Link>
+                        <Link to='/egitimlerimiz/is-guvenligi-egitimi'> <li><FaAngleRight />İş Güvenliği Eğitimi</li></Link>
+                        <Link to='/egitimlerimiz/hijyen-egitimi'> <li><FaAngleRight />Hijyen Eğitimi</li></Link>
+                        <Link to='/egitimlerimiz/yangin-egitimi'> <li><FaAngleRight />Yangın Eğitimi</li></Link>
+                        <Link to='/egitimlerimiz/yuksekte-calisma-egitimi'> <li><FaAngleRight />Yüksekte Çalışma Eğitimi</li></Link>
                     </ul>
                 </div>
                 <div className="footer-center">
@@ -32,6 +34,7 @@ const Footer = () => {
                         <li><FaInstagram /></li>
                         <li><FaFacebook /></li>
                         <li><FaTwitter /></li>
+                        <li><FaYoutube /></li>
 
                     </ul>
                 </div>
