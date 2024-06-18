@@ -94,7 +94,7 @@ function TeklifAl() {
               />
             </label>
             <label className="person-count">
-              Kişi Sayısı:
+              Çalışan Sayısı:
               <input
                 type="number"
                 min={1}
@@ -104,7 +104,7 @@ function TeklifAl() {
               />
             </label>
             <label>
-              Tehlike Sınıfı:
+              İşyeri Tehlike Sınıfı:
               <select
                 value={riskClass}
                 onChange={(e) => setRiskClass(e.target.value)}
@@ -174,22 +174,22 @@ function TeklifAl() {
             <label>
               <input
                 type="checkbox"
-                value="Mobil Sağlık Tarama Hizmeti"
-                checked={services.includes("Mobil Sağlık Tarama Hizmeti")}
+                value="Yüksekte Çalışma Eğitimi"
+                checked={services.includes("Yüksekte Çalışma Eğitimi")}
                 onChange={handleCheckboxChange}
               />
-              Mobil Sağlık Tarama Hizmeti
+              Yüksekte Çalışma Eğitimi
             </label>
             <label>
               <input
                 type="checkbox"
-                value="Sedex Denetim Danışmanlığı"
-                checked={services.includes("Sedex Denetim Danışmanlığı")}
+                value="Hijyen Eğitimi"
+                checked={services.includes("Hijyen Eğitimi")}
                 onChange={handleCheckboxChange}
               />
-              Sedex Denetim Danışmanlığı
+              Hijyen Eğitimi (E-Devlet Onaylı)
             </label>
-            <label>
+            {/* <label>
               <input
                 type="checkbox"
                 value="Bscı Denetim Danışmanlığı"
@@ -197,8 +197,8 @@ function TeklifAl() {
                 onChange={handleCheckboxChange}
               />
               Bscı Denetim Danışmanlığı
-            </label>
-            <label>
+            </label> */}
+            {/* <label>
               <input
                 type="checkbox"
                 value="Fama Denetim Danışmanlığı"
@@ -206,8 +206,8 @@ function TeklifAl() {
                 onChange={handleCheckboxChange}
               />
               Fama Denetim Danışmanlığı
-            </label>
-            <label>
+            </label> */}
+            {/* <label>
               <input
                 type="checkbox"
                 value="Sosyal Uygunluk Denetim Danışmanlığı"
@@ -217,7 +217,7 @@ function TeklifAl() {
                 onChange={handleCheckboxChange}
               />
               Sosyal Uygunluk Denetim Danışmanlığı
-            </label>
+            </label> */}
           </label>
         </div>
         <div className="form-bottom">
