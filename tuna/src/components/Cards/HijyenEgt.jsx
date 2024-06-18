@@ -2,6 +2,8 @@ import React from 'react'
 import hijyen from "../../assets/hijyen.jpeg"
 import hijyen2 from "../../assets/hijyen3.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 
 function HijyenEgt() {
@@ -10,7 +12,7 @@ function HijyenEgt() {
             <div className='content-title'>
                 <h1>Hijyen Eğitimi</h1>
             </div>
-            <div className='content-center'>
+            <div className='content-center' style={{ marginBottom: '50px' }}>
                 <div className='content-center-box1'>
                     <section>
                         <p>
@@ -46,8 +48,14 @@ function HijyenEgt() {
                     </section>
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={hijyen2} alt="" width={300} height={200} />
-                    <img className='img2' src={hijyen} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={hijyen2} alt="" width={300} height={200} />
+                        <img className='img2' src={hijyen} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 

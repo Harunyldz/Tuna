@@ -2,6 +2,8 @@ import React from 'react'
 import dsp from "../../assets/dsp2.jpeg"
 import dsp2 from "../../assets/dsp.jpeg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 function Dsp() {
     return (
@@ -84,8 +86,14 @@ function Dsp() {
                     </ul>
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={dsp2} alt="" width={300} height={200} />
-                    <img className='img2' src={dsp} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={dsp2} alt="" width={300} height={200} />
+                        <img className='img2' src={dsp} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 

@@ -3,6 +3,8 @@ import { ImArrowRight } from "react-icons/im";
 import isgEgt from "../../assets/isgEgt.png"
 import isgEgt2 from "../../assets/isgEgtm3.png"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 
 function IsgTmlEgtm() {
@@ -60,12 +62,18 @@ function IsgTmlEgtm() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={isgEgt} alt="" width={300} height={200} />
-                    <img className='img2' src={isgEgt2} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={isgEgt} alt="" width={300} height={200} />
+                        <img className='img2' src={isgEgt2} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

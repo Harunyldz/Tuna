@@ -2,6 +2,8 @@ import React from 'react'
 import igu from "../../assets/igu.jpg"
 import igu2 from "../../assets/igu2.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 function IsGvUzm() {
     return (
@@ -46,12 +48,18 @@ function IsGvUzm() {
                     <p>İş güvenliği uzmanları, iş yerlerinin güvenli ve sağlıklı bir çalışma ortamı sağlamasına katkıda bulunarak hem iş kazalarını önlemeye hem de çalışanların refahını artırmaya yönelik önemli bir rol üstlenirler.</p>
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={igu} alt="" width={300} height={200} />
-                    <img className='img2' src={igu2} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={igu} alt="" width={300} height={200} />
+                        <img className='img2' src={igu2} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

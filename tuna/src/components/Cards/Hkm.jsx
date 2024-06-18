@@ -2,7 +2,8 @@ import React from 'react'
 import hkm from "../../assets/HKM.jpg"
 import hkm2 from "../../assets/hkm2.png"
 import './cards.css'
-
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 function Hkm() {
     return (
@@ -83,12 +84,18 @@ function Hkm() {
                     </ul>
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={hkm2} alt="" width={300} height={200} />
-                    <img className='img2' src={hkm} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={hkm2} alt="" width={300} height={200} />
+                        <img className='img2' src={hkm} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 
-        </div>
+        </div >
 
 
 

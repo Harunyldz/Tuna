@@ -2,6 +2,8 @@ import React from 'react'
 import yangin from "../../assets/yangin2.jpeg"
 import yangin2 from "../../assets/yangin.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 
 function YanginEgt() {
@@ -66,8 +68,14 @@ function YanginEgt() {
                     </p>
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={yangin2} alt="" width={300} height={200} />
-                    <img className='img2' src={yangin} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={yangin2} alt="" width={300} height={200} />
+                        <img className='img2' src={yangin} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 

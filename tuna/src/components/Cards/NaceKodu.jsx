@@ -2,6 +2,8 @@ import React from 'react'
 import nace2 from "../../assets/nace2.jpeg"
 import nace1 from "../../assets/nace1.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 function NaceKodu() {
     return (
@@ -70,8 +72,14 @@ function NaceKodu() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={nace2} alt="" width={300} height={200} />
-                    <img className='img2' src={nace1} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={nace2} alt="" width={300} height={200} />
+                        <img className='img2' src={nace1} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 

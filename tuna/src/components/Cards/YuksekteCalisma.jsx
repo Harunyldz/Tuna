@@ -3,6 +3,8 @@ import { ImArrowRight } from "react-icons/im";
 import hight from "../../assets/hightWorking.jpg"
 import hight2 from "../../assets/yuksek2.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 
 function YuksekteCalisma() {
@@ -76,8 +78,14 @@ function YuksekteCalisma() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={hight} alt="" width={300} height={200} />
-                    <img className='img2' src={hight2} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={hight} alt="" width={300} height={200} />
+                        <img className='img2' src={hight2} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 

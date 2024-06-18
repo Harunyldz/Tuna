@@ -5,9 +5,6 @@ import './cards.css'
 import YanMenu from './YanMenu'
 import { Link } from "react-router-dom";
 
-
-
-
 function AcilDrmPln() {
     return (
         <div className='content-item'>

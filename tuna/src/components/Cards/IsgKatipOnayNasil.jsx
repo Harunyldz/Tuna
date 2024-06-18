@@ -2,6 +2,8 @@ import React from 'react'
 import './cards.css'
 import isgKtp1 from "../../assets/isgKtp1.jpg"
 import isgKtp2 from "../../assets/isgKtp2.jpg"
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 function IsgKatipOnayNasil() {
     return (
@@ -29,9 +31,15 @@ function IsgKatipOnayNasil() {
                         <a href="https://isgkatip.csgb.gov.tr" target='_blank'>TIKLAYINIZ</a>.
                     </p>
                 </div>
-                <div className='content-center-box2'>
-                    <img className='img1' src={isgKtp1} alt="" width={300} height={200} />
-                    <img className='img2' src={isgKtp2} alt="" width={300} height={200} />
+                <div className='content-center-box2' style={{ marginBottom: '150px' }}>
+                    <div className='box-img'>
+                        <img className='img1' src={isgKtp1} alt="" width={300} height={200} />
+                        <img className='img2' src={isgKtp2} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 
@@ -40,7 +48,7 @@ function IsgKatipOnayNasil() {
 
 
 
-        </div>
+        </div >
     )
 }
 

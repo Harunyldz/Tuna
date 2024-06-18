@@ -2,6 +2,8 @@ import React from 'react'
 import Risk from "../../assets/riskDe.jpg"
 import Risk2 from "../../assets/risk-image.jpg"
 import './cards.css'
+import YanMenu from './YanMenu'
+import { Link } from "react-router-dom";
 
 
 function RiskAnaliz() {
@@ -61,8 +63,14 @@ function RiskAnaliz() {
 
                 </div>
                 <div className='content-center-box2'>
-                    <img className='img1' src={Risk} alt="" width={300} height={200} />
-                    <img className='img2' src={Risk2} alt="" width={300} height={200} />
+                    <div className='box-img'>
+                        <img className='img1' src={Risk} alt="" width={300} height={200} />
+                        <img className='img2' src={Risk2} alt="" width={300} height={200} />
+                    </div>
+                    <div>
+                        <YanMenu />
+                        <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
+                    </div>
                 </div>
             </div>
 
