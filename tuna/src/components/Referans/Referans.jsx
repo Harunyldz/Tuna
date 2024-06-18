@@ -28,7 +28,7 @@ const Referans = () => {
         loop={true}
         speed={1500}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         navigation={true}

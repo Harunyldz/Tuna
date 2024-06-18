@@ -1,13 +1,10 @@
 /////////////////  Yapılacaklar Eksikler Düzeltilecekler //////////////////
 
-1. Navbar daki search input a arama iconu eklenecek şekilde düzenlenecek
-2. navbar sayfa aşağı kayınca yukarda sabit kalsın.
-
-3. ana sayfada görünenleri anlayamadım.  bakıp
-4. main.jsx sadece navbadaki hizmetlerimiz cartları olsun......yapıldı
-5. Ana sayfada neler görünecek belirlensin
 Resimler için Lazy loading kullan
-Teklif Al sayfasındaki css seçiciler düzenlenmeli diğer sayfaları etkiliyorlar
-
+infoData oluşturup data.js ye ekledim oaradan Info js leri düzenleyecem
+footer daki sosyal medaaya iconlarına bağlantı eklenecek
+referanslar ayrı bir sayfada detaylı gösterilecek mi
+Hizmetker ve eğitimler sayfalarına yazılı içerik eklenecek mi(başlık vs gibi)
+İletişim sayfasına harita tel no vs gibi başka şeyler ekelenecek mi
 
 

@@ -314,3 +314,35 @@ export const referanslar = [
         text: 'Murat Matbaacılık'
     },
 ]
+
+//Info data
+export const infoData = [
+    {
+        id: 1,
+        level: "Az Tehlikeli",
+        data: [
+            { riskA: '6 Yılda 1 Defa' },
+            { AcilD: '6 Yılda 1 Defa' },
+            { egtm: '3 Yılda 1 Defa' },
+            { sglk: '5 Yılda 1 Defa' },
+            { ilkYrd: 20 },
+            { thlEkp: 50 },
+            { snEkp: 50 },
+            { hbrEkp: 50 }
+        ]
+    },
+    {
+        id: 2,
+        level: "Tehlikeli",
+        data: [
+            { riskA: '6 Yılda 1 Defa' },
+            { AcilD: '6 Yılda 1 Defa' },
+            { egtm: '3 Yılda 1 Defa' },
+            { sglk: '5 Yılda 1 Defa' },
+            { ilkYrd: 20 },
+            { thlEkp: 50 },
+            { snEkp: 50 },
+            { hbrEkp: 50 }
+        ]
+    }
+]
