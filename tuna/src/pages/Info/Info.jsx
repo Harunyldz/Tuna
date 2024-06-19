@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Info.css";
 import { infoData } from "../../Data.js";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Info = () => {
   const [riskLevel, setRiskLevel] = useState("azTehlikeli");
@@ -149,7 +150,12 @@ const Info = () => {
             <span>{Math.ceil(employeeCount / riskData.tahliyeEkibi)} Kişi</span>
           </div>
         </div>
-        <div className="info-links">
+        <motion.div
+          className="info-links"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{duration:1}}
+        >
           <p>
             İş güvenliği hizmetlerimizden hemen faydalanmak için{" "}
             <Link to="/teklifAl" className="info-teklif">
@@ -162,7 +168,7 @@ const Info = () => {
               İletişim
             </Link>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

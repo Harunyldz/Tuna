@@ -7,7 +7,6 @@ import RiskAnaliz from './components/Cards/RiskAnaliz';
 import AcilDrmPln from './components/Cards/AcilDrmPln';
 import Dsp from './components/Cards/Dsp';
 import Hkm from './components/Cards/Hkm';
-// import Info from './components/Cards/Info';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Services from './pages/Services/Services.jsx';
