@@ -316,33 +316,45 @@ export const referanslar = [
 ]
 
 //Info data
-export const infoData = [
-    {
-        id: 1,
-        level: "Az Tehlikeli",
-        data: [
-            { riskA: '6 Yılda 1 Defa' },
-            { AcilD: '6 Yılda 1 Defa' },
-            { egtm: '3 Yılda 1 Defa' },
-            { sglk: '5 Yılda 1 Defa' },
-            { ilkYrd: 20 },
-            { thlEkp: 50 },
-            { snEkp: 50 },
-            { hbrEkp: 50 }
-        ]
+export const infoData =
+{
+    azTehlikeli: {
+        title:"Az Tehlikeli",
+        riskA: 6,
+        AcilD: 6,
+        egtm: 3,
+        sglk: 5,
+        ilkYrd: 20,
+        thlEkp: 50,
+        snEkp: 50,
+        hbrEkp: 50,
+        igu:10,
+        hkm:5,
     },
-    {
-        id: 2,
-        level: "Tehlikeli",
-        data: [
-            { riskA: '6 Yılda 1 Defa' },
-            { AcilD: '6 Yılda 1 Defa' },
-            { egtm: '3 Yılda 1 Defa' },
-            { sglk: '5 Yılda 1 Defa' },
-            { ilkYrd: 20 },
-            { thlEkp: 50 },
-            { snEkp: 50 },
-            { hbrEkp: 50 }
-        ]
+    tehlikeli: {
+        title:"Tehlikeli",
+        riskA: 4,
+        AcilD: 4,
+        egtm: 2,
+        sglk: 3,
+        ilkYrd: 15,
+        thlEkp: 40,
+        snEkp: 40,
+        hbrEkp: 40,
+        igu:20,
+        hkm:10,
+    },
+    cokTehlikeli: {
+        title:"Çok Tehlikeli",
+        riskA: 2,
+        AcilD: 2,
+        egtm: 1,
+        sglk: 1,
+        ilkYrd: 10,
+        thlEkp: 30,
+        snEkp: 30,
+        hbrEkp: 30,
+        igu:40,
+        hkm:15,
     }
-]
+}
