@@ -33,8 +33,8 @@ const Footer = () => {
                     <ul className="icons">
                         <li><FaInstagram /></li>
                         <li><FaFacebook /></li>
-                        <a href="https://x.com/tunaisguvenligi" target='_blank'><li><FaTwitter /></li></a>
-                        <li><FaYoutube /></li>
+                        <a href="https://x.com/tunaisguvenligi" target="_blank" rel="noopener noreferrer"><li><FaTwitter /></li></a>
+                        <a href="https://www.youtube.com/@TunaIsGuvenligi" target='_blank' rel='noopener noreferrer'><li><FaYoutube /></li></a>
 
                     </ul>
                 </div>
