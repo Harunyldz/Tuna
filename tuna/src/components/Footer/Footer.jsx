@@ -33,7 +33,7 @@ const Footer = () => {
                     <ul className="icons">
                         <li><FaInstagram /></li>
                         <li><FaFacebook /></li>
-                        <li><FaTwitter /></li>
+                        <a href="https://x.com/tunaisguvenligi" target='_blank'><li><FaTwitter /></li></a>
                         <li><FaYoutube /></li>
 
                     </ul>
