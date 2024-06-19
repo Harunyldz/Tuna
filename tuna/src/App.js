@@ -7,7 +7,7 @@ import RiskAnaliz from './components/Cards/RiskAnaliz';
 import AcilDrmPln from './components/Cards/AcilDrmPln';
 import Dsp from './components/Cards/Dsp';
 import Hkm from './components/Cards/Hkm';
-import Info from './components/Cards/Info';
+// import Info from './components/Cards/Info';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Services from './pages/Services/Services.jsx';
@@ -22,6 +22,7 @@ import NaceKodu from './components/Cards/NaceKodu.jsx';
 import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
 import TeklifAl from './pages/TeklifAl/TeklifAl.jsx';
 import Referans from './components/Referans/Referans.jsx';
+import Info from './pages/Info/Info.jsx';
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
           <Route path='/egitimlerimiz/is-guvenligi-egitimi' element={<IsgTmlEgtm />} />
           <Route path='/egitimlerimiz/yangin-egitimi' element={<YanginEgt />} />
           <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalisma />} />
-          <Route path='/info' element={<Info />} />
+          <Route path='/info' element={<Info/>} />
           <Route path='/nace' element={<NaceKodu />} />
           <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
           <Route path='/iletisim' element={<Contact />} />

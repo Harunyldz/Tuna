@@ -1,5 +1,4 @@
 import logo5 from "../../assets/logo5.png";
-import Info from "../Info/Info";
 import "./About.css";
 
 
@@ -41,7 +40,6 @@ const About = () => {
         </p>
 
       </div>
-      <Info/>
     </div>
   );
 };

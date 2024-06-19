@@ -1,5 +1,5 @@
 .info {
-    margin: 5vw auto;
+    margin: 2vw auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,12 @@
     align-items: stretch;
     border-radius: 10px;
     gap: 15px;
-    width: 70%;
+    width: 75%;
+}
+
+.info h3 {
+    color: #0a2c3c;
+    letter-spacing: 0.5px;
 }
 
 .info .hesapla {
@@ -18,17 +23,23 @@
     border: 1px solid #0a2c3c;
     padding: 30px;
     border-radius: 8px;
-
 }
 
-.hesapla h3 {
-    color: #0a2c3c;
-    letter-spacing: 0.5px;
+.hesapla p{
+    font-size: 14px;
+}
+
+.hesapla p::after,
+.hesapla p::before{
+    content: "***";
+    margin: 0 5px;
+    color: #f89715;
 }
 
 .hesapla .inputs {
+    width: 100%;
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 
 .hesapla .input {
@@ -55,8 +66,6 @@
     border: 1px solid #f89715;
     outline: 1px solid #f89715;
 }
-
-
 
 .hesapla .inputs label {
     font-size: 20px;
@@ -85,8 +94,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     border: 1px solid #0a2c3c;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
+}
+
+.tablo .tablo-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    padding: 5px 10px;
+}
+
+.tablo-items .tablo-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f89715;
+}
+
+.info .info-links{
+    border: 2px solid #f89715;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding:20px;
+}
+
+.info-links .info-teklif{
+    padding: 8px 20px;
+    background-color: #f89715;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.info-links .info-teklif:hover{
+    background-color: #e08510;
+    box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
+    font-weight: bold;
+}
+
+.info-links .info-contact{
+    color: #f89715;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.info-links .info-contact:hover{
+    text-decoration: underline;
 }
