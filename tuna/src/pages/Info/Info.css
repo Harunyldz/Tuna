@@ -1,4 +1,4 @@
-.info{
+.info {
     margin: 5vw auto;
     padding: 20px;
     display: flex;
@@ -10,27 +10,28 @@
     width: 70%;
 }
 
-.info .hesapla{
+.info .hesapla {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     border: 1px solid #0a2c3c;
-    padding:  30px;
+    padding: 30px;
     border-radius: 8px;
+
 }
 
-.hesapla h3{
+.hesapla h3 {
     color: #0a2c3c;
     letter-spacing: 0.5px;
 }
 
-.hesapla .inputs{
+.hesapla .inputs {
     display: flex;
     gap: 50px;
 }
 
-.hesapla .input{
+.hesapla .input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,30 +39,31 @@
 }
 
 .hesapla .input select,
-.hesapla .input input{
+.hesapla .input input {
     width: 120px;
-    padding: 5px ;
+    padding: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
 
-.hesapla .input select:focus{
-    border: 1px solid #f89715;
-    outline: 1px solid #f89715;
-}
-.hesapla .input input:focus{
+.hesapla .input select:focus {
     border: 1px solid #f89715;
     outline: 1px solid #f89715;
 }
 
+.hesapla .input input:focus {
+    border: 1px solid #f89715;
+    outline: 1px solid #f89715;
+}
 
 
-.hesapla .inputs label{
+
+.hesapla .inputs label {
     font-size: 20px;
 }
 
-.hesapla .hesapla-btn{
-    padding: 10px 40px ;
+.hesapla .hesapla-btn {
+    padding: 10px 40px;
     border-radius: 4px;
     border: none;
     outline: none;
@@ -72,19 +74,19 @@
     font-weight: bold;
 }
 
-.hesapla .hesapla-btn:hover{
+.hesapla .hesapla-btn:hover {
     background-color: #e08510;
     box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
     font-weight: bold;
 }
 
 /* tablo styles*/
-.info .tablo{
+.info .tablo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     border: 1px solid #0a2c3c;
-    padding:  30px;
+    padding: 30px;
     border-radius: 8px;
 }
