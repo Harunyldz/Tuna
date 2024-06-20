@@ -4,10 +4,12 @@ import acilDr2 from "../../assets/acil-durum.jpg"
 import './cards.css'
 import YanMenu from './YanMenu'
 import { Link } from "react-router-dom";
+import LeftMenu from '../LeftMenu/LeftMenu'
 
 function AcilDrmPln() {
     return (
-        <div className='content-item'>
+        <div className='card-container'>
+            <LeftMenu/>
             <div className='content-title'>
                 <h1>Acil Durum Planı</h1>
             </div>
@@ -39,7 +41,7 @@ function AcilDrmPln() {
                     <p>Acil durum planı yazılı olarak belgelenir ve kolayca erişilebilir bir yerde saklanır. Plan, yeni riskler ve değişen koşullar doğrultusunda düzenli olarak gözden geçirilir ve güncellenir.</p>
 
                 </div>
-                <div className='content-center-box2'>
+                {/* <div className='content-center-box2'>
                     <div className='box-img'>
                         <img className='img1' src={acilDr2} alt="" width={300} height={200} />
                         <img className='img2' src={acilDr} alt="" width={300} height={200} />
@@ -48,7 +50,7 @@ function AcilDrmPln() {
                         <YanMenu />
                         <Link to="/teklifAl"><button className="TeklifBtn">Teklif Al</button></Link>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

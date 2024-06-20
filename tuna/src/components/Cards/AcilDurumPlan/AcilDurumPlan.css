@@ -1,0 +1,39 @@
+.card-container {
+    width: 75%;
+    margin: 5vw auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.card-container .card-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content h1{
+    margin-bottom: 2vw;
+}
+
+.card-images {
+    flex: 1;
+    margin-top: 5vw;
+    position: relative;
+}
+
+.card-img1 {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card-img2 {
+    position: absolute;
+    right: 20%;
+    bottom: 55%;
+    width: 300px;
+    border-radius: 10px;
+}

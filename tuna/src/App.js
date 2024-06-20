@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import IsGvUzm from './components/Cards/IsGvUzm';
 import RiskAnaliz from './components/Cards/RiskAnaliz';
-import AcilDrmPln from './components/Cards/AcilDrmPln';
+// import AcilDrmPln from './components/Cards/AcilDrmPln';
 import Dsp from './components/Cards/Dsp';
 import Hkm from './components/Cards/Hkm';
 import Navbar from './components/Navbar/Navbar';
@@ -22,6 +22,7 @@ import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
 import TeklifAl from './pages/TeklifAl/TeklifAl.jsx';
 import Referans from './components/Referans/Referans.jsx';
 import Info from './pages/Info/Info.jsx';
+import AcilDurumPlan from './components/Cards/AcilDurumPlan/AcilDurumPlan.jsx';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
           <Route path='/egitimlerimiz' element={<Trainings />} />
           <Route path='/hizmetlerimiz/is-guvenligi-uzmani' element={<IsGvUzm />} />
           <Route path='/hizmetlerimiz/risk-analizi' element={<RiskAnaliz />} />
-          <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDrmPln />} />
+          <Route path='/hizmetlerimiz/acil-durum-plani' element={<AcilDurumPlan />} />
           <Route path='/hizmetlerimiz/diger-saglik-personeli' element={<Dsp />} />
           <Route path='/hizmetlerimiz/is-yeri-hekimi' element={<Hkm />} />
           <Route path='/egitimlerimiz/hijyen-egitimi' element={<HijyenEgt />} />

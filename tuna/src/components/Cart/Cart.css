@@ -8,6 +8,7 @@
     box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .cart:hover {
@@ -38,6 +39,8 @@
 }
 
 .card-button {
+    position: absolute;
+    bottom: 30px;
     background-color: #f89715;
     border: none;
     outline: none;

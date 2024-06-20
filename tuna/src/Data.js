@@ -96,7 +96,7 @@ export const carts = [
         title: "Yangın Eğitimi",
         image: yangin,
         type: "egitim",
-        text: "Yangın eğitimi, iş yerlerinde ve toplu yaşam alanlarında yangınların önlenmesi, yangın anında doğru ve etkili müdahale edilmesi, tahliye süreçlerinin doğru yönetilmesi ve yangın güvenliği bilincinin artırılması amacıyla verilen eğitimdir. ",
+        text: "Yangın eğitimi, iş yerlerinde ve toplu yaşam alanlarında yangınların önlenmesi, doğru ve etkili müdahale edilmesi, tahliye süreçlerinin doğru yönetilmesi ve yangın güvenliği bilincinin artırılması amacıyla verilen eğitimdir. ",
         href: "yangin-egitimi"
     },
     {

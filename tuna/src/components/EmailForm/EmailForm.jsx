@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./EmailForm.css";
+import { motion } from "framer-motion";
 
 const EmailForm = () => {
   const [name, setName] = useState();
@@ -35,7 +36,12 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="contact-container">
+    <motion.div
+      className="contact-container"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="contact-header">
         <h1>Bizimle İletişime Geçin</h1>
         <p>
@@ -83,7 +89,7 @@ const EmailForm = () => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
