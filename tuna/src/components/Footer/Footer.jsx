@@ -31,10 +31,10 @@ const Footer = () => {
                     </div>
                     <h3>Bizi Takip Edin</h3>
                     <ul className="icons">
-                        <li><FaInstagram /></li>
-                        <li><FaFacebook /></li>
-                        <li><FaTwitter /></li>
-                        <li><FaYoutube /></li>
+                        <a href="https://www.instagram.com/tunaisguvenligihizmetleri/" target="_blank" rel="noopener noreferrer"><li><FaInstagram /></li></a>
+                        <a href="https://www.facebook.com/tunaisguvenligihizmetleri?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><li><FaFacebook /></li></a>
+                        <a href="https://x.com/tunaisguvenligi" target="_blank" rel="noopener noreferrer" ><li><FaTwitter /></li></a>
+                        <a href="https://www.youtube.com/@TunaIsGuvenligi" target='_blank' rel='noopener noreferrer'><li><FaYoutube /></li></a>
 
                     </ul>
                 </div>

@@ -6,7 +6,7 @@
 
 .slider-container .swiper {
   width: 100%;
-  height: 40vw;
+  height: 35vw;
 }
 
 .slider-container .swiper-slide {
@@ -62,11 +62,11 @@
   color: #fff5e1;
 }
 
-.slide-span{
+.slide-span {
   color: #f89715;
 }
 
-.slide-content .slide-btn{
+.slide-content .slide-btn {
   padding: 0.8vw 3vw;
   background-color: #f89715;
   font: bold 20px "Roboto Slab", serif;
@@ -79,7 +79,7 @@
   box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
 }
 
-.slide-btn:hover{
+.slide-btn:hover {
   background-color: #e08510;
   box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
 }
