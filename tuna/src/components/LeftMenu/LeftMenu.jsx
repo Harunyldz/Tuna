@@ -3,32 +3,21 @@ import { FaAngleRight } from "react-icons/fa6";
 import { NavLink, Link } from "react-router-dom";
 import { carts } from "../../Data.js";
 const LeftMenu = () => {
-  const services = carts.filter((item) => item.type === "hizmet");
-  const trainings = carts.filter((item) => item.type === "egitim");
   return (
     <div className="leftmenu">
       <ul className="leftmenu-list">
         <h3>Tuna İş Güvenliği Hizmetleri</h3>
-        {services.map((service) => (
+        {carts.map((cart) => (
           <NavLink
-            to={`/hizmetlerimiz/${service.href}`}
+            to={`/${
+              cart.type === "hizmet" ? "hizmetlerimiz" : "egitimlerimiz"
+            }/${cart.href}`}
             className={({ isActive }) =>
               isActive ? "list-item active-link" : "list-item"
             }
           >
             <FaAngleRight />
-            {service.title}
-          </NavLink>
-        ))}
-        {trainings.map((training) => (
-          <NavLink
-            to={`/egitimlerimiz/${training.href}`}
-            className={({ isActive }) =>
-              isActive ? "list-item active-link" : "list-item"
-            }
-          >
-            <FaAngleRight />
-            {training.title}
+            {cart.title}
           </NavLink>
         ))}
       </ul>

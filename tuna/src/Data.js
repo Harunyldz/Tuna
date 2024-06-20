@@ -128,8 +128,8 @@ export const menuItems = [
         subMenu: [
             {
                 id: 1,
-                title: "İş Güvenliği Uzmanı",
-                href: 'is-guvenligi-uzmani'
+                title: "Acil Durum Planı",
+                href: "acil-durum-plani"
             },
             {
                 id: 2,
@@ -143,13 +143,13 @@ export const menuItems = [
             },
             {
                 id: 4,
-                title: "Risk Analizi",
-                href: "risk-analizi"
+                title: "İş Güvenliği Uzmanı",
+                href: 'is-guvenligi-uzmani'
             },
             {
                 id: 5,
-                title: "Acil Durum Planı",
-                href: "acil-durum-plani"
+                title: "Risk Analizi",
+                href: "risk-analizi"
             }
         ]
     },
@@ -319,7 +319,7 @@ export const referanslar = [
 export const infoData =
 {
     azTehlikeli: {
-        title:"Az Tehlikeli",
+        title: "Az Tehlikeli",
         riskAnalizRaporu: 6,
         acilDurumPlani: 6,
         isgEgitim: 3,
@@ -328,11 +328,11 @@ export const infoData =
         korumaEkibi: 50,
         sondurmeEkibi: 50,
         tahliyeEkibi: 50,
-        isGuvenligi:10,
-        isyeriHekimi:5,
+        isGuvenligi: 10,
+        isyeriHekimi: 5,
     },
     tehlikeli: {
-        title:"Tehlikeli",
+        title: "Tehlikeli",
         riskAnalizRaporu: 4,
         acilDurumPlani: 4,
         isgEgitim: 2,
@@ -341,11 +341,11 @@ export const infoData =
         korumaEkibi: 40,
         sondurmeEkibi: 40,
         tahliyeEkibi: 40,
-        isGuvenligi:20,
-        isyeriHekimi:10,
+        isGuvenligi: 20,
+        isyeriHekimi: 10,
     },
     cokTehlikeli: {
-        title:"Çok Tehlikeli",
+        title: "Çok Tehlikeli",
         riskAnalizRaporu: 2,
         acilDurumPlani: 2,
         isgEgitim: 1,
@@ -354,7 +354,7 @@ export const infoData =
         korumaEkibi: 30,
         sondurmeEkibi: 30,
         tahliyeEkibi: 30,
-        isGuvenligi:40,
-        isyeriHekimi:15,
+        isGuvenligi: 40,
+        isyeriHekimi: 15,
     }
 }

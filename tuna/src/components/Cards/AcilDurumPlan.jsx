@@ -1,23 +1,27 @@
-import LeftMenu from "../../LeftMenu/LeftMenu";
-import "./AcilDurumPlan.css";
-import acilDr from "../../../assets/acil-durum.jpg"
-import acilDr2 from "../../../assets/acildurum3.jpg"
-import {motion} from "framer-motion"
+import LeftMenu from "../LeftMenu/LeftMenu";
+import "./Carts.css";
+import acilDr from "../../assets/acil-durum.jpg";
+import acilDr2 from "../../assets/acildurum3.jpg";
+import { motion } from "framer-motion";
 
 const AcilDurumPlan = () => {
   return (
     <div className="card-container">
       <LeftMenu />
-      <div className="card-content">
-        <motion.h1
-              initial={{opacity:0,y:100}}
-              whileInView={{opacity:1, y:0}}
-              transition={{duration:2}}
-        >Acil Durum Planı</motion.h1>
-        <motion.div className="card-content-text"
-              initial={{opacity:0,y:100}}
-              whileInView={{opacity:1, y:0}}
-              transition={{duration:2}}>
+      <motion.div
+        className="card-content"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+      >
+        <h1
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+        >
+          Acil Durum Planı
+        </h1>
+        <div className="card-content-text">
           <p>
             Acil durum planı, olası acil durumlar ve afetler karşısında can ve
             mal kaybını en aza indirmek için önceden hazırlanan, sistematik bir
@@ -75,18 +79,25 @@ const AcilDurumPlan = () => {
             bir yerde saklanır. Plan, yeni riskler ve değişen koşullar
             doğrultusunda düzenli olarak gözden geçirilir ve güncellenir.
           </p>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
       <div className="card-images">
-        <motion.img className="card-img1" src={acilDr} alt="Acil durum resmi"
-          initial={{opacity:0,x:100}}
-          whileInView={{opacity:1, x:0}}
-          transition={{duration:2}}
+        <motion.img
+          className="card-img1"
+          src={acilDr}
+          alt="Acil durum resmi"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2 }}
         />
-        <motion.img className="card-img2" src={acilDr2} alt="Acil durum resmi"
-              initial={{opacity:0,y:100}}
-              whileInView={{opacity:1, y:0}}
-              transition={{duration:2}}   />
+        <motion.img
+          className="card-img2"
+          src={acilDr2}
+          alt="Acil durum resmi"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+        />
       </div>
     </div>
   );
