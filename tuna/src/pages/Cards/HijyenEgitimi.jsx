@@ -1,6 +1,6 @@
 import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
-import hijyen from "../../assets/hijyen.jpeg";
+import hijyen from "../../assets/hijyen2.jpg";
 import hijyen2 from "../../assets/hijyen3.jpg";
 import { motion } from "framer-motion";
 
