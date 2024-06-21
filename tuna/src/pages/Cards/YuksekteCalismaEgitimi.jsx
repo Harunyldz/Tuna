@@ -1,6 +1,6 @@
 import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
-import height from "../../assets/yuksek.jpeg"
+import height from "../../assets/yuksek3.jpg"
 import height2 from "../../assets/yuksek2.jpg"
 import { motion } from "framer-motion";
 

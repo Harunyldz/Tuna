@@ -11,7 +11,7 @@ import yangin from "./assets/yangin.jpg"
 import yuksek2 from "./assets/yuksek2.jpg"
 
 //Slide images
-import yuksek from "./assets/yuksek.jpeg";
+import yuksek from "./assets/yuksek3.jpg";
 import isgegt from "./assets/isgegt.jpg";
 import risk2 from "./assets/risk3.jpg"
 import health from "./assets/health.jpg"
