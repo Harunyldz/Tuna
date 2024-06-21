@@ -2,23 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-// import IsGvUzm from './components/Cards/IsGvUzm';
-// import RiskAnaliz from './components/Cards/RiskAnaliz';
-// import AcilDrmPln from './components/Cards/AcilDrmPln';
-// import Dsp from './components/Cards/Dsp';
-// import Hkm from './components/Cards/Hkm';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Services from './pages/Services/Services.jsx';
-// import HijyenEgt from './components/Cards/HijyenEgt';
-// import IsgTmlEgtm from './components/Cards/IsgTmlEgtm';
-// import YanginEgt from './components/Cards/YanginEgt.jsx';
-// import YuksekteCalisma from './components/Cards/YuksekteCalisma.jsx';
 import Trainings from './pages/Trainings/Trainings.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import ScrollToTop from './utils/ScrollToTop.js';
-import NaceKodu from './components/Cards/NaceKodu.jsx';
-import IsgKatipOnayNasil from './components/Cards/IsgKatipOnayNasil.jsx'
 import TeklifAl from './pages/TeklifAl/TeklifAl.jsx';
 import Referans from './components/Referans/Referans.jsx';
 import Info from './pages/Info/Info.jsx';
@@ -31,6 +20,8 @@ import RiskAnalizi from './components/Cards/RiskAnalizi.jsx';
 import HijyenEgitimi from './components/Cards/HijyenEgitimi.jsx';
 import YanginEgitimi from './components/Cards/YanginEgitimi.jsx';
 import YuksekteCalismaEgitimi from './components/Cards/YuksekteCalismaEgitimi.jsx';
+import NaceKodu from './components/Cards/NaceKodu.jsx';
+import IsgKatipOnayi from './components/Cards/IsgKatipOnayi.jsx';
 
 function App() {
   return (
@@ -54,7 +45,7 @@ function App() {
           <Route path='/egitimlerimiz/yuksekte-calisma-egitimi' element={<YuksekteCalismaEgitimi />} />
           <Route path='/info' element={<Info/>} />
           <Route path='/nace' element={<NaceKodu />} />
-          <Route path='/isgKatipNasil' element={<IsgKatipOnayNasil />} />
+          <Route path='/isgKatipNasil' element={<IsgKatipOnayi />} />
           <Route path='/iletisim' element={<Contact />} />
           <Route path='/teklifAl' element={<TeklifAl/>} />
           <Route path='/referans' element={<Referans />} />

@@ -21,6 +21,35 @@ const LeftMenu = () => {
           </NavLink>
         ))}
       </ul>
+      <ul className="leftmenu-list leftmenu-list-alt">
+        <NavLink
+          to="/info"
+          className={({ isActive }) =>
+            isActive ? "list-item active-link" : "list-item"
+          }
+        >
+          <FaAngleRight />
+          İş Güvenliği Gereksinimlerini Öğren
+        </NavLink>
+        <NavLink
+          to="/nace"
+          className={({ isActive }) =>
+            isActive ? "list-item active-link" : "list-item"
+          }
+        >
+          <FaAngleRight />
+          Nace Kodu Öğren
+        </NavLink>
+        <NavLink
+          to="/isgKatipNasil"
+          className={({ isActive }) =>
+            isActive ? "list-item active-link" : "list-item"
+          }
+        >
+          <FaAngleRight />
+          İsg Katip Onayı Nasıl Yapılır
+        </NavLink>
+      </ul>
       <div className="leftmenu-contact">
         <h5>Güvenliğiniz bir adım uzağınızda</h5>
         <p>

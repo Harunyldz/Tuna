@@ -15,6 +15,7 @@
 }
 
 .card-content h1{
+    margin: 0;
     margin-bottom: 2vw;
 }
 
@@ -72,4 +73,9 @@
 
 .card-content table tr{
 text-align: left;
+}
+
+.card-content a {
+    margin-left: 5px;
+    color: #f89715;
 }
