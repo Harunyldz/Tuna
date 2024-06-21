@@ -11,17 +11,17 @@ import ScrollToTop from './utils/ScrollToTop.js';
 import TeklifAl from './pages/TeklifAl/TeklifAl.jsx';
 import Referans from './components/Referans/Referans.jsx';
 import Info from './pages/Info/Info.jsx';
-import AcilDurumPlan from './components/Cards/AcilDurumPlan.jsx';
-import IsyeriHekimi from './components/Cards/IsyeriHekimi.jsx';
-import DigerSaglikPersoneli from './components/Cards/DigerSaglikPersoneli.jsx';
-import IsGuvenligiUzmani from './components/Cards/IsGuvenligiUzmani.jsx';
-import IsGuvenligiEgitimi from './components/Cards/IsGuvenligiEgitimi.jsx';
-import RiskAnalizi from './components/Cards/RiskAnalizi.jsx';
-import HijyenEgitimi from './components/Cards/HijyenEgitimi.jsx';
-import YanginEgitimi from './components/Cards/YanginEgitimi.jsx';
-import YuksekteCalismaEgitimi from './components/Cards/YuksekteCalismaEgitimi.jsx';
-import NaceKodu from './components/Cards/NaceKodu.jsx';
-import IsgKatipOnayi from './components/Cards/IsgKatipOnayi.jsx';
+import AcilDurumPlan from './pages/Cards/AcilDurumPlan.jsx';
+import IsyeriHekimi from './pages/Cards/IsyeriHekimi.jsx';
+import DigerSaglikPersoneli from './pages/Cards/DigerSaglikPersoneli.jsx';
+import IsGuvenligiUzmani from './pages/Cards/IsGuvenligiUzmani.jsx';
+import IsGuvenligiEgitimi from './pages/Cards/IsGuvenligiEgitimi.jsx';
+import RiskAnalizi from './pages/Cards/RiskAnalizi.jsx';
+import HijyenEgitimi from './pages/Cards/HijyenEgitimi.jsx';
+import YanginEgitimi from './pages/Cards/YanginEgitimi.jsx';
+import YuksekteCalismaEgitimi from './pages/Cards/YuksekteCalismaEgitimi.jsx';
+import NaceKodu from './pages/Cards/NaceKodu.jsx';
+import IsgKatipOnayi from './pages/Cards/IsgKatipOnayi.jsx';
 
 function App() {
   return (

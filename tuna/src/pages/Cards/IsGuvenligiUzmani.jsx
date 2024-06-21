@@ -1,4 +1,4 @@
-import LeftMenu from "../LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
 import igu from "../../assets/isgUzman.jpg";
 import igu2 from "../../assets/isgUzman2.jpg";

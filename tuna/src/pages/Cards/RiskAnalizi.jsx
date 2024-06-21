@@ -1,4 +1,4 @@
-import LeftMenu from "../LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
 import Risk from "../../assets/risk4.jpg"
 import Risk2 from "../../assets/risk.jpeg"

@@ -1,23 +1,23 @@
 
 //Card images
-import acildurum from "../src/assets/acildurum3.jpg"
-import dsp from "../src/assets/dsp2.jpeg"
-import hijyen from "../src/assets/hijyen3.jpg"
-import hkm from "../src/assets/HKM.jpg"
-import isgEgt from "../src/assets/isgegt.jpg"
-import igu from "../src/assets/igu.jpg"
-import risk from "../src/assets/risk.jpeg"
-import yangin from "../src/assets/yangin.jpg"
-import yuksek2 from "../src/assets/yuksek2.jpg"
+import acildurum from "./assets/acildurum3.jpg"
+import dsp from "./assets/dsp2.jpeg"
+import hijyen from "./assets/hijyen3.jpg"
+import hkm from "./assets/HKM.jpg"
+import isgEgt from "./assets/isgegt.jpg"
+import igu from "./assets/igu.jpg"
+import risk from "./assets/risk.jpeg"
+import yangin from "./assets/yangin.jpg"
+import yuksek2 from "./assets/yuksek2.jpg"
 
 //Slide images
-import yuksek from "../src/assets/yuksek.jpeg";
-import isgegt from "../src/assets/isgegt.jpg";
-import risk2 from "../src/assets/risk3.jpg"
-import health from "../src/assets/health.jpg"
-import emergency from "../src/assets/emergency.jpg"
-import yangin4 from "../src/assets/yangin4.jpeg"
-import healthsafety from "../src/assets/healthsafety.jpg"
+import yuksek from "./assets/yuksek.jpeg";
+import isgegt from "./assets/isgegt.jpg";
+import risk2 from "./assets/risk3.jpg"
+import health from "./assets/health.jpg"
+import emergency from "./assets/emergency.jpg"
+import yangin4 from "./assets/yangin4.jpeg"
+import healthsafety from "./assets/healthsafety.jpg"
 
 //Referans images
 import ataSoyk from "./assets/ref/atakentSoyak.jpg"

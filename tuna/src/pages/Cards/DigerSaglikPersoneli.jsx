@@ -1,4 +1,4 @@
-import LeftMenu from "../LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
 import dsp from "../../assets/other4.jpg";
 import dsp2 from "../../assets/other3.jpg";

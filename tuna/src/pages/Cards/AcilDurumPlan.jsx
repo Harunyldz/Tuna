@@ -1,4 +1,4 @@
-import LeftMenu from "../LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
 import acilDr from "../../assets/acil-durum.jpg";
 import acilDr2 from "../../assets/acildurum3.jpg";

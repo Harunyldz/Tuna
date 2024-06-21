@@ -1,4 +1,4 @@
-import LeftMenu from "../LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 import "./Carts.css";
 import hkm from "../../assets/HKM.jpg";
 import hkm2 from "../../assets/hkm2.png";

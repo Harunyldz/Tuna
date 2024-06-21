@@ -1,0 +1,122 @@
+.service-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+}
+
+.service {
+    width: 100%;
+    margin: 2vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    text-align: center;
+}
+
+.service h2 {
+    font-size: 2vw;
+    color: #0a2c3c;
+}
+
+.service p {
+    margin-bottom: 2vw;
+    color: #555;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.service .service-carts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2vw;
+    row-gap: 2vw;
+}
+
+.service-carts .service-cart {
+    height: 15vw;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-carts .service-cart:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.service-carts .service-cart:hover .icon {
+    margin-left: 5vw;
+    opacity: 1;
+}
+
+.service-cart img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.service-cart .service-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.service-carts .service-cart .icon {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    color: #f89715;
+    transition: all 0.5s ease-out;
+}
+
+.service-carts .service-cart .service-title {
+    font-size: 1.1vw;
+    color: #555;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+.service .service-btns{
+    margin-top: 2vw;
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+
+.service-btns .service-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 5vw;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: font-size 0.3s ease-in-out;
+}
+
+.service-btns .service-btn1{
+    background-color: #f89715;
+}
+.service-btns .service-btn2{
+    background-color: #0a2c3c;
+}
+.service-btns .service-btn1:hover {
+    font-size: 1.8vw;
+}
+.service-btns .service-btn2:hover {
+    font-size: 1.8vw;
+}
