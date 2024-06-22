@@ -55,24 +55,24 @@ const Service = () => {
         </div>
         <div className="service-btns">
           <motion.div
-            as={Link}
-            to="/hizmetlerimiz"
-            className="service-btn1 service-btn"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
+            className="motion-link-wrapper"
           >
-            Hizmetlerimiz
+            <Link to="/hizmetlerimiz" className="service-btn1 service-btn">
+              Hizmetlerimiz
+            </Link>
           </motion.div>
           <motion.div
-            as={Link}
-            to="/egitimlerimiz"
-            className="service-btn2 service-btn"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
+            className="motion-link-wrapper"
           >
-            Eğitimlerimiz
+            <Link to="/egitimlerimiz" className="service-btn2 service-btn">
+              Eğitimlerimiz
+            </Link>
           </motion.div>
         </div>
       </motion.div>

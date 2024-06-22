@@ -33,6 +33,11 @@ const Referans = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="ref-swiper"
+        breakpoints={{
+          480: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {referanslar.map((referans) => (
           <SwiperSlide key={referans.id}>

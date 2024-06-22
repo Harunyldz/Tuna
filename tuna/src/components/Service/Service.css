@@ -26,6 +26,25 @@
     letter-spacing: 0.2px;
 }
 
+@media screen and (max-width:480px) {
+    .service-container {
+        width: 90%;
+        margin: 5vw auto;
+    }
+
+    .service h2 {
+        font-size: 5vw;
+        margin-bottom: 1vw;
+    }
+
+    .service p {
+        margin-bottom: 5vw;
+        color: #555;
+        line-height: 1.2;
+        letter-spacing: 0.2px;
+    }
+}
+
 .service .service-carts {
     width: 100%;
     display: grid;
@@ -83,14 +102,37 @@
     font-weight: 600;
 }
 
-.service .service-btns{
+@media screen and (max-width:480px) {
+    .service-carts .service-cart {
+        height: 24vw;
+    }
+
+    .service-cart .service-content {
+        display: flex;
+        align-items: center;
+        padding: 10px ;
+    }
+
+    .service-carts .service-cart .icon {
+        display: none;
+    }
+    .service-carts .service-cart .service-title {
+        font-size: 1.8vw;
+    }
+}
+
+.service .service-btns {
     margin-top: 2vw;
     width: 100%;
     display: flex;
     gap: 1vw;
 }
 
-.service-btns .service-btn{
+.service-btns .motion-link-wrapper{
+    width: 100%;
+}
+
+.service-btns .service-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,15 +150,36 @@
     transition: font-size 0.3s ease-in-out;
 }
 
-.service-btns .service-btn1{
+.service-btns .service-btn1 {
     background-color: #f89715;
 }
-.service-btns .service-btn2{
+
+.service-btns .service-btn2 {
     background-color: #0a2c3c;
 }
+
 .service-btns .service-btn1:hover {
     font-size: 1.8vw;
 }
+
 .service-btns .service-btn2:hover {
     font-size: 1.8vw;
+}
+
+@media screen and (max-width:480px) {
+    .service .service-btns {
+        margin-top: 5vw;
+        gap: 3vw;
+    }
+    .service-btns .service-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        font-size: 3vw;
+    }
+
+    .service-btns .service-btn:hover{
+        font-size: 3.5vw;
+    }
 }

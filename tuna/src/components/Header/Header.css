@@ -19,9 +19,21 @@
     gap: 4vw;
 }
 
+@media screen and (max-width: 480px) {
+    .header-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .header {
+        margin: 0;
+        padding: 2rem;
+    }
+}
+
 .header-content {
     flex: 1;
-    border: 1px solid rgba(10,44,60,1) ;
+    border: 1px solid rgba(10, 44, 60, 1);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -33,7 +45,7 @@
     margin-bottom: 1rem;
 }
 
-.header-content h1 span{
+.header-content h1 span {
     font-weight: 900;
 }
 
@@ -41,6 +53,23 @@
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-content {
+        padding-top:10px;
+    }
+
+    .header-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+    
+    .header-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
 
 .header-btn {
