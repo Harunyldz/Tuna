@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
 import logo from "../../assets/logo5.png";
@@ -6,11 +6,9 @@ import { menuItems } from "../../Data";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
-
-
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
     if (window.innerWidth >= 960) {
@@ -24,8 +22,28 @@ const Navbar = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 960) {
+        setDropdown(true);
+      } else {
+        setDropdown(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); 
+
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${isOpen ? "active" : ""}`}>
       <div className="navbar">
         <Link to="/" className="navbar-logo">
           <img src={logo} alt="TUNA Logo" />
@@ -34,7 +52,12 @@ const Navbar = () => {
             <span className="logo-title">İş Güvenliği Hizmetleri</span>
           </div>
         </Link>
-        <ul className="navbar-links">
+        <div className="hamburger-menu" onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
           {menuItems.map((menu) => (
             <li
               className="navbar-link"
@@ -69,9 +92,11 @@ const Navbar = () => {
               )}
             </li>
           ))}
-
           <li>
-            <Link to="/teklifAl"><button className="navbar-btn">Teklif Al</button></Link></li>
+            <Link to="/teklifAl">
+              <button className="navbar-btn">Teklif Al</button>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

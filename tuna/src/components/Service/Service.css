@@ -33,15 +33,16 @@
     }
 
     .service h2 {
-        font-size: 5vw;
+        font-size: 6vw;
         margin-bottom: 1vw;
     }
 
     .service p {
         margin-bottom: 5vw;
         color: #555;
-        line-height: 1.2;
+        line-height: 1.5;
         letter-spacing: 0.2px;
+        font-size: 3.2vw;
     }
 }
 
@@ -104,7 +105,15 @@
 
 @media screen and (max-width:480px) {
     .service-carts .service-cart {
-        height: 24vw;
+        height: 40vw;
+    }
+    .service .service-carts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
     }
 
     .service-cart .service-content {
@@ -117,7 +126,7 @@
         display: none;
     }
     .service-carts .service-cart .service-title {
-        font-size: 1.8vw;
+        font-size: 3vw;
     }
 }
 
@@ -175,7 +184,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 10vw;
+        height: 12vw;
         font-size: 3vw;
     }
 

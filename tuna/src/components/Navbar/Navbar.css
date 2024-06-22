@@ -1,6 +1,7 @@
+
 .navbar-container {
   position: sticky;
-  top:0 ;
+  top: 0;
   transition: all 1s ease;
   width: 100%;
   background: #0a2c3c;
@@ -105,7 +106,7 @@
   margin-left: 0.3vw;
   font-size: 0.8vw;
   position: absolute;
-  top: 20%
+  top: 20%;
 }
 
 .dropdown-menu li {
@@ -127,7 +128,6 @@
   box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.35);
 }
 
-
 .navbar-btn {
   padding: 12px 20px;
   background-color: #f89715;
@@ -144,4 +144,82 @@
   background-color: #e08510;
   box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
   font-weight: bold;
+}
+
+/* Medya Sorguları */
+@media (max-width: 960px) {
+
+  .navbar-container.active {
+    background-color: rgba(0, 0, 0, 0.5); /* Açık menü arka plan rengi */
+    width: 100%; /* Tam genişlik */
+  }
+  
+  .navbar {
+    width: 90%;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    padding: 10px 50px;
+  }
+
+  .navbar-logo img {
+    width: 8vw;
+  }
+
+  .navbar .logo-name {
+    font-size: 4vw;
+  }
+
+  .navbar .logo-title {
+    font-size: 1.5vw;
+  }
+
+  .navbar-links {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+  }
+
+  .navbar-link {
+    margin: 1vw 0;
+  }
+
+  .dropdown-menu {
+    width: 80vw;
+    left: 10vw;
+  }
+
+  .navbar-btn {
+    margin: 2vw 0;
+  }
+
+  .navbar .active  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #f89715;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .navbar.active .hamburger-menu div:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .navbar.active .hamburger-menu div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.active .hamburger-menu div:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
 }

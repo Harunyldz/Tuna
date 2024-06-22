@@ -87,13 +87,13 @@
 
 @media screen and (max-width:480px) {
   .slider-container .swiper {
-    height: 60vw;
+    height: 100vw;
   }
 
   .slide-content {
     position: absolute;
     left: 0;
-    bottom: 10vw;
+    bottom: 20vw;
     background: linear-gradient(to right, rgba(10, 44, 60, 0.9), rgba(10, 44, 60, 0.8), rgba(10, 44, 60, 0.0));
     padding: 5vw 7vw;
     padding-bottom: 5vw;
