@@ -12,6 +12,7 @@ const LeftMenu = () => {
             to={`/${
               cart.type === "hizmet" ? "hizmetlerimiz" : "egitimlerimiz"
             }/${cart.href}`}
+            key={cart.id}
             className={({ isActive }) =>
               isActive ? "list-item active-link" : "list-item"
             }
