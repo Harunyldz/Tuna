@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
     if (window.innerWidth >= 960) {
@@ -22,28 +21,8 @@ const Navbar = () => {
     }
   };
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 960) {
-        setDropdown(true);
-      } else {
-        setDropdown(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); 
-
   return (
-    <div className={`navbar-container ${isOpen ? "active" : ""}`}>
+    <div className="navbar-container" >
       <div className="navbar">
         <Link to="/" className="navbar-logo">
           <img src={logo} alt="TUNA Logo" />
@@ -52,12 +31,7 @@ const Navbar = () => {
             <span className="logo-title">İş Güvenliği Hizmetleri</span>
           </div>
         </Link>
-        <div className="hamburger-menu" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
+        <ul className="navbar-links">
           {menuItems.map((menu) => (
             <li
               className="navbar-link"
