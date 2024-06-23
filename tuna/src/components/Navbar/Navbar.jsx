@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
 import logo from "../../assets/logo5.png";
-import { menuItems } from "../../Data";
+import { menuItems } from "../../utils/Data.js";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

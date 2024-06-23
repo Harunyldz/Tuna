@@ -1,6 +1,6 @@
 import "./Service.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { carts } from "../../Data.js";
+import { carts } from "../../utils/Data.js";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import "./Services.css";
-import { carts } from "../../Data.js";
+import { carts } from "../../utils/Data.js";
 import Cart from "../../components/Cart/Cart.jsx";
 
 const Services = () => {

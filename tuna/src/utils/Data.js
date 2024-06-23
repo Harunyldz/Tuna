@@ -1,36 +1,36 @@
 
 //Card images
-import acildurum from "./assets/acildurum3.jpg"
-import dsp from "./assets/dsp2.jpeg"
-import hijyen from "./assets/hijyen3.jpg"
-import hkm from "./assets/HKM.jpg"
-import isgEgt from "./assets/isgegt.jpg"
-import igu from "./assets/igu.jpg"
-import risk from "./assets/risk.jpeg"
-import yangin from "./assets/yangin.jpg"
-import yuksek2 from "./assets/yuksek2.jpg"
+import acildurum from "../assets/acildurum3.jpg"
+import dsp from "../assets/dsp2.jpeg"
+import hijyen from "../assets/hijyen3.jpg"
+import hkm from "../assets/HKM.jpg"
+import isgEgt from "../assets/isgegt.jpg"
+import igu from "../assets/igu.jpg"
+import risk from "../assets/risk.jpeg"
+import yangin from "../assets/yangin.jpg"
+import yuksek2 from "../assets/yuksek2.jpg"
 
 //Slide images
-import yuksek from "./assets/yuksek3.jpg";
-import isgegt from "./assets/isgegt.jpg";
-import risk2 from "./assets/risk3.jpg"
-import health from "./assets/health.jpg"
-import emergency from "./assets/emergency.jpg"
-import yangin4 from "./assets/yangin4.jpeg"
-import healthsafety from "./assets/healthsafety.jpg"
+import yuksek from "../assets/yuksek3.jpg";
+import isgegt from "../assets/isgegt.jpg";
+import risk2 from "../assets/risk3.jpg"
+import health from "../assets/health.jpg"
+import emergency from "../assets/emergency.jpg"
+import yangin4 from "../assets/yangin4.jpeg"
+import healthsafety from "../assets/healthsafety.jpg"
 
 //Referans images
-import ataSoyk from "./assets/ref/atakentSoyak.jpg"
-import alkur from "./assets/ref/alkur.jpg"
-import ataSinav from "./assets/ref/atakentSinav.jpg"
-import aybak from "./assets/ref/aybakGida.jpg"
-import drn from "./assets/ref/drnGold.jpg"
-import ensarlar from "./assets/ref/ensarlar.jpg"
-import kalemOfset from "./assets/ref/kalemOfset.jpg"
-import macitKoz from "./assets/ref/maciterKozmetik.jpg"
-import mehAk from "./assets/ref/mehmetAkkaya.jpg"
-import muratMat from "./assets/ref/muratMabaacilik.jpg"
-import safira from "./assets/ref/safira.jpg"
+import ataSoyk from "../assets/ref/atakentSoyak.jpg"
+import alkur from "../assets/ref/alkur.jpg"
+import ataSinav from "../assets/ref/atakentSinav.jpg"
+import aybak from "../assets/ref/aybakGida.jpg"
+import drn from "../assets/ref/drnGold.jpg"
+import ensarlar from "../assets/ref/ensarlar.jpg"
+import kalemOfset from "../assets/ref/kalemOfset.jpg"
+import macitKoz from "../assets/ref/maciterKozmetik.jpg"
+import mehAk from "../assets/ref/mehmetAkkaya.jpg"
+import muratMat from "../assets/ref/muratMabaacilik.jpg"
+import safira from "../assets/ref/safira.jpg"
 
 
 //hizmet ve eğitim kartları

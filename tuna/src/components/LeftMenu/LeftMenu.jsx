@@ -1,7 +1,7 @@
 import "./LeftMenu.css";
 import { FaAngleRight } from "react-icons/fa6";
 import { NavLink, Link } from "react-router-dom";
-import { carts } from "../../Data.js";
+import { carts } from "../../utils/Data.js";
 const LeftMenu = () => {
   return (
     <div className="leftmenu">

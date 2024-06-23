@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./Slider.css";
-import { slides } from "../../Data";
+import { slides } from "../../utils/Data.js";
 import { useState } from "react";
 
 const Slider = () => {

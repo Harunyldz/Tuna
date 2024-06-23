@@ -1,7 +1,7 @@
 import "./Cart.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Cart = ({ cart,index }) => {
   return (

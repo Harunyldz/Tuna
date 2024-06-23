@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Info.css";
-import { infoData } from "../../Data.js";
+import { infoData } from "../../utils/Data.js";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import LeftMenu from "../../components/LeftMenu/LeftMenu.jsx";

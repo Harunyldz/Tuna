@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import { referanslar } from "../../Data.js";
+import { referanslar } from "../../utils/Data.js";
 const Referans = () => {
   return (
     <motion.div
