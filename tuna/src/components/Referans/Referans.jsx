@@ -21,8 +21,8 @@ const Referans = () => {
       whileInView={{ opacity: 1, y: 0 }}
     >
       <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
+        slidesPerView={4}
+        spaceBetween={0}
         centeredSlides={false}
         loop={true}
         speed={1500}
@@ -34,6 +34,10 @@ const Referans = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="ref-swiper"
         breakpoints={{
+          360: {
+            slidesPerView: 2,
+            spaceBetween:20
+          },
           480: {
             slidesPerView: 3,
           },

@@ -20,16 +20,9 @@
     align-items: center;
     border: 1px solid #fff5e1;
     border-radius: 10px;
-    padding: 20px;
+    padding: 1.2vw;
     transition: background-color 0.3s ease;
     cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-    .hero {
-        padding: 10px;
-        font-size: 16px;
-    }
 }
 
 .hero-cards .card:hover {
@@ -38,7 +31,7 @@
 
 .card .card-icon {
     color: #fff5e1;
-    font-size: 40px;
+    font-size: 2vw;
     transition: scale 0.3s ease;
 }
 
@@ -48,6 +41,7 @@
 
 .card .card-content {
     color: #fff5e1;
+    font-size: 1.3vw;
 }
 
 .hero-cards .card:hover .card-content span {
@@ -63,7 +57,16 @@
 }
 
 @media screen and (max-width: 480px) {
+    .hero {
+        padding: 2vw;
+    }
+    .hero .card{
+        padding: 4vw;
+    }
+    .card .card-content {
+        font-size: 3.5vw;
+    }
     .card .card-icon {
-        font-size: 24px;
+        font-size: 5vw;
     }
 }

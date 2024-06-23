@@ -23,6 +23,9 @@
     flex-direction: column;
     text-align: left;
 }
+.footer-left h2{
+    font-size: 1.5vw;
+}
 
 .footer-left ul {
     padding: 0;
@@ -36,6 +39,7 @@
     display: flex;
     align-items: center;
     gap: 3px;
+    font-size: 1vw;
 }
 
 .footer-left ul li:hover {
@@ -58,12 +62,12 @@
 }
 
 .footer-logo img {
-    width: 5vw;
+    width: 7vw;
 }
 
 .footer-logo .logo-name {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-bottom: 1vw;
 }
 
@@ -78,7 +82,7 @@
 }
 
 .footer-center .icons li {
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,18 +98,31 @@
     color: #0a2c3c;
 }
 
+.footer-center h3{
+    font-size: 1vw;
+}
+
 .footer-right {
     text-align: right;
     flex: 1;
 }
 
+.footer-right h2{
+    font-size: 1.5vw;
+}
 .footer-right ul {
     padding: 0;
     text-align: right;
 }
 
 .footer-right ul li {
-    margin-bottom: 0.5vw;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+
+.footer-right .map{
+    width: 400px;
+    height: 300px;
 }
 @media screen and (max-width:480px) {
     .footer-container {
@@ -122,23 +139,33 @@
     .footer-left {
         align-items: center;
     }
+
+    .footer-left h2{
+        font-size: 6vw;
+    }
     .footer-left ul li {
         gap: 1vw;
         margin-bottom: 1vw;
+        font-size: 4vw;
     }
     .footer-logo img {
-        width: 20vw;
+        width: 25vw;
     }
     
     .footer-logo .logo-name {
+        font-size: 8vw;
+    }
+
+    .footer-center h3{
         font-size: 5vw;
     }
+    
     .footer-center .icons {
         gap: 5vw;
     }
     
     .footer-center .icons li {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .footer-right {
         text-align: left;
@@ -149,8 +176,17 @@
         padding: 0;
         text-align: left;
     }
+
+    .footer-right h2{
+        font-size: 6vw;
+    }
     
     .footer-right ul li {
         margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+
+    .footer-right .map{
+        width: 300px;
     }
 }

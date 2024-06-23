@@ -44,7 +44,7 @@ const Footer = () => {
                         <ul>
                             <li>İnönü Mah. 375. Sokak No:7 Bağcılar/İstanbul</li>
                             <li>
-                                <iframe src="https://www.google.com/maps/d/u/6/embed?mid=1HvMPDb2MjqMppAGpD0ccpFCZcg-h6-I&ehbc=2E312F" width="400" height="300"></iframe>
+                                <iframe src="https://www.google.com/maps/d/u/6/embed?mid=1HvMPDb2MjqMppAGpD0ccpFCZcg-h6-I&ehbc=2E312F" className='map'></iframe>
                             </li>
                         </ul>
                     </div>
