@@ -4,7 +4,7 @@
     display: flex;
     align-items: stretch;
     padding: 0;
-    gap: 50px;
+    gap:2vw;
 }
 
 .info {
@@ -16,26 +16,27 @@
     justify-content: center;
     align-items: stretch;
     border-radius: 10px;
-    gap: 15px;
+    gap: 1vw;
 }
 
 .info h3 {
     color: #0a2c3c;
     letter-spacing: 0.5px;
+    font-size: 1vw;
 }
 
 .info .hesapla {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1vw;
     border: 1px solid #0a2c3c;
-    padding: 30px;
+    padding: 2vw;
     border-radius: 8px;
 }
 
 .hesapla p{
-    font-size: 14px;
+    font-size: 0.7vw;
 }
 
 .hesapla p::after,
@@ -60,10 +61,11 @@
 
 .hesapla .input select,
 .hesapla .input input {
-    width: 120px;
+    width: 8vw;
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    font-size: 0.8vw;
 }
 
 .hesapla .input select:focus {
@@ -77,25 +79,7 @@
 }
 
 .hesapla .inputs label {
-    font-size: 20px;
-}
-
-.hesapla .hesapla-btn {
-    padding: 10px 40px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #f89715;
-    box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
-    color: #fff;
-    font-weight: bold;
-}
-
-.hesapla .hesapla-btn:hover {
-    background-color: #e08510;
-    box-shadow: 0 6px 12px rgba(224, 133, 16, 0.7);
-    font-weight: bold;
+    font-size:1vw;
 }
 
 /* tablo styles*/
@@ -105,7 +89,7 @@
     align-items: center;
     gap: 10px;
     border: 1px solid #0a2c3c;
-    padding: 20px;
+    padding: 1.5vw;
     border-radius: 8px;
 }
 
@@ -122,8 +106,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 0;
+    padding: 0.5vw 0;
     border-bottom: 1px solid #f89715;
+    font-size: 0.8vw;
 }
 
 .info .info-links{
@@ -133,8 +118,12 @@
     padding:20px;
 }
 
+.info-links p{
+    font-size: 0.8vw;
+}
+
 .info-links .info-teklif{
-    padding: 8px 20px;
+    padding: 0.5vw 1vw;
     background-color: #f89715;
     border-radius: 4px;
     box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);

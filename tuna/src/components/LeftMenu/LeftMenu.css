@@ -15,7 +15,8 @@
     margin-left: 10px;
     color: #333;
     padding: 0;
-  }
+    font-size: 1vw;
+  } 
   
   .leftmenu-list {
     width: 100%;
@@ -36,6 +37,7 @@
     transition: background-color 0.3s ease;
     text-decoration: none;
     color: #555;
+    font-size: 0.8vw;
   }
   
   .leftmenu-list .list-item:hover {
@@ -50,28 +52,28 @@
   .leftmenu-contact {
     width: 100%;
     margin-top: 2vw;
-    /* margin-right: 10px; */
     text-align: center;
     border: 1px solid #f89715;
     padding:  10px;
-    padding-bottom: 40px;
+    padding-bottom:2vw;
     border-radius: 8px;
     box-shadow: 0 0 10px #f89715;
   }
   
   .leftmenu-contact h5 {
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size:1vw;
     color: #333;
   }
   
   .leftmenu-contact p {
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
+    font-size: 0.8vw;
   }
   
   .leftmenu-contact .leftmenu-btn {
-    padding: 8px 16px;
+    padding: 0.5vw 1vw;
     border: none;
     background-color: #f89715;
     color: #fff;
@@ -79,6 +81,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 5px;
+    font-size: 0.8vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .leftmenu-contact .leftmenu-btn:hover {
