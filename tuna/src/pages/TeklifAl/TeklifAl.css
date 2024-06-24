@@ -4,15 +4,15 @@
 }
 
 .teklif-text {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 0.9vw;
+    line-height: 1.5;
     margin-bottom: 40px;
 }
 
 .teklif-form {
-    width: 700px;
-    margin:auto;
-    padding: 20px;
+    width: 40vw;
+    margin: auto;
+    padding: 1vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -29,6 +29,7 @@
 
 .teklif-form .form-left {
     flex: 1;
+    font-size: 0.8vw;
 }
 
 .teklif-form .form-right {
@@ -39,8 +40,9 @@
 
 .teklif-form .form-right h3 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
     padding: 0;
+    font-size: 1vw;
 }
 
 .teklif-form .form-right label {
@@ -48,19 +50,12 @@
     align-items: center;
     gap: 5px;
     cursor: pointer;
+    font-size: 0.8vw;
 }
-
-.teklif-form .form-right .checkbox-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 
 .teklif-form label {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .teklif-form input[type="text"],
@@ -73,7 +68,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 0.8vw;
     outline: none;
     margin-top: 5px;
 }
@@ -88,7 +83,7 @@
     cursor: pointer;
 }
 
-.teklif-form select:focus{
+.teklif-form select:focus {
     border: 1px solid #f89715;
 }
 
@@ -102,8 +97,8 @@
     background-color: #f89715;
     color: #fff;
     border: none;
-    padding: 12px 50px;
-    font-size: 16px;
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -111,4 +106,70 @@
 
 .teklif-form button[type="submit"]:hover {
     background-color: #e08510;
+}
+
+.form-bottom label {
+    font-size: 0.8vw;
+}
+
+@media screen and (max-width:480px) {
+    .teklif {
+        width: 100%;
+        margin:5vw auto;
+    }
+
+    .teklif-text {
+        font-size: 4vw;
+        line-height: 1.3;
+        margin: 5vw;
+    }
+
+    .teklif-form {
+        width: 80%;
+        margin: auto;
+        padding: 2vw;
+    }
+
+    .teklif-form .form-top {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .teklif-form .form-left {
+        font-size: 4vw;
+    }
+
+    .teklif-form .form-right h3 {
+        margin-bottom: 2vw;
+        font-size: 5vw;
+    }
+
+    .teklif-form .form-right label {
+        gap: 1vw;
+        font-size: 4vw;
+    }
+
+    .teklif-form label {
+        margin: 1vw 0;
+        padding: 1vw;
+    }
+
+    .teklif-form input[type="text"],
+    .teklif-form input[type="email"],
+    .teklif-form input[type="tel"],
+    .teklif-form input[type="number"],
+    .teklif-form textarea,
+    .teklif-form select {
+        font-size: 3vw;
+    }
+    .teklif-form textarea {
+      font-size: 4vw;
+    }
+    .form-bottom label {
+        font-size:4vw;
+    }
+    .teklif-form button[type="submit"] {
+        padding: 1.5vw 5vw;
+        font-size: 5vw;
+    }
 }

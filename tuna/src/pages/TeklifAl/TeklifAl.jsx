@@ -67,7 +67,7 @@ function TeklifAl() {
         <div className="form-top">
           <div className="form-left">
             <label className="name">
-              Adınız Soyadınız:
+              Adınız Soyadınız
               <input
                 type="text"
                 value={name}
@@ -76,7 +76,7 @@ function TeklifAl() {
               />
             </label>
             <label className="email">
-              E-Posta Adresiniz:
+              E-Posta Adresiniz
               <input
                 type="email"
                 value={email}
@@ -85,7 +85,7 @@ function TeklifAl() {
               />
             </label>
             <label className="phone">
-              Telefon:
+              Telefon
               <input
                 type="tel"
                 value={phone}
@@ -94,7 +94,7 @@ function TeklifAl() {
               />
             </label>
             <label className="person-count">
-              Çalışan Sayısı:
+              Çalışan Sayısı
               <input
                 type="number"
                 min={1}
@@ -104,7 +104,7 @@ function TeklifAl() {
               />
             </label>
             <label>
-              İşyeri Tehlike Sınıfı:
+              İşyeri Tehlike Sınıfı
               <select
                 value={riskClass}
                 onChange={(e) => setRiskClass(e.target.value)}
@@ -116,7 +116,7 @@ function TeklifAl() {
             </label>
           </div>
           <label className="form-right">
-            <h3>İstediğiniz hizmetleri seçiniz:</h3>
+            <h3>İstediğiniz hizmetleri seçiniz</h3>
             <label>
               <input
                 type="checkbox"
@@ -189,40 +189,11 @@ function TeklifAl() {
               />
               Hijyen Eğitimi (E-Devlet Onaylı)
             </label>
-            {/* <label>
-              <input
-                type="checkbox"
-                value="Bscı Denetim Danışmanlığı"
-                checked={services.includes("Bscı Denetim Danışmanlığı")}
-                onChange={handleCheckboxChange}
-              />
-              Bscı Denetim Danışmanlığı
-            </label> */}
-            {/* <label>
-              <input
-                type="checkbox"
-                value="Fama Denetim Danışmanlığı"
-                checked={services.includes("Fama Denetim Danışmanlığı")}
-                onChange={handleCheckboxChange}
-              />
-              Fama Denetim Danışmanlığı
-            </label> */}
-            {/* <label>
-              <input
-                type="checkbox"
-                value="Sosyal Uygunluk Denetim Danışmanlığı"
-                checked={services.includes(
-                  "Sosyal Uygunluk Denetim Danışmanlığı"
-                )}
-                onChange={handleCheckboxChange}
-              />
-              Sosyal Uygunluk Denetim Danışmanlığı
-            </label> */}
           </label>
         </div>
         <div className="form-bottom">
           <label>
-            Ek hizmet talebiniz varsa bu alana yazarak belirtebilirsiniz:
+            Ek hizmet talebiniz varsa bu alana yazarak belirtebilirsiniz
             <textarea
               value={additionalRequest}
               onChange={(e) => setAdditionalRequest(e.target.value)}
