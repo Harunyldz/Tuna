@@ -13,3 +13,15 @@
     gap: 2vw;
     color: #8c8c8c;
 }
+
+@media screen and (max-width:480px) {
+    .services-container {
+        margin: 5vw 0;
+    }
+
+    .services {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+}

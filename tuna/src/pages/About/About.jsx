@@ -7,7 +7,7 @@ const About = () => {
     <div className="about-container">
       <div className="about-header">
         <div className="about-img">
-          <img src={logo5} alt="" />
+          <img src={logo5} alt="Tuna isg logo" />
         </div>
         <div>
           <h1>TUNA İŞ GÜVENLİĞİ HİZMETLERİ</h1>
