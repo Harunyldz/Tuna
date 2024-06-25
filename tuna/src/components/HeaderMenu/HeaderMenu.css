@@ -58,15 +58,15 @@
 
 @media screen and (max-width: 480px) {
     .hero {
-        padding: 2vw;
+        padding: 2vw 1vw;
     }
     .hero .card{
-        padding: 4vw;
+        padding: 4vw 1vw;
     }
-    .card .card-content {
-        font-size: 3.5vw;
+    .card .card-content h3{
+        font-size:4vw;
     }
     .card .card-icon {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }

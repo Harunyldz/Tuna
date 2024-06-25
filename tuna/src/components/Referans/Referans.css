@@ -68,23 +68,23 @@
   }
   .referans .ref-swiper {
     width: 90vw;
-    height: 20vw;
+    height: 24vw;
     padding: 0 20px;
   }
 
   .referans .swiper-slide {
-    width: 150px;
+    width: 120px;
     align-items: center;
   }
 
   .referans .swiper-slide img {
-    width: 100px;
+    width: 120px;
   }
 
   .ref-swiper .swiper-button-next,
   .ref-swiper .swiper-button-prev {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .ref-swiper .swiper-button-next::after,

@@ -27,20 +27,6 @@
   color: #666;
 }
 
-@media screen and (max-width: 480px) {
-  .contact-container {
-    width: 80%;
-  }
-
-  .contact-header h1 {
-    font-size: 5vw;
-  }
-
-  .contact-header p {
-    font-size: 3vw;
-  }
-}
-
 .contact-form {
   margin: 0;
   display: flex;
@@ -103,16 +89,33 @@
 }
 
 @media screen and (max-width: 480px) {
+  .contact-container {
+    width: 80%;
+  }
+
+  .contact-header h1 {
+    font-size: 6vw;
+  }
+
+  .contact-header p {
+    font-size: 3.5vw;
+  }
+
   .contact-form form {
     width: 100%;
   }
 
   .form-group label {
-    font-size: 3vw;
+    font-size: 3.5vw;
     letter-spacing: 0.5px;
   }
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 3.5vw;
+  }
   .submit-button {
-    padding: 1.5vw 5vw;
+    padding: 2vw 6vw;
     font-size: 4vw;
   }
 }

@@ -116,8 +116,14 @@
 }
 
 .footer-right ul li {
-    margin-bottom: 1vw;
+    margin: 1vw 0;
     font-size: 1vw;
+}
+
+.footer-right .footer-contact{
+    color: #f89715;
+    font-size: 1vw;
+    margin-bottom: 2vw;
 }
 
 .footer-right .map{
@@ -183,6 +189,10 @@
     
     .footer-right ul li {
         margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+
+    .footer-right .footer-contact{
         font-size: 4vw;
     }
 

@@ -2,3 +2,9 @@
     width: 75%;
     margin: auto;
 }
+@media screen and (max-width:480px) {
+    .contact{
+        width: 90%;
+        margin:5vw auto;
+    }
+}

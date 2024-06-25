@@ -43,7 +43,7 @@
         color: #555;
         line-height: 1.5;
         letter-spacing: 0.2px;
-        font-size: 3.2vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -114,7 +114,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         column-gap: 2vw;
-        row-gap: 2vw;
+        row-gap: 5vw;
     }
 
     .service-cart .service-content {
@@ -127,7 +127,7 @@
         display: none;
     }
     .service-carts .service-cart .service-title {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -185,11 +185,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 12vw;
-        font-size: 3vw;
+        height: 15vw;
+        font-size: 4vw;
     }
 
     .service-btns .service-btn:hover{
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 }
