@@ -101,16 +101,16 @@
     }
 
     .card-content h3 {
-        font-size: 4.5vw;
+        font-size: 5vw;
         margin-top: 5vw;
     }
 
     .card-content h4 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     .card-content p {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .card-images {
@@ -118,10 +118,10 @@
     }
 
     .card-content ul li {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .card-content table {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
