@@ -14,24 +14,25 @@
     line-height: 1.5;
 }
 
-.card-content h1{
+.card-content h1 {
     margin: 0;
     margin-bottom: 2vw;
-    font-size: 1.6vw;;
+    font-size: 1.6vw;
+    ;
 }
 
-.card-content h3{
+.card-content h3 {
     text-align: center;
     margin-top: 2vw;
     font-size: 1.1vw;
 }
 
-.card-content h4{
+.card-content h4 {
     margin-bottom: 5px;
     font-size: 0.9vw;
 }
 
-.card-content p{
+.card-content p {
     margin-top: 0;
     font-size: 0.8vw;
 }
@@ -62,23 +63,65 @@
     object-fit: cover;
 }
 
-.card-content ul{
+.card-content ul {
     padding: 0;
 }
 
-.card-content ul li{
+.card-content ul li {
     margin-bottom: 5px;
+    font-size: 0.8vw;
 }
 
-.card-content table{
+.card-content table {
     width: 100%;
+    font-size: 0.8vw;
 }
 
-.card-content table tr{
-text-align: left;
+.card-content table tr {
+    text-align: left;
 }
 
 .card-content a {
     margin-left: 5px;
     color: #f89715;
+}
+
+@media screen and (max-width:480px) {
+    .card-container {
+        width: 90%;
+    }
+
+    .card-container .card-content {
+        flex: 1;
+        margin-top: 5vw;
+    }
+
+    .card-content h1 {
+        font-size:6vw;
+    }
+
+    .card-content h3 {
+        font-size: 5vw;
+        margin-top: 5vw;
+    }
+
+    .card-content h4 {
+        font-size: 4vw;
+    }
+
+    .card-content p {
+        font-size: 3.5vw;
+    }
+
+    .card-images {
+        display: none;
+    }
+
+    .card-content ul li {
+        font-size: 3.5vw;
+    }
+
+    .card-content table {
+        font-size: 3.5vw;
+    }
 }

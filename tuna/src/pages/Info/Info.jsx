@@ -60,7 +60,7 @@ const Info = () => {
           <h3>İş Güvenliği Gerekli Hizmet Bilgisi</h3>
           <div className="inputs">
             <div className="input">
-              <label htmlFor="risk-levels">Tehlike Sınıfı : </label>
+              <label htmlFor="risk-levels">Tehlike Sınıfı </label>
               <select
                 name="risk-levels"
                 id="risk-levels"
@@ -72,7 +72,7 @@ const Info = () => {
               </select>
             </div>
             <div className="input">
-              <label htmlFor="">Çalışan Sayısı : </label>
+              <label htmlFor="">Çalışan Sayısı </label>
               <input
                 type="number"
                 min={1}

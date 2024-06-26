@@ -160,7 +160,7 @@
     .teklif-form input[type="number"],
     .teklif-form textarea,
     .teklif-form select {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .teklif-form textarea {
       font-size: 4vw;
@@ -171,5 +171,6 @@
     .teklif-form button[type="submit"] {
         padding: 1.5vw 5vw;
         font-size: 5vw;
+        margin-left: 1vw;
     }
 }
