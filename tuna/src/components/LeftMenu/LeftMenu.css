@@ -89,3 +89,9 @@
     background-color: #e08010;
   }
   
+  @media screen and (max-width:480px) {
+    
+.leftmenu {
+display: none;
+}
+  }
