@@ -14,6 +14,17 @@
     color: #8c8c8c;
 }
 
+@media screen and (max-width:1024px) {
+    .services-container {
+        margin: 5vw 0;
+    }
+
+    .services {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vw;
+    }
+}
 @media screen and (max-width:480px) {
     .services-container {
         margin: 5vw 0;

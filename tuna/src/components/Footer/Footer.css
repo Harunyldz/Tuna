@@ -1,4 +1,5 @@
 .footer-container {
+    margin-top: 2em;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -8,7 +9,6 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    gap: 5vw;
     width: 75%;
     margin: auto;
     color: #f89715;
@@ -18,13 +18,11 @@
 
 .footer-left {
     flex: 1;
+    min-width: 300px;
     display: flex;
     align-items: start;
     flex-direction: column;
     text-align: left;
-}
-.footer-left h2{
-    font-size: 1.5vw;
 }
 
 .footer-left ul {
@@ -32,26 +30,27 @@
 }
 
 .footer-left ul li {
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.5em;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #f89715;
     display: flex;
     align-items: center;
     gap: 3px;
-    font-size: 1vw;
+    font-size: 1em;
 }
 
 .footer-left ul li:hover {
-    margin-left: 1vw;
+    margin-left: 1em;
 }
 
 .footer-center {
+    min-width: 300px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .footer-logo {
@@ -62,33 +61,32 @@
 }
 
 .footer-logo img {
-    width: 7vw;
+    width: 100px;
 }
 
 .footer-logo .logo-name {
     font-weight: bold;
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    font-size: 2em;
 }
 
 .footer-center .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5vw;
+    gap: 1em;
     padding: 0;
     margin-top: 0;
     color: #f89715;
 }
 
 .footer-center .icons li {
-    font-size: 2vw;
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 0.5vw;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 4px;
     transition: all 0.3s ease-in;
     color: #f89715;
 }
@@ -98,105 +96,55 @@
     color: #0a2c3c;
 }
 
-.footer-center h3{
-    font-size: 1vw;
-}
-
 .footer-right {
     text-align: right;
     flex: 1;
+    min-width: 300px;
 }
 
-.footer-right h2{
-    font-size: 1.5vw;
-}
 .footer-right ul {
     padding: 0;
     text-align: right;
 }
 
 .footer-right ul li {
-    margin: 1vw 0;
-    font-size: 1vw;
+    margin: 1em 0;
+    font-size: 1em;
 }
 
-.footer-right .footer-contact{
+.footer-right .footer-contact {
     color: #f89715;
-    font-size: 1vw;
-    margin-bottom: 2vw;
+    font-size: 1em;
 }
 
-.footer-right .map{
-    width: 400px;
-    height: 300px;
+.footer-right .map {
+    width: 60%;
+    height: 250px;
 }
+
 @media screen and (max-width:480px) {
-    .footer-container {
-     margin-top: 5vw;
-    }
+
     .footer {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 5vw;
         width: 90%;
     }
-    .footer-left {
-        align-items: center;
+
+    .footer-center {
+        margin: 0 auto;
     }
 
-    .footer-left h2{
-        font-size: 6vw;
-    }
-    .footer-left ul li {
-        gap: 1vw;
-        margin-bottom: 1vw;
-        font-size: 4vw;
-    }
-    .footer-logo img {
-        width: 25vw;
-    }
-    
-    .footer-logo .logo-name {
-        font-size: 8vw;
-    }
-
-    .footer-center h3{
-        font-size: 5vw;
-    }
-    
-    .footer-center .icons {
-        gap: 5vw;
-    }
-    
-    .footer-center .icons li {
-        font-size: 8vw;
-    }
     .footer-right {
         text-align: left;
         flex: 1;
     }
-    
+
     .footer-right ul {
         padding: 0;
         text-align: left;
     }
 
-    .footer-right h2{
-        font-size: 6vw;
-    }
-    
-    .footer-right ul li {
-        margin-bottom: 2vw;
-        font-size: 4vw;
-    }
-
-    .footer-right .footer-contact{
-        font-size: 4vw;
-    }
-
-    .footer-right .map{
-        width: 300px;
+    .footer-right .map {
+        width: 80%;
     }
 }
