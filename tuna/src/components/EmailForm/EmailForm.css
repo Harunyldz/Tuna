@@ -1,6 +1,6 @@
 .contact-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 5vw auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -87,8 +87,8 @@
 
 @media screen and (max-width: 480px) {
   .contact-container {
-    width: 85%;
-    margin: 5vw 0;
+    width: 80%;
+    margin: 5vw auto;
   }
 
   .contact-form form {

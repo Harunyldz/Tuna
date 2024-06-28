@@ -14,7 +14,7 @@
     color: #8c8c8c;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .services-container {
         margin: 5vw 0;
     }

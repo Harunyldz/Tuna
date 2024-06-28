@@ -52,7 +52,7 @@ const LeftMenu = () => {
         </NavLink>
       </ul>
       <div className="leftmenu-contact">
-        <h5>Güvenliğiniz bir adım uzağınızda</h5>
+        <h3>Güvenliğiniz bir adım uzağınızda</h3>
         <p>
           İş sağlığı ve güvenliği hizmetlerimizle yanınızdayız. Hemen teklif
           almak için tıklayınız.
@@ -60,7 +60,7 @@ const LeftMenu = () => {
         <Link to="/TeklifAl" className="leftmenu-btn">
           Teklif Al
         </Link>
-        <h5>Aklınıza takılan bir şey mi var?</h5>
+        <h3>Aklınıza takılan bir şey mi var?</h3>
         <p>
           İş Güvenliği Hizmetlerimizle alakalı detaylı bilgi almak için bize
           ulaşabilirsiniz.

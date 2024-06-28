@@ -13,7 +13,7 @@
     gap: 2vw;
     color: #8c8c8c;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .trainings-container {
         margin: 5vw 0;
     }

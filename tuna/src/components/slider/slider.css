@@ -59,7 +59,7 @@
 }
 
 .slide-text {
-  font: 1.6vw "Roboto Slab", serif;
+  font: 1.7em "Roboto Slab", serif;
   color: #fff5e1;
 }
 
@@ -95,20 +95,18 @@
     left: 0;
     bottom: 10vw;
     background: linear-gradient(to right, rgba(10, 44, 60, 0.9), rgba(10, 44, 60, 0.8), rgba(10, 44, 60, 0.0));
-    padding: 5vw 7vw;
-    padding-bottom: 5vw;
+    padding: 5vw;
     width: 60vw;
   }
 
   .slide-text {
-    font: 3vw "Roboto Slab", serif;
+    font: 0.8em"Roboto Slab", serif;
     color: #fff5e1;
   }
 
   .slide-content .slide-btn {
-    padding: 2vw 5vw;
+    padding: 0.7em 1.6em;
     background-color: #f89715;
-    font: bold 3vw "Roboto Slab", serif;
+    font-size: 0.7em;
   }
-
 }

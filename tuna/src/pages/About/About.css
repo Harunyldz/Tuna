@@ -13,7 +13,12 @@
 }
 
 .about-header h1{
-    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header h1 span{
+    color: #f89715;
 }
 
 .about-header .about-img {
@@ -22,13 +27,11 @@
 }
 
 .about-header img {
-    width: 5vw;
+    width: 100px;
 }
 
 .about-content p {
-    font-size: 1vw;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: justify;
 }
 
@@ -47,17 +50,20 @@
     }
     
     .about-header h1{
-        font-size: 5vw;
+        font-size:1.6em;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .about-header h1 span{
+        font-size: 1.4em;
     }
     
     .about-header img {
-        width: 15vw;
+        width: 80px;
     }
     
     .about-content p {
-        font-size: 3.5vw;
-        letter-spacing: 0.3px;
-        line-height: 1.3;
         text-align: left;
     }
 }

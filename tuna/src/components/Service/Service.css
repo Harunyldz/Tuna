@@ -15,36 +15,14 @@
 }
 
 .service h2 {
-    font-size: 2vw;
+    font-size: 2em;
     color: #0a2c3c;
 }
 
 .service p {
-    margin-bottom: 2vw;
+    margin-bottom: 1em;
     color: #555;
     line-height: 1.5;
-    letter-spacing: 0.2px;
-    font-size: 1vw;
-}
-
-@media screen and (max-width:480px) {
-    .service-container {
-        width: 90%;
-        margin: 5vw auto;
-    }
-
-    .service h2 {
-        font-size: 6vw;
-        margin-bottom: 1vw;
-    }
-
-    .service p {
-        margin-bottom: 5vw;
-        color: #555;
-        line-height: 1.5;
-        letter-spacing: 0.2px;
-        font-size: 3.5vw;
-    }
 }
 
 .service .service-carts {
@@ -52,12 +30,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 2vw;
-    row-gap: 2vw;
+    column-gap: 2em;
+    row-gap: 2em;
 }
 
 .service-carts .service-cart {
-    height: 15vw;
+    height: 280px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -69,14 +47,9 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
-.service-carts .service-cart:hover .icon {
-    margin-left: 5vw;
-    opacity: 1;
-}
-
 .service-cart img {
     width: 100%;
-    height: 70%;
+    height: 75%;
     object-fit: cover;
     object-position: top;
 }
@@ -84,51 +57,29 @@
 .service-cart .service-content {
     display: flex;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0.5em 1em;
 }
 
 .service-carts .service-cart .icon {
     opacity: 0;
     display: flex;
     align-items: center;
-    font-size: 2.5vw;
-    margin-left: 2vw;
+    font-size: 2.2em;
+    margin-left: 1em;
     color: #f89715;
     transition: all 0.5s ease-out;
 }
 
+.service-carts .service-cart:hover .icon {
+    margin-left: 2em;
+    opacity: 1;
+}
+
 .service-carts .service-cart .service-title {
-    font-size: 1.1vw;
+    font-size: 1.1em;
     color: #555;
     letter-spacing: 0.3px;
     font-weight: 600;
-}
-
-@media screen and (max-width:480px) {
-    .service-carts .service-cart {
-        height: 40vw;
-    }
-    .service .service-carts {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        column-gap: 2vw;
-        row-gap: 5vw;
-    }
-
-    .service-cart .service-content {
-        display: flex;
-        align-items: center;
-        padding: 10px ;
-    }
-
-    .service-carts .service-cart .icon {
-        display: none;
-    }
-    .service-carts .service-cart .service-title {
-        font-size: 3.5vw;
-    }
 }
 
 .service .service-btns {
@@ -138,7 +89,7 @@
     gap: 1vw;
 }
 
-.service-btns .motion-link-wrapper{
+.service-btns .motion-link-wrapper {
     width: 100%;
 }
 
@@ -151,7 +102,7 @@
     border: none;
     outline: none;
     border-radius: 8px;
-    font-size: 1.5vw;
+    font-size: 1.8em;
     cursor: pointer;
     letter-spacing: 1px;
     font-weight: 600;
@@ -168,28 +119,63 @@
     background-color: #0a2c3c;
 }
 
-.service-btns .service-btn1:hover {
-    font-size: 1.8vw;
-}
-
-.service-btns .service-btn2:hover {
-    font-size: 1.8vw;
+.service-btns .service-btn:hover {
+    font-size: 2em;
 }
 
 @media screen and (max-width:480px) {
+    .service-container {
+        width: 90%;
+        margin: 5vw auto;
+    }
+
+    .service h2 {
+        margin-bottom: 1vw;
+    }
+
+    .service p {
+        margin-bottom: 5vw;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .service-carts .service-cart {
+        height: 180px;
+    }
+
+    .service .service-carts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 0.8em;
+        row-gap: 1em;
+    }
+
+    .service-cart .service-content {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .service-carts .service-cart .icon {
+        display: none;
+    }
+
+    .service-carts .service-cart .service-title {
+        font-size: 0.9em;
+    }
+
     .service .service-btns {
         margin-top: 5vw;
         gap: 3vw;
     }
+
     .service-btns .service-btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 15vw;
-        font-size: 4vw;
-    }
-
-    .service-btns .service-btn:hover{
-        font-size: 5vw;
+        height: 70px;
+        font-size: 1.2em;
     }
 }

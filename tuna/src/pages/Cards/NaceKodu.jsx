@@ -101,33 +101,33 @@ const NaceKodu = () => {
             başlıkları verilen hizmetler OSGB firmalarından alınmaya devam
             edecektir.
           </p>
-            <p>İSG Risk Değerlendirme Raporu Hazırlanması</p>
-            <p>
-              Acil Durum Planları, Yangın, Tahliye Eğitimi ve Tatbikatları
-              (Yılda 1)
-            </p>
-            <p>Tüm Çalışanların Sertifikalı İSG Eğitimi Alınması</p>
-            <p>
-              Çalışanlar arasından belirli kişilerin ilkyardımcı sertifikası
-              alması
-            </p>
-            <p>
-              Koruyucu donanım ve ekipmanların belirlenmesi, temin edilmesi,
-              eğitimi.
-            </p>
-            <p>
-              Personel görev tanımlarının, İSG Talimatlarının ve prosedürlerin
-              hazırlanması
-            </p>
-            <p>
-              İşyerinde kullanılması gereken iş güvenliği işaretlerinin
-              belirlenmesi
-            </p>
-            <p>
-              Ortam ölçümleri, mühendislik kontrolleri ile işe – işyerine özgü
-              olan ekipmanların periyodik kontrolleri gibi İSG gerekliliklerinin
-              yerine getirilmesini sağlamak.
-            </p>
+          <p>İSG Risk Değerlendirme Raporu Hazırlanması</p>
+          <p>
+            Acil Durum Planları, Yangın, Tahliye Eğitimi ve Tatbikatları (Yılda
+            1)
+          </p>
+          <p>Tüm Çalışanların Sertifikalı İSG Eğitimi Alınması</p>
+          <p>
+            Çalışanlar arasından belirli kişilerin ilkyardımcı sertifikası
+            alması
+          </p>
+          <p>
+            Koruyucu donanım ve ekipmanların belirlenmesi, temin edilmesi,
+            eğitimi.
+          </p>
+          <p>
+            Personel görev tanımlarının, İSG Talimatlarının ve prosedürlerin
+            hazırlanması
+          </p>
+          <p>
+            İşyerinde kullanılması gereken iş güvenliği işaretlerinin
+            belirlenmesi
+          </p>
+          <p>
+            Ortam ölçümleri, mühendislik kontrolleri ile işe – işyerine özgü
+            olan ekipmanların periyodik kontrolleri gibi İSG gerekliliklerinin
+            yerine getirilmesini sağlamak.
+          </p>
 
           <p>
             OSGB hizmet süresi hesaplama dolayısıyla görevlendirilen uzman

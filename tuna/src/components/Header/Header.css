@@ -29,8 +29,7 @@
 }
 
 .header-content h1 {
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0.2em;
 }
 
 .header-content h1 span {
@@ -38,17 +37,17 @@
 }
 
 .header-content p {
-    font-size: 1vw;
-    line-height: 1.8;
-    margin-bottom: 1.5vw;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
 }
 
 .header-btn {
     background-color: #f89715;
     border: none;
     color: #ffffff;
-    padding: 0.75vw 1.5vw;
-    font-size: 1vw;
+    padding: 15px 20px;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -76,21 +75,20 @@
 
 
     .header-content {
-        padding: 1vw 3vw;
+        padding: 1em ;
     }
 
     .header-content h1 {
-        font-size: 6vw;
+        font-size: 1.6em;
     }
 
     .header-content p {
-        font-size: 3.5vw;
-        line-height: 1.5;
+        font-size: 1em;
+        line-height: 1.4;
     }
 
     .header-btn {
-        padding: 3vw 4vw;
-        font-size: 3.5vw;
-        margin: 3vw 0;
+        font-size: 1em;
+        padding: 12px 15px;
     }
 }

@@ -1,16 +1,23 @@
 import logo5 from "../../assets/logo5.png";
 import "./About.css";
-
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <motion.div
+      className="about-container"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="about-header">
         <div className="about-img">
           <img src={logo5} alt="Tuna isg logo" />
         </div>
         <div>
-          <h1>TUNA İŞ GÜVENLİĞİ HİZMETLERİ</h1>
+          <h1>
+            <span>TUNA</span> İŞ GÜVENLİĞİ HİZMETLERİ
+          </h1>
         </div>
       </div>
 
@@ -38,9 +45,8 @@ const About = () => {
           edilen bir firma olmaktır. Kaliteli hizmet anlayışımızla sektörde
           lider olmayı amaçlıyoruz.
         </p>
-
       </div>
-    </div>
+    </motion.div>
   );
 };
 
