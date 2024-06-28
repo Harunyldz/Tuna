@@ -9,20 +9,18 @@
 
 .info {
     flex: 1;
-    margin:0 8vw;
+    margin:0 5em;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     border-radius: 10px;
-    gap: 1vw;
+    gap: 1em;
 }
 
 .info h3 {
     color: #0a2c3c;
-    letter-spacing: 0.5px;
-    font-size: 1vw;
 }
 
 .info .hesapla {
@@ -33,10 +31,6 @@
     border: 1px solid #0a2c3c;
     padding: 2vw;
     border-radius: 8px;
-}
-
-.hesapla p{
-    font-size: 0.7vw;
 }
 
 .hesapla p::after,
@@ -61,25 +55,22 @@
 
 .hesapla .input select,
 .hesapla .input input {
-    width: 8vw;
+    width: 150px;
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    font-size: 0.8vw;
+    font-size:1em;
 }
 
-.hesapla .input select:focus {
-    border: 1px solid #f89715;
-    outline: 1px solid #f89715;
-}
-
-.hesapla .input input:focus {
+.hesapla .input select:focus,
+.hesapla .input input:focus
+{
     border: 1px solid #f89715;
     outline: 1px solid #f89715;
 }
 
 .hesapla .inputs label {
-    font-size:1vw;
+    font-size:1.1em;
 }
 
 /* tablo styles*/
@@ -89,7 +80,7 @@
     align-items: center;
     gap: 10px;
     border: 1px solid #0a2c3c;
-    padding: 1.5vw;
+    padding: 1em;
     border-radius: 8px;
 }
 
@@ -106,9 +97,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5vw 0;
+    padding: 0.5em 0;
     border-bottom: 1px solid #f89715;
-    font-size: 0.8vw;
 }
 
 .info .info-links{
@@ -118,12 +108,8 @@
     padding:20px;
 }
 
-.info-links p{
-    font-size: 0.8vw;
-}
-
 .info-links .info-teklif{
-    padding: 0.5vw 1vw;
+    padding: 10px 20px;
     background-color: #f89715;
     border-radius: 4px;
     box-shadow: 0 6px 12px rgba(248, 151, 21, 0.5);
@@ -160,25 +146,18 @@
     .info {
         width: 100vw;
         margin:5vw 2vw;
+        gap: 1em;
     }
-    
-    .info h3 {
-        font-size: 4.5vw;
-    }
-    
-    .info .hesapla {
-        padding: 5vw;
-    }
-    
+        
     .hesapla p{
-        font-size:3vw;
+        font-size:0.8em;
     }
     
     .hesapla .inputs {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2vw;
+        gap: 0.5em;
     }
     
     .hesapla .input {
@@ -188,19 +167,8 @@
         gap: 10px;
     }
     
-    .hesapla .input select,
-    .hesapla .input input {
-        width: 30vw;
-        padding: 5px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        font-size:3.5vw;
-    }    
-    .hesapla .inputs label {
-        font-size:3.5vw;
-    }
     .info .tablo {
-        padding: 5vw 0;
+        padding: 1em 0;
     }
     
     .tablo .tablo-items{
@@ -212,23 +180,21 @@
     }
     
     .tablo-items .tablo-item{
-        padding: 1vw 0;
-        font-size: 3.5vw;
+        padding: 0.5em 0;
     }
 
     .info .info-links{
         margin: 10px auto;
         width: 80%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     
     .info-links p{
-        font-size: 4vw;
         line-height: 2;
     }
     
     .info-links .info-teklif{
-        padding: 1.5vw 4vw;
+        padding: 8px 15px;
         background-color: #f89715;
         font-weight: bold;
         margin: 0 10px;

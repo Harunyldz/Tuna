@@ -13,6 +13,9 @@ const Footer = () => {
                 <div className="footer-left">
                     <h2>Tuna İş Güvenliği Hizmetleri</h2>
                     <ul>
+                        <Link to='/info'> <li><FaAngleRight />İş Güvenliği Gereksinimlerini Öğren</li></Link>
+                        <Link to='/nace'> <li><FaAngleRight />Nace Kodu Öğren</li></Link>
+                        <Link to='/isgKatipNasil'> <li><FaAngleRight />İsg Katip Onayı Nasıl Yapılır</li></Link>
                         <Link to='/hizmetlerimiz/is-guvenligi-uzmani'><li><FaAngleRight />İş Güvenliği Uzmanlığı</li></Link>
                         <Link to='/hizmetlerimiz/is-yeri-hekimi'><li><FaAngleRight />İşyeri Hekimliği</li></Link>
                         <Link to='/hizmetlerimiz/diger-saglik-personeli'><li><FaAngleRight />Diğer Sağlık Personeli</li></Link>
