@@ -60,12 +60,12 @@
         padding: 0.2em;
     }
     .hero .card{
-        padding:1em;
+        padding:1em 0;
     }
     .card .card-content h3{
         font-size:0.7em;
     }
     .card .card-icon {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }

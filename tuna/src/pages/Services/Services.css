@@ -31,7 +31,7 @@
     }
 
     .services {
-        width: 80%;
+        width: 90%;
         grid-template-columns: 1fr;
         gap: 5vw;
     }

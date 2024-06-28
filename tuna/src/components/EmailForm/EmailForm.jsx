@@ -43,7 +43,7 @@ const EmailForm = () => {
       transition={{ duration: 1 }}
     >
       <div className="contact-header">
-        <h1>Bizimle İletişime Geçin</h1>
+        <h2>Bizimle İletişime Geçin</h2>
         <p>
           Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede size
           geri dönüş yapacağız.

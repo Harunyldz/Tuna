@@ -155,7 +155,7 @@
     .service-cart .service-content {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
 
     .service-carts .service-cart .icon {
@@ -163,12 +163,12 @@
     }
 
     .service-carts .service-cart .service-title {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .service .service-btns {
-        margin-top: 5vw;
-        gap: 3vw;
+        margin-top: 1em;
+        gap: 1em;
     }
 
     .service-btns .service-btn {

@@ -16,13 +16,14 @@
   margin-bottom: 20px;
 }
 
-.contact-header h1 {
+.contact-header h2 {
   color: #0a2c3c;
   margin-bottom: 10px;
 }
 
 .contact-header p {
   color: #666;
+  margin: 0;
 }
 
 .contact-form {
