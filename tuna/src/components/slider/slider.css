@@ -59,7 +59,7 @@
 }
 
 .slide-text {
-  font: 1.7em "Roboto Slab", serif;
+  font-size: 2em;
   color: #fff5e1;
 }
 
@@ -91,7 +91,6 @@
   }
 
   .slide-content {
-    position: absolute;
     left: 0;
     bottom: 10vw;
     background: linear-gradient(to right, rgba(10, 44, 60, 0.9), rgba(10, 44, 60, 0.8), rgba(10, 44, 60, 0.0));
@@ -100,8 +99,8 @@
   }
 
   .slide-text {
-    font: 0.8em"Roboto Slab", serif;
     color: #fff5e1;
+    font-size: 1em;
   }
 
   .slide-content .slide-btn {
