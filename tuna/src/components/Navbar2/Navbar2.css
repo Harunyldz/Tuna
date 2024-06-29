@@ -1,3 +1,60 @@
+.navbar-links {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar-links>div {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links .navbar-mail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #0a2c3c;
+    cursor: pointer;
+}
+
+.navbar-mail .mail-icon {
+    margin-top: 4px;
+    font-size: 1.2em;
+}
+
+.navbar-links .navbar-socialLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-socialLinks a {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.navbar-socialLinks a:hover {
+    border: 1px solid #f89715;
+    color: #f89715
+}
+
+/* Alt navbarın stilleri*************************************************/
 .navbar-container {
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -24,11 +81,11 @@
 }
 
 .navbar-logo {
-    width: 400px;
+    flex: 2;
     height: 100%;
     display: flex;
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     background: #0a2c3c;
 
 }
@@ -62,10 +119,17 @@
     color: #333;
 }
 
+.navbar-menu {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-items {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     height: 100%;
     gap: 30px;
@@ -153,12 +217,12 @@
 
 .navbar-btn {
     margin: 0;
-    width: 250px;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     background: #0a2c3c;
 }
 
@@ -179,4 +243,14 @@
 .navbar-btn .teklif-btn:hover {
     box-shadow: 0 0 15px #f89715;
     background-color: #e08510;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-container{
+        display: none;
+    }
 }
