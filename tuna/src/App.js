@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Services from './pages/Services/Services.jsx';
 import Trainings from './pages/Trainings/Trainings.jsx';
@@ -22,12 +22,13 @@ import YanginEgitimi from './pages/Cards/YanginEgitimi.jsx';
 import YuksekteCalismaEgitimi from './pages/Cards/YuksekteCalismaEgitimi.jsx';
 import NaceKodu from './pages/Cards/NaceKodu.jsx';
 import IsgKatipOnayi from './pages/Cards/IsgKatipOnayi.jsx';
+import Navbar from './components/Navbar2/Navbar.jsx';
 
 function App() {
   return (
     <div className="App">
       <ScrollToTop />
-      <Navbar />
+      <Navbar/>
       <div className="app-content">
         <Routes>
           <Route path='/' element={<Home />} />
