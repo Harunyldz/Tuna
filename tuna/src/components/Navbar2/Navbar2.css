@@ -265,10 +265,8 @@
     flex-direction: column;
     width: 300px;
     height: 100vh;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     background-color: #0a2c3c80;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 0;
     padding: 0;
     padding-top: 50px;
@@ -278,16 +276,16 @@
 
   .nav-item {
     width: 100%;
-    padding: 20px 30px;
-    display: block;
+    padding: 20px 0;
+    display: flex;
     font-size: 1.2em;
     transition: all 0.3s ease;
   }
   .nav-item:nth-child(odd){
-    background-color: #0a2c3c80;
+    background-color: #0a2c3c90;
   }
   .nav-item:nth-child(even){
-    background-color: #0a2c3c50;
+    background-color: #0a2c3c60;
   }
   .nav-item:hover{
     padding-left: 20px;
@@ -296,7 +294,8 @@
     display: none;
   }
   .navbar-icon {
-    display: block;
+    display: inline;
+    margin-right: 5px;
   }
 
   .teklif-btn {
@@ -330,15 +329,17 @@
   .dropdown-menu li{
     padding: 0;
   }
-
 }
 
 @media screen and (max-width:480px) {
+  .navbar-logo {
+    flex: 10;
+  }
   .nav-items.opened {
     top:80px;
   }
   .nav-items {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     right: 0;
     top: -600px;
@@ -346,16 +347,14 @@
   }
   .nav-item {
     width: 100%;
-    padding: 20px 80px;
-    display: block;
     font-size: 1em;
     transition: all 0.3s ease;
   }
+
   .nav-item:hover{
     padding-left: 80px;
   }
   .teklif-btn {
-    margin-left: 80px;
     font-size: 1.1em;
   }
 }
