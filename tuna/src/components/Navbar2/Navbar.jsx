@@ -8,7 +8,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -76,13 +76,14 @@ const Navbar = () => {
               <span>İş Güvenliği Hizmetleri</span>
             </div>
           </div>
-          <nav className={`navbar-menu ${opened ? "open" : ""}`}>
-            <ul className="nav-items">
+          <nav className="navbar-menu">
+            <ul className={`nav-items ${opened ? 'opened' : ''}`}>
               {menuItems.map((menuItem) => (
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-item active-item" : "nav-item"
                   }
+                  onClick={()=>setOpened(!opened)}
                   to={menuItem.href}
                   key={menuItem.id}
                   onMouseEnter={menuItem.subMenu ? handleMouseEnter : null}
@@ -110,17 +111,14 @@ const Navbar = () => {
                   )}
                 </NavLink>
               ))}
+              <Link onClick={()=>setOpened(!opened)} to="/teklifAl" className="teklif-btn">
+                Teklif Al
+              </Link>
             </ul>
           </nav>
-          <div className="navbar-btn">
-            <Link to="/teklifAl" className="teklif-btn">
-              Teklif Al
-            </Link>
-          </div>
+
           <div className="navbar-icon">
-            <i onClick={() => setOpened(!opened)}>
-              {opened ? <FaTimes /> : <FaBars />}
-            </i>
+            <i onClick={()=>setOpened(!opened)}>{opened ? <FaTimes /> : <FaBars />}</i>
           </div>
         </div>
       </div>
