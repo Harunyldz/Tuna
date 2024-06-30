@@ -1,7 +1,7 @@
 .referans {
   margin-bottom: 3vw;
   margin-top: 3vw;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,10 +64,11 @@
 
 @media screen and (max-width: 480px) {
   .referans{
-    margin: 10vw auto;
+    margin: 80px auto;
+    width: 90%;
   }
   .referans .ref-swiper {
-    width: 90vw;
+    /* width: 90vw; */
     height: 24vw;
     padding: 0 20px;
   }

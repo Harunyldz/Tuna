@@ -76,12 +76,9 @@
     background-color: #f8f9fa;
 }
 
-.navbar-menu {
-    height: 100%;
-}
-
 .navbar-logo {
-    flex: 2;
+    flex: 1.5;
+    flex-basis: 1;
     height: 100%;
     display: flex;
     align-items: center;
@@ -120,7 +117,9 @@
 }
 
 .navbar-menu {
-    flex: 4;
+    height: 100%;
+    flex: 3;
+    flex-basis: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +131,7 @@
     margin: 0 auto;
     display: flex;
     height: 100%;
-    gap: 30px;
+    gap: 2em;
 }
 
 .nav-item {
@@ -143,7 +142,7 @@
     position: relative;
     cursor: pointer;
     gap: 5px;
-    font-size: 1.05em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -217,13 +216,16 @@
 
 .navbar-btn {
     margin: 0;
-    flex: 2;
+    flex: 0.6;
+    flex-basis: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
     background: #0a2c3c;
+    border: none;
+    outline: none;
 }
 
 .navbar-btn .teklif-btn {
@@ -245,12 +247,61 @@
     background-color: #e08510;
 }
 
-@media screen and (max-width:768px) {
-    .navbar-links{
+@media screen and (max-width:960px) {
+    .navbar-links {
         display: none;
     }
 
-    .navbar-container{
+    .navbar-container {}
+
+    .navbar{
+        background-color: #0a2c3c;
+    }
+
+    .navbar-logo {
+        clip-path: none;
+    }
+
+    .navbar-container .logo-text {
         display: none;
+    }
+    .nav-item.active-item::after {
+        display: none;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #f8f9fa50;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0,1);
+    }
+    .nav-items{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .nav-item{
+        font-size: 1.5em;
+    }
+    .navbar-btn {
+        display: none;
+    }
+
+    .navbar-icon {
+        display: block;
+        color: #f8f9fa;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-container {
+        /* display: none; */
     }
 }

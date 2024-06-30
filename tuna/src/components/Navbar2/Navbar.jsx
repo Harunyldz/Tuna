@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-links">
+      {/* <div className="navbar-links">
         <div>
           <div className="navbar-mail">
             <MdEmail className="mail-icon" />
@@ -66,7 +66,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="navbar-container">
         <div className="navbar">
           <div className="navbar-logo">
