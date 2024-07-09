@@ -13,7 +13,6 @@ const Service = () => {
     .slice(0, 3);
 
   const serviceCarts = [...serviceTopCarts, ...serviceBotCarts];
-  console.log(serviceCarts);
   return (
     <section className="service-container">
       <motion.div
