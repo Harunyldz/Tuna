@@ -86,13 +86,49 @@
   background-color: #e08510;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .contact-container {
-    width: 80%;
+    width: 90%;
     margin: 5vw auto;
+  }
+
+  .contact-header h2 {
+    font-size: 2em;
+  }
+
+  .contact-header p {
+    font-size: 1.2em;
   }
 
   .contact-form form {
     width: 100%;
+  }
+
+  .form-group label {
+    font-size: 1.2em;
+  }
+
+  .submit-button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-header h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-header p {
+    font-size: 0.9em;
+  }
+
+  .form-group label {
+    font-size: 0.9em;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
   }
 }

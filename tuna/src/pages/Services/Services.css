@@ -5,34 +5,45 @@
     padding: 1vw 0;
 }
 
+.services-container .services-header h1 {
+    text-align: center;
+}
+
+.services-container .services-header p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
 .services {
     width: 75%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     gap: 2vw;
     color: #8c8c8c;
 }
 
 @media screen and (max-width:1200px) {
-    .services-container {
-        margin: 5vw 0;
-    }
 
     .services {
         width: 80%;
-        grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
     }
 }
-@media screen and (max-width:480px) {
-    .services-container {
-        margin: 5vw 0;
+
+@media screen and (max-width:960px) {
+
+    .services-container .services-header p {
+        width: 90%;
+        font-size: 1.1em;
     }
 
     .services {
         width: 90%;
-        grid-template-columns: 1fr;
         gap: 5vw;
     }
 }

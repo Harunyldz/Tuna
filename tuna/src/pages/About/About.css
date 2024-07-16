@@ -35,24 +35,38 @@
     text-align: justify;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:960px) {
     .about-container {
         width: 90%;
-        margin: 5vw auto;
     }
     
     .about-header {
-        display: flex;
-        align-items: center;
         flex-direction: column;
-        gap: 2vw;
-        margin-top: 5vw;
     }
     
     .about-header h1{
-        font-size:1.6em;
+        font-size:2em;
         text-align: center;
         gap: 5px;
+    }
+
+    .about-header h1 span{
+        font-size: 1.6em;
+    }
+    
+    .about-header img {
+        width: 90px;
+    }
+    
+    .about-content p {
+        text-align: left;
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:480px) {
+        
+    .about-header h1{
+        font-size:1.6em;
     }
 
     .about-header h1 span{
@@ -64,6 +78,6 @@
     }
     
     .about-content p {
-        text-align: left;
+        font-size: 1em;
     }
 }

@@ -137,7 +137,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:960px) {
     .info-container{
         width:90%;
         margin: 5vw auto;
@@ -150,14 +150,14 @@
     }
         
     .hesapla p{
-        font-size:0.8em;
+        font-size:1em;
     }
     
     .hesapla .inputs {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 0.5em;
+        gap: 10px;
     }
     
     .hesapla .input {
@@ -198,5 +198,11 @@
         background-color: #f89715;
         font-weight: bold;
         margin: 0 10px;
+    }
+}
+@media screen and (max-width:480px) {
+        
+    .hesapla p{
+        font-size:0.8em;
     }
 }

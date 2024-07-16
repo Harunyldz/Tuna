@@ -6,8 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f89715' fill-opacity='0.1' d='M0,224L60,234.7C120,245,240,267,360,272C480,277,600,267,720,224C840,181,960,107,1080,80C1200,53,1320,75,1380,85.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") center center no-repeat;
-    background-size: cover; */
 }
 
 .header-container {
@@ -59,6 +57,37 @@
 
 .header-links {
     flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    .header-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-content {
+        padding: 1em ;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+
+    .header-btn {
+        font-size: 1.2em;
+        padding: 12px 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {

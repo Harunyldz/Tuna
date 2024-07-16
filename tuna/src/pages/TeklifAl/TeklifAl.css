@@ -104,9 +104,9 @@
     background-color: #e08510;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     .teklif {
-        width: 100%;
+        width: 80%;
         margin:5vw auto;
     }
 
@@ -124,5 +124,12 @@
     .teklif-form .form-top {
         flex-direction: column;
         gap: 5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .teklif {
+        width: 100%;
+        margin:5vw auto;
     }
 }

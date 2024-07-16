@@ -5,33 +5,44 @@
     padding: 1vw 0;
 }
 
+.trainings-container .trainings-header h1 {
+    text-align: center;
+}
+
+.trainings-container .trainings-header p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
 .trainings {
     width: 75%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2vw;
     color: #8c8c8c;
 }
+
 @media screen and (max-width:1200px) {
-    .trainings-container {
-        margin: 5vw 0;
-    }
 
     .trainings {
         width: 80%;
-        grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
     }
 }
 
-@media screen and (max-width:480px) {
-    .trainings-container {
-        margin: 5vw 0;
+@media screen and (max-width:960px) {
+
+    .trainings-container .trainings-header p {
+        width: 90%;
+        font-size: 1.1em;
     }
 
     .trainings {
         width: 90%;
-        grid-template-columns: 1fr;
     }
 }

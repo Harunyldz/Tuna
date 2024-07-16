@@ -55,16 +55,37 @@
     margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 0.2em;
+    }
+
+    .hero .card {
+        padding: 1em 0;
+    }
+
+    .card .card-content h3 {
+        font-size: 1em;
+    }
+
+    .card .card-icon {
+        font-size: 1.2em;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .hero {
         padding: 0.2em;
     }
-    .hero .card{
-        padding:1em 0;
+
+    .hero .card {
+        padding: 1em 0;
     }
-    .card .card-content h3{
-        font-size:0.7em;
+
+    .card .card-content h3 {
+        font-size: 0.7em;
     }
+
     .card .card-icon {
         font-size: 1em;
     }

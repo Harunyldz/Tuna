@@ -117,12 +117,7 @@
     font-size: 1em;
 }
 
-.footer-right .map {
-    width: 60%;
-    height: 250px;
-}
-
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
 
     .footer {
         flex-direction: column;
@@ -130,8 +125,12 @@
         width: 90%;
     }
 
+    .footer-left ul li {
+        font-size: 1.2em;
+    }
+
     .footer-center {
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .footer-right {
@@ -144,7 +143,26 @@
         text-align: left;
     }
 
-    .footer-right .map {
-        width: 80%;
+    .footer-right ul li {
+        font-size: 1.2em;
+    }
+
+    .footer-right .footer-contact {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .footer-left ul li {
+        font-size: 1em;
+    }
+
+    .footer-right ul li {
+        font-size: 1em;
+    }
+
+    .footer-right .footer-contact {
+        font-size: 1em;
     }
 }

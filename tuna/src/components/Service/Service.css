@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vw;
     text-align: center;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .service p {
-    margin-bottom: 1em;
+    margin-bottom: 20px;
     color: #555;
     line-height: 1.5;
 }
@@ -123,10 +122,11 @@
     font-size: 2em;
 }
 
-@media screen and (max-width:480px) {
+
+@media screen and (max-width:960px) {
     .service-container {
         width: 90%;
-        margin: 5vw auto;
+        margin: 4vw auto;
     }
 
     .service h2 {
@@ -137,10 +137,11 @@
         margin-bottom: 5vw;
         color: #555;
         line-height: 1.5;
+        font-size: 1.2em;
     }
 
     .service-carts .service-cart {
-        height: 180px;
+        height: 240px;
     }
 
     .service .service-carts {
@@ -155,6 +156,7 @@
     .service-cart .service-content {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 5px;
     }
 
@@ -163,11 +165,12 @@
     }
 
     .service-carts .service-cart .service-title {
-        font-size: 0.8em;
+        font-size: 1.2em;
+        margin-top: 10px;
     }
 
     .service .service-btns {
-        margin-top: 1em;
+        margin-top: 1.5em;
         gap: 1em;
     }
 
@@ -175,6 +178,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 90px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .service p {
+        font-size: 1em;
+    }
+
+    .service-carts .service-cart {
+        height: 180px;
+    }
+
+    .service-carts .service-cart .icon {
+        display: none;
+    }
+
+    .service-carts .service-cart .service-title {
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+
+    .service-btns .service-btn {
         height: 70px;
         font-size: 1.2em;
     }

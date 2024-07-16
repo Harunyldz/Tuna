@@ -3,6 +3,7 @@
 .leftmenu {
   margin-top: 0;
   width: 20%;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +90,7 @@
   background-color: #e08010;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:960px) {
 
   .leftmenu {
     display: none;

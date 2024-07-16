@@ -74,7 +74,12 @@
     color: #f89715;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:1500px) {
+    .card-images {
+        display: none;
+    }
+}
+@media screen and (max-width:960px) {
     .card-container {
         width: 90%;
     }
@@ -83,7 +88,4 @@
         flex: 1;
     }
 
-    .card-images {
-        display: none;
-    }
 }

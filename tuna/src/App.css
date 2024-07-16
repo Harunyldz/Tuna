@@ -6,11 +6,20 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .App .app-content {
   flex: 1;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width:960px) {
+  .App {
+    overflow: hidden;
+  }
+
+  .App .app-content {
+    margin-top: 80px;
+  }
 }
