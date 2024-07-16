@@ -1,5 +1,5 @@
 .hero {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 24px;
     border: 1px solid rgba(10, 44, 60, 1);
@@ -8,7 +8,6 @@
 .hero-cards {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     gap: 10px;
 }
 
@@ -55,7 +54,20 @@
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .card .card-content h3 {
+        font-size: 1em;
+    }
+
+    .card .card-icon {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 960px) {
     .hero {
         padding: 0.2em;
     }
