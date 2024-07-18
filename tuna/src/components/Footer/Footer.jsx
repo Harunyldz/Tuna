@@ -2,11 +2,15 @@ import React from 'react'
 import "./Footer.css"
 import logo from "../../assets/logo5.png"
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
+import WhatsAppLink from './WhatsAppLink';
+
 
 
 const Footer = () => {
+    const phoneNumber = "905322505784"; // Ülke kodu ile birlikte telefon numarası
+    const message = "Merhaba, bu bir test mesajıdır!";
     return (
         <div className='footer-container'>
             <div className="footer">
@@ -47,6 +51,13 @@ const Footer = () => {
                         <ul>
                             <Link to="/iletisim" className='footer-contact'>tunaisguvenligihizmetleri@gmail.com</Link>
                             <li>İnönü Mah. 375. Sokak No:7 Bağcılar/İstanbul</li>
+                            <li className='arama'>
+                                <div className='cepNumber'><a href="tel:+905322505784">+90 532 250 5784</a></div>
+                                <div>
+                                    <WhatsAppLink phoneNumber={phoneNumber} message={message} /></div>
+                            </li>
+
+
                         </ul>
                     </div>
                 </div>
