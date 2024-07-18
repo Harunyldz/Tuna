@@ -1,8 +1,8 @@
 .header {
     width: 100%;
     color: #3f3e3e;
-    margin: 5vw auto;
-    padding: 5rem 0;
+    margin: 1vw auto;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +62,8 @@
 
 @media screen and (max-width: 1400px) {
     .header {
-        margin: 3vw auto;
-        padding: 3rem 0;
+        margin: 1.5vw auto;
+        padding: 1.5rem 0;
     }
 
     .header-container {
@@ -75,7 +75,7 @@
         line-height: 1.5;
         margin-bottom: 1.5em;
     }
-    
+
 }
 
 @media screen and (max-width: 960px) {
