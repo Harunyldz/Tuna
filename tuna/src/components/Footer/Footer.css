@@ -133,6 +133,12 @@
     color: rgb(179, 255, 0);
 }
 
+.adres {
+    color: green;
+    font-size: 1.5em;
+    text-align: center;
+}
+
 .cepNumber {
     color: chocolate;
     font-size: 1.5em;

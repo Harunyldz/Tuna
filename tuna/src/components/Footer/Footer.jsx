@@ -10,7 +10,7 @@ import WhatsAppLink from './WhatsAppLink';
 
 const Footer = () => {
     const phoneNumber = "905322505784"; // Ülke kodu ile birlikte telefon numarası
-    const message = "Merhaba, bu bir test mesajıdır!";
+    const message = "Tuna iş güvenliği!";
     return (
         <div className='footer-container'>
             <div className="footer">
