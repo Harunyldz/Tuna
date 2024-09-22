@@ -120,8 +120,9 @@
 .arama {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
+    gap: 50px
 }
 
 .whatsapp {
